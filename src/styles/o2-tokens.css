@@ -1,0 +1,17 @@
+/* App aliases onto the captured O2 Momentum tokens (o2-brand.css, from assets/brand). */
+:root {
+  --o2-font-display: var(--o2-font);
+  --o2-brand: var(--o2-brand-primary);
+  --o2-brand-ink: var(--o2-text-on-brand);
+  --o2-accent: var(--o2-badge-offer);
+  --o2-text: var(--o2-text-default);
+  --o2-text-muted: var(--o2-text-variant);
+  --o2-selected-bg: #f2f6ff;
+  --o2-warn: var(--o2-warning);
+  --o2-focus: var(--o2-legacy-o2-blue);
+  --o2-radius: var(--border-radius-m);
+  --o2-radius-lg: var(--border-radius-l);
+  --o2-radius-pill: var(--cta-radius);
+  --o2-shadow: var(--o2-shadow-card);
+  --o2-btn-height: 48px;
+}

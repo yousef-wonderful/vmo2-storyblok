@@ -1,0 +1,25 @@
+{
+  "name": "storyblok",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --experimental-https --experimental-https-key certificates/localhost-key.pem --experimental-https-cert certificates/localhost.pem -p 3010",
+    "build": "next build",
+    "start": "next start -p 3010",
+    "extract": "tsx scripts/extract-journeys.ts",
+    "seed": "tsx scripts/seed.ts"
+  },
+  "dependencies": {
+    "@storyblok/react": "^7.4.0",
+    "next": "16.4.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  }
+}

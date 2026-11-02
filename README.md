@@ -1,0 +1,24 @@
+# O2 buying layer · Storyblok (Next.js)
+
+The O2 buying journeys from `../app`, sliced into Storyblok components and pages, rendered by Next.js App Router with `@storyblok/react/rsc` (O2's own stack: Next.js + Storyblok).
+
+Storyblok holds customer-facing content only. The demo's presenter bar, persona switcher and agent panel stay in `../app` and are not part of this build.
+
+## Content model
+
+- `journeys/` is a folder per journey (6). Each step is one `journey_step` story, numbered `01-…`, and its buttons link to the next step.
+- A `journey_step` page holds the title, blocks, button labels and links, and the O2 checkout frame settings (progress step, secure header, basket bar figures).
+- Blocks: hero, choice, reco, splash, offer, form, result, info card, order summary, legal, note. Parts: choice option, recommendation, form field, summary row.
+- The Help me chat (p7) and EE-style layout (p8) journeys are behaviours on top of p1, not different content, so they are not seeded.
+
+## Setup
+
+1. Fill in `.env.local` (template: `.env.example`).
+2. `npm run seed -- --dry`, then `npm run seed`. Add `--prune` to remove stale stories under `journeys/` and components from earlier seeds.
+3. `npm run dev` (https://localhost:3010, self-signed certificate). In Chrome, allow **Local network access** for app.storyblok.com, or the Visual Editor frame is blocked.
+
+## Scripts and routes
+
+- `npm run extract` re-walks `../app`'s planner and rewrites `seed/journeys.json`.
+- `/` lists the journeys. `/<slug>` shows published content, `/preview/<slug>` shows draft content for the Visual Editor, and `/local/<slug>` renders the seed file offline.
+- Selections and form inputs stay in the browser. Each button follows the recorded path; "No thanks" and "Skip" go to the step that path would show next.

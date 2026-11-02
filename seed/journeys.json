@@ -1,0 +1,4488 @@
+{
+  "extracted_at": "2026-11-01T15:14:55.712Z",
+  "catalogue_captured_at": "2026-10-26",
+  "journeys": [
+    {
+      "name": "iPhone 17 · paid social",
+      "slug": "iphone-17-paid-social",
+      "steps": [
+        {
+          "name": "01 · iPhone 17",
+          "slug": "01-iphone-17",
+          "content": {
+            "_uid": "f8c7ff5b-7017-4f86-995a-9577ef3afae9",
+            "component": "journey_step",
+            "title": "iPhone 17",
+            "subtitle": "More delightful. More durable.",
+            "stage": "Phone",
+            "blocks": [
+              {
+                "_uid": "175bc878-a94a-43f1-9dc9-8e8808ffcc42",
+                "component": "hero",
+                "title": "iPhone 17",
+                "image": {
+                  "__asset": "/catalogue/iphone-17-lavender-01-main.png"
+                },
+                "from_price": "From £50.27 a month",
+                "rating": "4",
+                "reviews": "245",
+                "specs": "48MP | Camera\nFast-charge capable | Charging Times\n5G+ | Data Connectivity\n6.3 inch | Screen Size"
+              }
+            ],
+            "primary_label": "Choose iPhone 17",
+            "primary_link": {
+              "__step": 1
+            },
+            "basket_label": "iPhone 17"
+          }
+        },
+        {
+          "name": "02 · How do you want to pay for your phone?",
+          "slug": "02-how-do-you-want-to-pay-for-your-phone",
+          "content": {
+            "_uid": "1bf94ec6-1b3f-417c-a48c-36063a25e9c7",
+            "component": "journey_step",
+            "title": "How do you want to pay for your phone?",
+            "subtitle": "Cash price £975.66. The cost of your phone is the same however long you choose.",
+            "stage": "Plan",
+            "blocks": [
+              {
+                "_uid": "6fe74129-db94-4046-9246-2c484aa07c76",
+                "component": "choice",
+                "layout": "cards",
+                "default_option": "24-30",
+                "options": [
+                  {
+                    "_uid": "a153c45a-e244-4968-9bb2-0e9642055b1d",
+                    "component": "choice_option",
+                    "value": "36-30",
+                    "title": "Smallest upfront",
+                    "meta": "36-month Device Plan · £30 upfront · 0% APR",
+                    "price": "£26.27/mo"
+                  },
+                  {
+                    "_uid": "5f4c5dbb-c882-4e2b-8063-632ccaf6bcd7",
+                    "component": "choice_option",
+                    "value": "24-30",
+                    "title": "Pay it off sooner",
+                    "meta": "24-month Device Plan · £30 upfront · 0% APR",
+                    "price": "£39.40/mo"
+                  },
+                  {
+                    "_uid": "8fdc7f2f-f9d5-49dc-9e60-dac3981712fe",
+                    "component": "choice_option",
+                    "value": "36-100",
+                    "title": "Lowest monthly",
+                    "meta": "36-month Device Plan · £100 upfront · 0% APR",
+                    "price": "£24.32/mo"
+                  }
+                ]
+              },
+              {
+                "_uid": "c3a945a9-effa-47f5-a300-3b6b7ae49141",
+                "component": "legal",
+                "title": "Representative example",
+                "body": "Your Custom Plan - Representative Example\nDuration of Device Plan: 36 months\nMonthly device payment: £26.27\nCredit Amount: £945.66\nInterest Rate (fixed): 0%\nRepresentative APR: 0%\nUpfront Cost: £30.00\nTotal amount payable for device: £975.66\nCash price: £975.66\n\n0% APR. Finance subject to status and credit checks, 18+, Direct Debit. Credit provided by Telefonica UK Ltd, 500 Brook Drive, Reading, RG2 6UU, UK. Terms apply, see o2.co.uk/terms."
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 2
+            },
+            "back_link": {
+              "__step": 0
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£39.40"
+          }
+        },
+        {
+          "name": "03 · How much data do you need?",
+          "slug": "03-how-much-data-do-you-need",
+          "content": {
+            "_uid": "bccda3a8-ae50-4dbb-95a2-93ce4bfbd664",
+            "component": "journey_step",
+            "title": "How much data do you need?",
+            "subtitle": "Unlimited UK Minutes & Texts. All our tariffs are 5G ready.",
+            "stage": "Plan",
+            "blocks": [
+              {
+                "_uid": "fc0f45ac-532e-4df4-bf89-e7c71041a060",
+                "component": "choice",
+                "layout": "cards",
+                "default_option": "unlimited-classic",
+                "options": [
+                  {
+                    "_uid": "2a59b5a7-b6bc-4d28-8cd0-eb5d5c78fdf7",
+                    "component": "choice_option",
+                    "value": "30gb-classic",
+                    "title": "30GB",
+                    "meta": "Classic · Roam freely in the EU, up to 25GB.",
+                    "price": "+£27.00/mo"
+                  },
+                  {
+                    "_uid": "085d73e0-6ead-461c-9c06-6ba0a542d79f",
+                    "component": "choice_option",
+                    "value": "125gb-classic",
+                    "title": "125GB",
+                    "meta": "Classic · Roam freely in the EU, up to 25GB.",
+                    "price": "+£32.00/mo"
+                  },
+                  {
+                    "_uid": "02b94aed-e95f-4bdb-a08f-410490734e7c",
+                    "component": "choice_option",
+                    "value": "unlimited-classic",
+                    "title": "Unlimited",
+                    "meta": "Classic · Roam freely in the EU, up to 25GB.",
+                    "price": "+£37.00/mo",
+                    "badge": "Recommended"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 3
+            },
+            "back_link": {
+              "__step": 1
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£76.40"
+          }
+        },
+        {
+          "name": "04 · Upgrade to Unlimited Plus",
+          "slug": "04-upgrade-to-unlimited-plus",
+          "content": {
+            "_uid": "762d3a5c-49fa-49ff-9ef4-a96f2fee2bfd",
+            "component": "journey_step",
+            "title": "Upgrade to Unlimited Plus",
+            "stage": "Plan",
+            "blocks": [
+              {
+                "_uid": "baec2509-0022-4e3c-962f-809744186290",
+                "component": "offer",
+                "title": "Unlimited Plus Airtime Plan",
+                "body": "Get O2 Switch Up and more, for a little extra each month.",
+                "bullets": "Swap to a new phone every 11 months, with O2 Switch Up.\nRoam at no extra cost in 75 destinations, USA included.",
+                "price": "+£3.99/mo",
+                "image": {
+                  "__asset": "/catalogue/config-switch-up-header-background.png"
+                },
+                "logo": {
+                  "__asset": "/catalogue/config-switch-up-logo.png"
+                }
+              }
+            ],
+            "primary_label": "Upgrade to Plus",
+            "primary_link": {
+              "__step": 4
+            },
+            "secondary_label": "No thanks",
+            "secondary_link": {
+              "__step": 4
+            },
+            "back_link": {
+              "__step": 2
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£76.40"
+          }
+        },
+        {
+          "name": "05 · Protect your new phone",
+          "slug": "05-protect-your-new-phone",
+          "content": {
+            "_uid": "00745430-58e5-409a-9885-1681b67c978b",
+            "component": "journey_step",
+            "title": "Protect your new phone",
+            "stage": "Plan",
+            "blocks": [
+              {
+                "_uid": "c302dcd2-482a-45db-b574-b57e6e971729",
+                "component": "offer",
+                "title": "O2 Insure Full Cover",
+                "body": "Dropping your phone. Leaving it on the bus. Finding it missing from your gym bag. We cover all of that. Our Full Cover policy meets the needs of someone wishing to cover their mobile device against theft, loss or accidental damage.",
+                "price": "£12.50/mo",
+                "image": {
+                  "__asset": "/catalogue/insurance-o2-insure-full-cover-headerbackground.jpg"
+                },
+                "logo": {
+                  "__asset": "/catalogue/insurance-icon.png"
+                },
+                "legal": "This product meets your demands and needs if you wish to cover your device for loss, theft and accidental damage and do not have a suitable alternative policy."
+              }
+            ],
+            "primary_label": "Add insurance",
+            "primary_link": {
+              "__step": 5
+            },
+            "secondary_label": "No thanks",
+            "secondary_link": {
+              "__step": 5
+            },
+            "back_link": {
+              "__step": 3
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£80.39"
+          }
+        },
+        {
+          "name": "06 · Let's check you're likely to be approved",
+          "slug": "06-lets-check-youre-likely-to-be-approved",
+          "content": {
+            "_uid": "bc252b8e-d1da-4561-ad90-61eccd853041",
+            "component": "journey_step",
+            "title": "Let's check you're likely to be approved",
+            "subtitle": "A quick eligibility check before you give us your details. It won't affect your credit score.",
+            "stage": "Check",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "8a0bcbe0-bb6c-4744-bd42-986cb0312473",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "45e4f94d-23b2-4465-994f-db7e3796efa8",
+                    "component": "form_field",
+                    "label": "How long have you lived at your address?",
+                    "input_type": "text",
+                    "options": "Less than 1 year\n1 to 2 years\n3 to 5 years\nMore than 5 years"
+                  },
+                  {
+                    "_uid": "85eddca1-8d40-4a44-9b0f-eac558e65841",
+                    "component": "form_field",
+                    "label": "Employment status",
+                    "input_type": "text",
+                    "options": "Employed\nEmployed part-time\nSelf-employed\nStudent\nRetired\nNot employed"
+                  }
+                ]
+              },
+              {
+                "_uid": "2f53ee1a-c7ea-4134-8ccb-150bfac45a9c",
+                "component": "note",
+                "body": "0% APR. Finance subject to status and credit checks, 18+, Direct Debit. Credit provided by Telefonica UK Ltd, 500 Brook Drive, Reading, RG2 6UU, UK. Terms apply, see o2.co.uk/terms."
+              }
+            ],
+            "primary_label": "Check now",
+            "primary_link": {
+              "__step": 6
+            },
+            "back_link": {
+              "__step": 4
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£92.89"
+          }
+        },
+        {
+          "name": "07 · About you",
+          "slug": "07-about-you",
+          "content": {
+            "_uid": "db22fbbb-67cf-459d-9d9c-7ceb3d0dfe9a",
+            "component": "journey_step",
+            "title": "About you",
+            "stage": "Details",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "5c593592-cdbb-4cfa-b6d5-b3b7cd924fb7",
+                "component": "result",
+                "tone": "good",
+                "title": "You're likely to pass a credit check",
+                "body": "Based on the information we have, we think you're likely to pass a credit check. We'll complete the full credit check when you checkout, which will be recorded as a 'search' on your credit file. Our eligibility check results are automatically generated."
+              },
+              {
+                "_uid": "101d9cbb-9e60-40bd-ac79-f993418887c9",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "1f0fcd47-a77b-4bde-b6e2-c52ebdd76813",
+                    "component": "form_field",
+                    "label": "Full name",
+                    "input_type": "text"
+                  },
+                  {
+                    "_uid": "feeb9954-11f5-4c80-8816-4fe681158413",
+                    "component": "form_field",
+                    "label": "Email address",
+                    "input_type": "email"
+                  },
+                  {
+                    "_uid": "b049a4c0-d031-464a-b81c-34a001f49c4c",
+                    "component": "form_field",
+                    "label": "Mobile number",
+                    "input_type": "tel"
+                  },
+                  {
+                    "_uid": "376b8884-46c8-4318-a3c2-a97ca6374caf",
+                    "component": "form_field",
+                    "label": "Date of birth (DD/MM/YYYY)",
+                    "input_type": "text"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 7
+            },
+            "back_link": {
+              "__step": 5
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£92.89"
+          }
+        },
+        {
+          "name": "08 · How would you like to get it?",
+          "slug": "08-how-would-you-like-to-get-it",
+          "content": {
+            "_uid": "77ec166e-62c6-4886-ba2a-0cc78321316e",
+            "component": "journey_step",
+            "title": "How would you like to get it?",
+            "stage": "Details",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "4a987791-a2f7-4c0d-900a-8a66e8a0d35d",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "3a57202e-8fac-4729-ad41-24a90a1ddf83",
+                    "component": "form_field",
+                    "label": "Delivery address",
+                    "input_type": "text"
+                  }
+                ]
+              },
+              {
+                "_uid": "ebe59ed5-d533-4c6d-864f-e56eeef3364d",
+                "component": "choice",
+                "layout": "list",
+                "default_option": "next-day",
+                "options": [
+                  {
+                    "_uid": "432c26b2-3600-45a1-ab83-ff31975bc97c",
+                    "component": "choice_option",
+                    "value": "next-day",
+                    "title": "Free next-working-day home delivery",
+                    "meta": "Order your device by midnight for free next working day delivery",
+                    "price": "FREE"
+                  },
+                  {
+                    "_uid": "ae48fecb-3bf7-4e57-b4bc-4ef1885e09f3",
+                    "component": "choice_option",
+                    "value": "premium",
+                    "title": "Premium delivery",
+                    "meta": "Pick a morning or midday slot, including weekends.",
+                    "price": "£9.99"
+                  },
+                  {
+                    "_uid": "d71f5ddc-06ef-4bab-b21e-147339f4565e",
+                    "component": "choice_option",
+                    "value": "collect",
+                    "title": "Click and collect",
+                    "meta": "If it's available you can collect the same day, and could even get it in minutes.",
+                    "price": "FREE"
+                  }
+                ]
+              },
+              {
+                "_uid": "79f579e4-1bc3-4da5-bf68-0e2b1dd2592f",
+                "component": "choice",
+                "label": "Your SIM",
+                "layout": "chips",
+                "default_option": "esim",
+                "options": [
+                  {
+                    "_uid": "de2407d7-c3bc-4535-86ee-a63fa1b8cee6",
+                    "component": "choice_option",
+                    "value": "esim",
+                    "title": "Use an eSIM"
+                  },
+                  {
+                    "_uid": "0d6f9f1e-e126-47a9-a4b2-4dccb8a71d84",
+                    "component": "choice_option",
+                    "value": "physical",
+                    "title": "Use a plastic SIM"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 8
+            },
+            "back_link": {
+              "__step": 6
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£92.89"
+          }
+        },
+        {
+          "name": "09 · Make sure you’re happy with your order",
+          "slug": "09-make-sure-youre-happy-with-your-order",
+          "content": {
+            "_uid": "c797199f-da2e-455e-8e35-bfc8761b2f65",
+            "component": "journey_step",
+            "title": "Make sure you’re happy with your order",
+            "stage": "Pay",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "30a3446c-c31e-4e3f-8120-55903102ae75",
+                "component": "order_summary",
+                "image": {
+                  "__asset": "/catalogue/iphone-17-lavender-01-main.png"
+                },
+                "rows": [
+                  {
+                    "_uid": "e3c554d0-9941-4ec9-bebc-d2f8a3603316",
+                    "component": "summary_row",
+                    "label": "iPhone 17 256GB",
+                    "meta": "Lavender · Device Plan, 24 months, 0% APR",
+                    "value": "£39.40"
+                  },
+                  {
+                    "_uid": "8d2ff1d3-8828-440d-ae08-17b0bd66447f",
+                    "component": "summary_row",
+                    "label": "Unlimited Plus",
+                    "meta": "30-day rolling Airtime Plan",
+                    "value": "£40.99"
+                  },
+                  {
+                    "_uid": "fcdfdf2f-935a-461d-9c5e-2a6dc645d8cd",
+                    "component": "summary_row",
+                    "label": "O2 Insure Full Cover",
+                    "meta": "Add-on",
+                    "value": "£12.50"
+                  },
+                  {
+                    "_uid": "b32878bb-850f-43fa-b04d-61cdb2191e23",
+                    "component": "summary_row",
+                    "label": "Free next-working-day home delivery",
+                    "meta": "eSIM",
+                    "value": "FREE"
+                  },
+                  {
+                    "_uid": "a145cf31-1175-4edb-a008-325167f4a0e8",
+                    "component": "summary_row",
+                    "label": "Total monthly",
+                    "value": "£92.89",
+                    "total": true
+                  },
+                  {
+                    "_uid": "6dbfc9c4-7f11-4917-a165-0b2977c81e0c",
+                    "component": "summary_row",
+                    "label": "Pay today",
+                    "value": "£30.00",
+                    "total": true
+                  }
+                ]
+              },
+              {
+                "_uid": "4c5d9649-edaf-4e90-94c1-dc08a6b1d325",
+                "component": "legal",
+                "title": "Your Device Plan and Airtime Plan",
+                "body": "Direct purchases only. Pay the cash price for your device or spread the cost over 3 to 36 months (excludes dongles). Certain device costs available to be spread over 3 to 48 months. The cost of your Device will be the same however long you choose. There may be an upfront cost. For customers who took out an O2 Refresh custom plan on or after 17 December 2021, your Airtime Plan and Device plans unlink after 24 months. This means that if you are in the first 24 months of your Device Plan you will have to pay off your Device Plan in full if you decide to end your Airtime Plan. After 24 months you can: keep your Airtime and Device Plans without changing anything Cancel your Airtime Plan and keep paying off your Device Plan instalments or, Cancel your Airtime Plan and pay off your Device Plan in full. For customers who took out an O2 Refresh custom plan before the 17 December 2021 the Airtime and Device Plans remain linked for the duration of the Device Plan, this means you will have to pay off your Device Plan in full if you decide to end your Airtime Plan at any point.\n\nDevice balance due if Airtime Plan cancelled in first 24 months."
+              },
+              {
+                "_uid": "8426cfd2-5ec7-44b2-a18d-6eb5a96209c5",
+                "component": "legal",
+                "title": "Your credit agreement",
+                "body": "Your Custom Plan - Representative Example\nDuration of Device Plan: 24 months\nMonthly device payment: £39.40\nCredit Amount: £945.66\nInterest Rate (fixed): 0%\nRepresentative APR: 0%\nUpfront Cost: £30.00\nTotal amount payable for device: £975.66\nCash price: £975.66"
+              },
+              {
+                "_uid": "378b05e5-0380-4d31-a7f3-bb0384e3321f",
+                "component": "legal",
+                "title": "Subject to Annual Price Increase",
+                "body": "Monthly price of your Airtime Plan will increase by £2.50 each April, except Data Only and Smartwatch Plans which will increase by 75p. Out of bundle charges increase by 5% every 1 April."
+              },
+              {
+                "_uid": "38dcb4e7-f14a-469b-958f-e3d4ba199a17",
+                "component": "legal",
+                "title": "Your cancellation rights",
+                "body": "If you’ve decided that the device isn’t for you, you can return it to us within 14 days for a refund. If you’d like to exchange it for a different device, just complete the return and place a new order."
+              }
+            ],
+            "primary_label": "Agree and continue",
+            "primary_link": {
+              "__step": 9
+            },
+            "back_link": {
+              "__step": 7
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£92.89"
+          }
+        },
+        {
+          "name": "10 · Pay and place your order",
+          "slug": "10-pay-and-place-your-order",
+          "content": {
+            "_uid": "ece31994-0bb3-4c50-bdc9-925bf7e8fea2",
+            "component": "journey_step",
+            "title": "Pay and place your order",
+            "stage": "Pay",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "6eaf419f-f8e4-4ac6-afd1-28bc64e99b9b",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "c51b710b-4671-4b14-a9f9-909f9d13b461",
+                    "component": "form_field",
+                    "label": "Account holder name",
+                    "input_type": "text",
+                    "value": "Jordan Ellis"
+                  },
+                  {
+                    "_uid": "525904be-48c3-45da-bbba-31c1b4ca733b",
+                    "component": "form_field",
+                    "label": "Sort code",
+                    "input_type": "text"
+                  },
+                  {
+                    "_uid": "c7fa9fcf-60d6-4e58-865e-77d0e3661fa9",
+                    "component": "form_field",
+                    "label": "Account number",
+                    "input_type": "text"
+                  }
+                ]
+              },
+              {
+                "_uid": "6babc7b7-e62b-4c4c-a7f6-feadf51e30d5",
+                "component": "choice",
+                "label": "Pay £30.00 today with",
+                "layout": "chips",
+                "default_option": "applepay",
+                "options": [
+                  {
+                    "_uid": "374c8af1-6e1b-4f35-b6c6-4d6b7c97fa9e",
+                    "component": "choice_option",
+                    "value": "applepay",
+                    "title": "Apple Pay"
+                  },
+                  {
+                    "_uid": "c1edb135-7ce2-4772-b191-7b81bdd2eec1",
+                    "component": "choice_option",
+                    "value": "card",
+                    "title": "Debit or credit card"
+                  }
+                ]
+              },
+              {
+                "_uid": "0d4a6e2b-9fe7-48d3-ae1d-a91cc38286bb",
+                "component": "note",
+                "body": "When you place your order we run a full credit check and an ID check. This will be recorded as a search on your credit file."
+              },
+              {
+                "_uid": "c71f98a7-bd25-49f1-81c6-f27b99390ad6",
+                "component": "legal",
+                "title": "Finance and credit",
+                "body": "0% APR. Finance subject to status and credit checks, 18+, Direct Debit. Credit provided by Telefonica UK Ltd, 500 Brook Drive, Reading, RG2 6UU, UK. Terms apply, see o2.co.uk/terms."
+              }
+            ],
+            "primary_label": "Place order · £30.00 today",
+            "primary_link": {
+              "__step": 10
+            },
+            "back_link": {
+              "__step": 8
+            },
+            "payment_logos": true,
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£92.89"
+          }
+        },
+        {
+          "name": "11 · Your order is complete",
+          "slug": "11-your-order-is-complete",
+          "content": {
+            "_uid": "2ca71f58-22d5-4c79-bf55-4a477f7e13dc",
+            "component": "journey_step",
+            "title": "Your order is complete",
+            "stage": "Pay",
+            "blocks": [
+              {
+                "_uid": "ce3bbf4c-e737-4c92-882d-e25e2a2ddf8f",
+                "component": "result",
+                "tone": "good",
+                "title": "We’ve received your order and it’ll be on its way soon.",
+                "body": "We've sent an email to jordan.ellis@example.com with all the details."
+              },
+              {
+                "_uid": "1f1c9547-d5a9-46ee-af47-61373e7c1912",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "9f084701-8089-4add-a685-d64418fc70c9",
+                    "component": "form_field",
+                    "label": "Create a password to track your order",
+                    "input_type": "password"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Create my account",
+            "secondary_label": "Not now",
+            "back_link": {
+              "__step": 9
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£92.89"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Virgin Media household · Volt",
+      "slug": "virgin-media-household-volt",
+      "steps": [
+        {
+          "name": "01 · Pick your new phone",
+          "slug": "01-pick-your-new-phone",
+          "content": {
+            "_uid": "768b4150-8e27-4ec2-acfa-f4373d3675bb",
+            "component": "journey_step",
+            "title": "Pick your new phone",
+            "stage": "Phone",
+            "blocks": [
+              {
+                "_uid": "81d14af4-be51-498e-a780-59a38a017e8f",
+                "component": "choice",
+                "layout": "cards",
+                "default_option": "iphone-17",
+                "options": [
+                  {
+                    "_uid": "aefa0b9f-896e-45c7-9b26-7dc6b53c73c0",
+                    "component": "choice_option",
+                    "value": "iphone-17",
+                    "title": "iPhone 17",
+                    "meta": "48MP camera · 6.3 inch screen size",
+                    "price": "From £50.27/mo",
+                    "badge": "Most popular",
+                    "image": {
+                      "__asset": "/catalogue/iphone-17-lavender-01-main-thumb-256.png"
+                    }
+                  },
+                  {
+                    "_uid": "29eaf89f-0a81-4748-a228-5ba0f8eb4812",
+                    "component": "choice_option",
+                    "value": "galaxy-s26",
+                    "title": "Galaxy S26",
+                    "meta": "50MP camera · 6.3 inches screen size",
+                    "price": "From £49.25/mo",
+                    "image": {
+                      "__asset": "/catalogue/galaxy-s26-black-01-main-thumb-256.png"
+                    }
+                  },
+                  {
+                    "_uid": "826346a4-e3de-4da6-a0e5-71faccc98b53",
+                    "component": "choice_option",
+                    "value": "iphone-17-pro",
+                    "title": "iPhone 17 Pro",
+                    "meta": "48MP camera · 6.3 inch screen size",
+                    "price": "From £56.29/mo",
+                    "image": {
+                      "__asset": "/catalogue/iphone-17-pro-cosmic-orange-01-main-thumb-256.png"
+                    }
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 1
+            },
+            "basket_label": "iPhone 17"
+          }
+        },
+        {
+          "name": "02 · Choose your colour and storage",
+          "slug": "02-choose-your-colour-and-storage",
+          "content": {
+            "_uid": "b5aa0ab8-ecac-444c-97c2-bb8a9e2bb1ef",
+            "component": "journey_step",
+            "title": "Choose your colour and storage",
+            "stage": "Phone",
+            "blocks": [
+              {
+                "_uid": "ff4169e8-5046-439a-a41d-9bf40e715c41",
+                "component": "hero",
+                "title": "iPhone 17",
+                "image": {
+                  "__asset": "/catalogue/iphone-17-lavender-01-main.png"
+                },
+                "rating": "4",
+                "reviews": "245"
+              },
+              {
+                "_uid": "5d108e85-eb89-4f0d-abe2-f349129c5016",
+                "component": "choice",
+                "label": "Colour",
+                "layout": "swatches",
+                "default_option": "lavender",
+                "options": [
+                  {
+                    "_uid": "1a16990d-937b-4c4c-8def-831118fe8409",
+                    "component": "choice_option",
+                    "value": "lavender",
+                    "title": "Lavender",
+                    "swatch": "#e9d9f2",
+                    "image": {
+                      "__asset": "/catalogue/iphone-17-lavender-01-main.png"
+                    }
+                  },
+                  {
+                    "_uid": "f598c9db-b8ac-4e6f-94f2-f0c9faac7ee0",
+                    "component": "choice_option",
+                    "value": "sage",
+                    "title": "Sage",
+                    "swatch": "#bac69d",
+                    "image": {
+                      "__asset": "/catalogue/iphone-17-sage-01-main.png"
+                    }
+                  },
+                  {
+                    "_uid": "e094c0c0-02f5-46ff-b60b-772500a91a70",
+                    "component": "choice_option",
+                    "value": "mist-blue",
+                    "title": "Mist Blue",
+                    "swatch": "#acc1de",
+                    "image": {
+                      "__asset": "/catalogue/iphone-17-mist-blue-01-main.png"
+                    }
+                  },
+                  {
+                    "_uid": "cb2bfc8b-830e-4e8b-8d89-17a981336ace",
+                    "component": "choice_option",
+                    "value": "white",
+                    "title": "White",
+                    "swatch": "#fafafa",
+                    "image": {
+                      "__asset": "/catalogue/iphone-17-white-01-main.png"
+                    }
+                  },
+                  {
+                    "_uid": "9028c774-af82-4b8e-a1bb-3eb14be444ab",
+                    "component": "choice_option",
+                    "value": "black",
+                    "title": "Black",
+                    "swatch": "#484c4e",
+                    "image": {
+                      "__asset": "/catalogue/iphone-17-black-01-main.png"
+                    }
+                  }
+                ]
+              },
+              {
+                "_uid": "07e8b66b-613b-4416-9b2f-f8e03c4ff7da",
+                "component": "choice",
+                "label": "Capacity",
+                "layout": "chips",
+                "default_option": "256GB",
+                "options": [
+                  {
+                    "_uid": "7a2f1180-6a67-44fd-930f-3b3bbe516087",
+                    "component": "choice_option",
+                    "value": "256GB",
+                    "title": "256GB"
+                  },
+                  {
+                    "_uid": "89e694bf-1e79-4685-8829-1fb214ed84f7",
+                    "component": "choice_option",
+                    "value": "512GB",
+                    "title": "512GB"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 2
+            },
+            "back_link": {
+              "__step": 0
+            },
+            "basket_label": "iPhone 17"
+          }
+        },
+        {
+          "name": "03 · How do you want to pay for your phone?",
+          "slug": "03-how-do-you-want-to-pay-for-your-phone",
+          "content": {
+            "_uid": "c6700209-9774-4a5e-ac72-31147687e669",
+            "component": "journey_step",
+            "title": "How do you want to pay for your phone?",
+            "subtitle": "Cash price £975.66. The cost of your phone is the same however long you choose.",
+            "stage": "Plan",
+            "blocks": [
+              {
+                "_uid": "7f84561e-2d7b-41a1-aecf-3665b242f6a5",
+                "component": "choice",
+                "layout": "cards",
+                "default_option": "24-30",
+                "options": [
+                  {
+                    "_uid": "95ff7d3b-089a-4055-a9b8-47ace59513df",
+                    "component": "choice_option",
+                    "value": "36-30",
+                    "title": "Smallest upfront",
+                    "meta": "36-month Device Plan · £30 upfront · 0% APR",
+                    "price": "£26.27/mo"
+                  },
+                  {
+                    "_uid": "d0689945-cce2-4b45-8e35-7ef6d1a0eec4",
+                    "component": "choice_option",
+                    "value": "24-30",
+                    "title": "Pay it off sooner",
+                    "meta": "24-month Device Plan · £30 upfront · 0% APR",
+                    "price": "£39.40/mo"
+                  },
+                  {
+                    "_uid": "44b175ef-5193-4364-bdec-badf7f94f504",
+                    "component": "choice_option",
+                    "value": "36-100",
+                    "title": "Lowest monthly",
+                    "meta": "36-month Device Plan · £100 upfront · 0% APR",
+                    "price": "£24.32/mo"
+                  }
+                ]
+              },
+              {
+                "_uid": "9b74c225-b770-4ddd-b988-82a2a782ae21",
+                "component": "legal",
+                "title": "Representative example",
+                "body": "Your Custom Plan - Representative Example\nDuration of Device Plan: 36 months\nMonthly device payment: £26.27\nCredit Amount: £945.66\nInterest Rate (fixed): 0%\nRepresentative APR: 0%\nUpfront Cost: £30.00\nTotal amount payable for device: £975.66\nCash price: £975.66\n\n0% APR. Finance subject to status and credit checks, 18+, Direct Debit. Credit provided by Telefonica UK Ltd, 500 Brook Drive, Reading, RG2 6UU, UK. Terms apply, see o2.co.uk/terms."
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 3
+            },
+            "back_link": {
+              "__step": 1
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£39.40"
+          }
+        },
+        {
+          "name": "04 · How much data do you need?",
+          "slug": "04-how-much-data-do-you-need",
+          "content": {
+            "_uid": "5de8b9bd-a49a-480c-90e3-1d636de53c04",
+            "component": "journey_step",
+            "title": "How much data do you need?",
+            "subtitle": "Unlimited UK Minutes & Texts. All our tariffs are 5G ready.",
+            "stage": "Plan",
+            "blocks": [
+              {
+                "_uid": "a3644c6e-e01b-4e1d-858a-e6dbb29b2d52",
+                "component": "choice",
+                "layout": "cards",
+                "default_option": "unlimited-classic",
+                "options": [
+                  {
+                    "_uid": "311fc18a-c4bd-4c92-bddd-15e7c0777005",
+                    "component": "choice_option",
+                    "value": "30gb-classic",
+                    "title": "30GB",
+                    "meta": "Classic · Roam freely in the EU, up to 25GB.",
+                    "price": "+£27.00/mo"
+                  },
+                  {
+                    "_uid": "31124458-fa80-4269-abbe-1fecaa218ccf",
+                    "component": "choice_option",
+                    "value": "125gb-classic",
+                    "title": "125GB",
+                    "meta": "Classic · Roam freely in the EU, up to 25GB.",
+                    "price": "+£32.00/mo"
+                  },
+                  {
+                    "_uid": "bf752b8c-94f8-44cd-af27-9aa4b05feb28",
+                    "component": "choice_option",
+                    "value": "unlimited-classic",
+                    "title": "Unlimited",
+                    "meta": "Classic · Roam freely in the EU, up to 25GB.",
+                    "price": "+£37.00/mo",
+                    "badge": "Recommended"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 4
+            },
+            "back_link": {
+              "__step": 2
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£76.40"
+          }
+        },
+        {
+          "name": "05 · You can get Volt",
+          "slug": "05-you-can-get-volt",
+          "content": {
+            "_uid": "79cdf0fa-d346-4b5a-96ed-b6c9e9f11000",
+            "component": "journey_step",
+            "title": "You can get Volt",
+            "stage": "Plan",
+            "blocks": [
+              {
+                "_uid": "aa14a751-6419-412b-880d-0c1152c44df6",
+                "component": "offer",
+                "title": "Volt",
+                "body": "Get double data, boosted broadband speeds, and more when you're with both Virgin Media and O2.",
+                "bullets": "a broadband speed boost (up to 1Gbps)\nour WiFi guarantee (if you don’t have it already) including up to three WiFi Pods if needed\ndouble mobile data on all eligible O2 plans in your household",
+                "price": "Included",
+                "image": {
+                  "__asset": "/o2/volt/promo-block-background-volt.jpg"
+                },
+                "logo": {
+                  "__asset": "/o2/volt/volt-nav-image-256x119-110225.webp"
+                },
+                "legal": "You’ll need an eligible Virgin Media broadband pack or bundle and an eligible O2 Pay Monthly phone, tablet or SIM in your household to get Volt benefits."
+              }
+            ],
+            "primary_label": "Add Volt",
+            "primary_link": {
+              "__step": 5
+            },
+            "secondary_label": "No thanks",
+            "secondary_link": {
+              "__step": 5
+            },
+            "back_link": {
+              "__step": 3
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£76.40"
+          }
+        },
+        {
+          "name": "06 · Let's check you're likely to be approved",
+          "slug": "06-lets-check-youre-likely-to-be-approved",
+          "content": {
+            "_uid": "1692bc0c-d9a0-4520-84af-cabc0bc92675",
+            "component": "journey_step",
+            "title": "Let's check you're likely to be approved",
+            "subtitle": "A quick eligibility check before you give us your details. It won't affect your credit score.",
+            "stage": "Check",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "0304232f-deda-4507-9f53-a76e8084a668",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "0378fe85-d902-403f-9191-57a81d318aee",
+                    "component": "form_field",
+                    "label": "How long have you lived at your address?",
+                    "input_type": "text",
+                    "options": "Less than 1 year\n1 to 2 years\n3 to 5 years\nMore than 5 years"
+                  },
+                  {
+                    "_uid": "8f84b92e-8670-4997-9534-af0732fe1b94",
+                    "component": "form_field",
+                    "label": "Employment status",
+                    "input_type": "text",
+                    "options": "Employed\nEmployed part-time\nSelf-employed\nStudent\nRetired\nNot employed"
+                  }
+                ]
+              },
+              {
+                "_uid": "abd023ac-ef2b-422b-9d01-4e8e0f01bc7f",
+                "component": "note",
+                "body": "0% APR. Finance subject to status and credit checks, 18+, Direct Debit. Credit provided by Telefonica UK Ltd, 500 Brook Drive, Reading, RG2 6UU, UK. Terms apply, see o2.co.uk/terms."
+              }
+            ],
+            "primary_label": "Check now",
+            "primary_link": {
+              "__step": 6
+            },
+            "back_link": {
+              "__step": 4
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£76.40"
+          }
+        },
+        {
+          "name": "07 · Is this you, Priya?",
+          "slug": "07-is-this-you-priya",
+          "content": {
+            "_uid": "408f5f6b-58cc-4b6e-8158-5155138114c5",
+            "component": "journey_step",
+            "title": "Is this you, Priya?",
+            "stage": "Details",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "ff6266a1-0dab-42be-89d6-d5eb387a6994",
+                "component": "result",
+                "tone": "good",
+                "title": "You're likely to pass a credit check",
+                "body": "Based on the information we have, we think you're likely to pass a credit check. We'll complete the full credit check when you checkout, which will be recorded as a 'search' on your credit file. Our eligibility check results are automatically generated."
+              },
+              {
+                "_uid": "691f2bd7-d075-414f-a7f0-fa4be61233f9",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "58608f4f-9aec-47e0-9202-308ee20612dc",
+                    "component": "form_field",
+                    "label": "Full name",
+                    "input_type": "text",
+                    "value": "Priya Shah"
+                  },
+                  {
+                    "_uid": "683bee70-e3e4-462a-ab4e-022eb3a637b9",
+                    "component": "form_field",
+                    "label": "Email address",
+                    "input_type": "email",
+                    "value": "priya.shah@example.com"
+                  },
+                  {
+                    "_uid": "b0c93004-2647-4149-a376-467cdad905ae",
+                    "component": "form_field",
+                    "label": "Mobile number",
+                    "input_type": "tel"
+                  },
+                  {
+                    "_uid": "c06be7f6-3b99-4fc7-92ea-1ebb71f39c8c",
+                    "component": "form_field",
+                    "label": "Date of birth (DD/MM/YYYY)",
+                    "input_type": "text"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 7
+            },
+            "back_link": {
+              "__step": 5
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£76.40"
+          }
+        },
+        {
+          "name": "08 · How would you like to get it?",
+          "slug": "08-how-would-you-like-to-get-it",
+          "content": {
+            "_uid": "50445a4b-a49b-40a7-a437-39c8e3d5f192",
+            "component": "journey_step",
+            "title": "How would you like to get it?",
+            "stage": "Details",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "4aa7f983-f178-4f54-9622-501aa4f7d4f6",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "254921f3-86f7-4e1c-bd07-d3a13a02cfb1",
+                    "component": "form_field",
+                    "label": "Delivery address",
+                    "input_type": "text",
+                    "value": "4 Sample Road, Manchester, M1 1AA"
+                  }
+                ]
+              },
+              {
+                "_uid": "608ddefb-7d0e-47c6-aece-de0494de6229",
+                "component": "choice",
+                "layout": "list",
+                "default_option": "next-day",
+                "options": [
+                  {
+                    "_uid": "427b6db9-0e6b-4ef8-b40b-879012cbba23",
+                    "component": "choice_option",
+                    "value": "next-day",
+                    "title": "Free next-working-day home delivery",
+                    "meta": "Order your device by midnight for free next working day delivery",
+                    "price": "FREE"
+                  },
+                  {
+                    "_uid": "11e975f4-10a1-4caf-bd35-f607f46d5b2b",
+                    "component": "choice_option",
+                    "value": "premium",
+                    "title": "Premium delivery",
+                    "meta": "Pick a morning or midday slot, including weekends.",
+                    "price": "£9.99"
+                  },
+                  {
+                    "_uid": "30e40b29-db3b-4d48-86b3-7749753d8e8a",
+                    "component": "choice_option",
+                    "value": "collect",
+                    "title": "Click and collect",
+                    "meta": "If it's available you can collect the same day, and could even get it in minutes.",
+                    "price": "FREE"
+                  }
+                ]
+              },
+              {
+                "_uid": "8980f33b-eb96-4978-bce5-20e7148ebf1f",
+                "component": "choice",
+                "label": "Your SIM",
+                "layout": "chips",
+                "default_option": "esim",
+                "options": [
+                  {
+                    "_uid": "9e84c904-ad89-475c-8fa6-fdd89cbcc718",
+                    "component": "choice_option",
+                    "value": "esim",
+                    "title": "Use an eSIM"
+                  },
+                  {
+                    "_uid": "a29bff22-9ed0-45f7-993e-e65e34fb9b00",
+                    "component": "choice_option",
+                    "value": "physical",
+                    "title": "Use a plastic SIM"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 8
+            },
+            "back_link": {
+              "__step": 6
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£76.40"
+          }
+        },
+        {
+          "name": "09 · Make sure you’re happy with your order",
+          "slug": "09-make-sure-youre-happy-with-your-order",
+          "content": {
+            "_uid": "4aef6bdc-3b33-45ca-b476-88be6d9d69dd",
+            "component": "journey_step",
+            "title": "Make sure you’re happy with your order",
+            "stage": "Pay",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "cf5ff1e7-35d0-4585-a8c0-f144752d7155",
+                "component": "order_summary",
+                "image": {
+                  "__asset": "/catalogue/iphone-17-lavender-01-main.png"
+                },
+                "rows": [
+                  {
+                    "_uid": "fe585b4f-8803-45a8-b57c-f5127e693685",
+                    "component": "summary_row",
+                    "label": "iPhone 17 256GB",
+                    "meta": "Lavender · Device Plan, 24 months, 0% APR",
+                    "value": "£39.40"
+                  },
+                  {
+                    "_uid": "5ff1ae23-5f6e-4620-933c-c828bec4d9a5",
+                    "component": "summary_row",
+                    "label": "Unlimited Classic",
+                    "meta": "30-day rolling Airtime Plan",
+                    "value": "£37.00"
+                  },
+                  {
+                    "_uid": "97604f0c-92b9-45ef-8c70-eeff86d49854",
+                    "component": "summary_row",
+                    "label": "Volt",
+                    "meta": "Add-on",
+                    "value": "Included"
+                  },
+                  {
+                    "_uid": "b4cc297a-951d-4d9b-a740-5d5e42b4b761",
+                    "component": "summary_row",
+                    "label": "Free next-working-day home delivery",
+                    "meta": "eSIM",
+                    "value": "FREE"
+                  },
+                  {
+                    "_uid": "48c3db1d-3bfc-47f1-8ca9-22992ab86bdc",
+                    "component": "summary_row",
+                    "label": "Total monthly",
+                    "value": "£76.40",
+                    "total": true
+                  },
+                  {
+                    "_uid": "a4fb9c7a-ef74-489d-9aab-4d8e516c49fc",
+                    "component": "summary_row",
+                    "label": "Pay today",
+                    "value": "£30.00",
+                    "total": true
+                  }
+                ]
+              },
+              {
+                "_uid": "d9e9907b-ccc5-4b91-b1b3-b46a0a2027b7",
+                "component": "legal",
+                "title": "Your Device Plan and Airtime Plan",
+                "body": "Direct purchases only. Pay the cash price for your device or spread the cost over 3 to 36 months (excludes dongles). Certain device costs available to be spread over 3 to 48 months. The cost of your Device will be the same however long you choose. There may be an upfront cost. For customers who took out an O2 Refresh custom plan on or after 17 December 2021, your Airtime Plan and Device plans unlink after 24 months. This means that if you are in the first 24 months of your Device Plan you will have to pay off your Device Plan in full if you decide to end your Airtime Plan. After 24 months you can: keep your Airtime and Device Plans without changing anything Cancel your Airtime Plan and keep paying off your Device Plan instalments or, Cancel your Airtime Plan and pay off your Device Plan in full. For customers who took out an O2 Refresh custom plan before the 17 December 2021 the Airtime and Device Plans remain linked for the duration of the Device Plan, this means you will have to pay off your Device Plan in full if you decide to end your Airtime Plan at any point.\n\nDevice balance due if Airtime Plan cancelled in first 24 months."
+              },
+              {
+                "_uid": "00921db4-2015-42f4-a6dc-e1790e4ea155",
+                "component": "legal",
+                "title": "Your credit agreement",
+                "body": "Your Custom Plan - Representative Example\nDuration of Device Plan: 24 months\nMonthly device payment: £39.40\nCredit Amount: £945.66\nInterest Rate (fixed): 0%\nRepresentative APR: 0%\nUpfront Cost: £30.00\nTotal amount payable for device: £975.66\nCash price: £975.66"
+              },
+              {
+                "_uid": "3c735313-a79e-4e17-99d0-c39a0854340e",
+                "component": "legal",
+                "title": "Subject to Annual Price Increase",
+                "body": "Monthly price of your Airtime Plan will increase by £2.50 each April, except Data Only and Smartwatch Plans which will increase by 75p. Out of bundle charges increase by 5% every 1 April."
+              },
+              {
+                "_uid": "4c2d77fd-a942-4560-b1aa-0f97a898bde9",
+                "component": "legal",
+                "title": "Your cancellation rights",
+                "body": "If you’ve decided that the device isn’t for you, you can return it to us within 14 days for a refund. If you’d like to exchange it for a different device, just complete the return and place a new order."
+              }
+            ],
+            "primary_label": "Agree and continue",
+            "primary_link": {
+              "__step": 9
+            },
+            "back_link": {
+              "__step": 7
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£76.40"
+          }
+        },
+        {
+          "name": "10 · Pay and place your order",
+          "slug": "10-pay-and-place-your-order",
+          "content": {
+            "_uid": "b7f1e7de-c0df-4b60-ae67-9f87fb0b5889",
+            "component": "journey_step",
+            "title": "Pay and place your order",
+            "stage": "Pay",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "66337f45-9358-476b-8a19-056df47d0634",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "fbfb8137-b47a-4ed2-a2fe-322db02348f6",
+                    "component": "form_field",
+                    "label": "Account holder name",
+                    "input_type": "text",
+                    "value": "Priya Shah"
+                  },
+                  {
+                    "_uid": "6c5bc440-9f18-44cb-aa1a-d318238c0bf0",
+                    "component": "form_field",
+                    "label": "Sort code",
+                    "input_type": "text"
+                  },
+                  {
+                    "_uid": "c831197c-1bf4-4da9-a744-d79497271388",
+                    "component": "form_field",
+                    "label": "Account number",
+                    "input_type": "text"
+                  }
+                ]
+              },
+              {
+                "_uid": "9c48ceca-21b9-4cb0-ac02-4e22f90b33ee",
+                "component": "choice",
+                "label": "Pay £30.00 today with",
+                "layout": "chips",
+                "default_option": "applepay",
+                "options": [
+                  {
+                    "_uid": "2d4ae6d4-2fb0-4561-9898-77911716843f",
+                    "component": "choice_option",
+                    "value": "applepay",
+                    "title": "Apple Pay"
+                  },
+                  {
+                    "_uid": "9ed4978d-d42f-4a85-8f7b-5540a6ec340d",
+                    "component": "choice_option",
+                    "value": "card",
+                    "title": "Debit or credit card"
+                  }
+                ]
+              },
+              {
+                "_uid": "fd59de1c-8269-4cdb-80b8-0b437cdc50e5",
+                "component": "note",
+                "body": "When you place your order we run a full credit check and an ID check. This will be recorded as a search on your credit file."
+              },
+              {
+                "_uid": "a6c54356-baad-4eec-b9c9-3dbf50b1ffdc",
+                "component": "legal",
+                "title": "Finance and credit",
+                "body": "0% APR. Finance subject to status and credit checks, 18+, Direct Debit. Credit provided by Telefonica UK Ltd, 500 Brook Drive, Reading, RG2 6UU, UK. Terms apply, see o2.co.uk/terms."
+              }
+            ],
+            "primary_label": "Place order · £30.00 today",
+            "primary_link": {
+              "__step": 10
+            },
+            "back_link": {
+              "__step": 8
+            },
+            "payment_logos": true,
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£76.40"
+          }
+        },
+        {
+          "name": "11 · Your order is complete",
+          "slug": "11-your-order-is-complete",
+          "content": {
+            "_uid": "14662e98-d3d0-4b8b-857a-d06ffa91478f",
+            "component": "journey_step",
+            "title": "Your order is complete",
+            "stage": "Pay",
+            "blocks": [
+              {
+                "_uid": "184466d9-9bcc-4204-be45-cbc43ddb44b0",
+                "component": "result",
+                "tone": "good",
+                "title": "We’ve received your order and it’ll be on its way soon.",
+                "body": "We've sent an email to priya.shah@example.com with all the details."
+              },
+              {
+                "_uid": "a02a8428-b54a-4baf-af93-6c074a547e22",
+                "component": "note",
+                "body": "This order is now in your Virgin Media O2 account, next to your broadband."
+              }
+            ],
+            "primary_label": "Done",
+            "back_link": {
+              "__step": 9
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£76.40"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cheapest iPhone · search",
+      "slug": "cheapest-iphone-search",
+      "steps": [
+        {
+          "name": "01 · Great iPhones for less",
+          "slug": "01-great-iphones-for-less",
+          "content": {
+            "_uid": "a1f2ba1e-8447-4a7e-96b3-ef4d47389a51",
+            "component": "journey_step",
+            "title": "Great iPhones for less",
+            "subtitle": "Sorted by lowest monthly price.",
+            "stage": "Phone",
+            "blocks": [
+              {
+                "_uid": "69a39e33-e42e-4e2c-a405-29b0d41ff975",
+                "component": "choice",
+                "layout": "cards",
+                "default_option": "iphone-15-pro-like-new",
+                "options": [
+                  {
+                    "_uid": "6f7fde3b-6f8b-453c-ba1e-8e8a66a7497e",
+                    "component": "choice_option",
+                    "value": "iphone-15-pro-like-new",
+                    "title": "iPhone 15 Pro (Like New)",
+                    "meta": "48MP camera · 6.1 inch screen size",
+                    "price": "From £38.17/mo",
+                    "badge": "Lowest monthly",
+                    "image": {
+                      "__asset": "/catalogue/iphone-15-pro-like-new-black-titanium-01-main-thumb-256.png"
+                    }
+                  },
+                  {
+                    "_uid": "764e3e09-7f4c-45a7-9fbc-947d81f8371c",
+                    "component": "choice_option",
+                    "value": "iphone-16e",
+                    "title": "iPhone 16e",
+                    "meta": "48MP camera · 6.1 inch screen size",
+                    "price": "From £41.22/mo",
+                    "image": {
+                      "__asset": "/catalogue/iphone-16e-black-01-main-thumb-256.png"
+                    }
+                  },
+                  {
+                    "_uid": "f5bcc510-97d1-480c-b470-4ad48ef70e98",
+                    "component": "choice_option",
+                    "value": "iphone-17",
+                    "title": "iPhone 17",
+                    "meta": "48MP camera · 6.3 inch screen size",
+                    "price": "From £50.27/mo",
+                    "image": {
+                      "__asset": "/catalogue/iphone-17-lavender-01-main-thumb-256.png"
+                    }
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 1
+            },
+            "basket_label": "iPhone 15 Pro (Like New)"
+          }
+        },
+        {
+          "name": "02 · Choose your colour and storage",
+          "slug": "02-choose-your-colour-and-storage",
+          "content": {
+            "_uid": "ef8bb531-7778-4b57-9659-d6161e2e2206",
+            "component": "journey_step",
+            "title": "Choose your colour and storage",
+            "stage": "Phone",
+            "blocks": [
+              {
+                "_uid": "7b3d64fb-50fc-4efb-a0b1-9d259f7fbee7",
+                "component": "hero",
+                "title": "iPhone 15 Pro (Like New)",
+                "image": {
+                  "__asset": "/catalogue/iphone-15-pro-like-new-black-titanium-01-main.png"
+                },
+                "rating": "3.4",
+                "reviews": "22"
+              },
+              {
+                "_uid": "076680d8-d11d-42c1-aa6a-aa65c59d5db9",
+                "component": "choice",
+                "label": "Colour",
+                "layout": "swatches",
+                "default_option": "black-titanium",
+                "options": [
+                  {
+                    "_uid": "09046f44-7e15-4ba7-8f2c-ad66d30481fb",
+                    "component": "choice_option",
+                    "value": "black-titanium",
+                    "title": "Black Titanium",
+                    "swatch": "#4b4c4f",
+                    "image": {
+                      "__asset": "/catalogue/iphone-15-pro-like-new-black-titanium-01-main.png"
+                    }
+                  },
+                  {
+                    "_uid": "9af2f416-4c47-481d-95a1-65cc93ede325",
+                    "component": "choice_option",
+                    "value": "natural-titanium",
+                    "title": "Natural Titanium",
+                    "swatch": "#c0bebb",
+                    "image": {
+                      "__asset": "/catalogue/iphone-15-pro-like-new-natural-titanium-01-main.png"
+                    }
+                  },
+                  {
+                    "_uid": "cc8abe47-4391-428a-bd14-99f00849d5b0",
+                    "component": "choice_option",
+                    "value": "white-titanium",
+                    "title": "White Titanium",
+                    "swatch": "#d6d3cf",
+                    "image": {
+                      "__asset": "/catalogue/iphone-15-pro-like-new-white-titanium-01-main.png"
+                    }
+                  },
+                  {
+                    "_uid": "319bc2c0-2387-47cb-a3c5-226b97b4f6e6",
+                    "component": "choice_option",
+                    "value": "blue-titanium",
+                    "title": "Blue Titanium",
+                    "swatch": "#353947",
+                    "image": {
+                      "__asset": "/catalogue/iphone-15-pro-like-new-blue-titanium-01-main.png"
+                    }
+                  }
+                ]
+              },
+              {
+                "_uid": "68ea9054-b137-4474-8390-7b8cef7d5f66",
+                "component": "choice",
+                "label": "Capacity",
+                "layout": "chips",
+                "default_option": "128GB",
+                "options": [
+                  {
+                    "_uid": "24137e31-5ac1-4c1c-bbfa-d2a37cfec56e",
+                    "component": "choice_option",
+                    "value": "128GB",
+                    "title": "128GB"
+                  },
+                  {
+                    "_uid": "026594ce-65a4-45f6-a0c8-4eb1480a2fbd",
+                    "component": "choice_option",
+                    "value": "256GB",
+                    "title": "256GB"
+                  },
+                  {
+                    "_uid": "8fa8f085-c3a0-46e7-a976-d00ee43e82f0",
+                    "component": "choice_option",
+                    "value": "512GB",
+                    "title": "512GB"
+                  },
+                  {
+                    "_uid": "270652cb-326a-4643-85e5-708d08853372",
+                    "component": "choice_option",
+                    "value": "1TB",
+                    "title": "1TB"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 2
+            },
+            "back_link": {
+              "__step": 0
+            },
+            "basket_label": "iPhone 15 Pro (Like New)"
+          }
+        },
+        {
+          "name": "03 · How do you want to pay for your phone?",
+          "slug": "03-how-do-you-want-to-pay-for-your-phone",
+          "content": {
+            "_uid": "e914352d-6f6b-45c6-bb4e-15531be11a92",
+            "component": "journey_step",
+            "title": "How do you want to pay for your phone?",
+            "subtitle": "Cash price £540.00. The cost of your phone is the same however long you choose.",
+            "stage": "Plan",
+            "blocks": [
+              {
+                "_uid": "a71a9e27-93fa-44fb-93ce-a83f9d85642f",
+                "component": "choice",
+                "layout": "cards",
+                "default_option": "36-30",
+                "options": [
+                  {
+                    "_uid": "a4a01361-8ff7-4e1c-a73e-990afa68bf00",
+                    "component": "choice_option",
+                    "value": "36-30",
+                    "title": "Smallest upfront",
+                    "meta": "36-month Device Plan · £30 upfront · 0% APR",
+                    "price": "£14.17/mo"
+                  },
+                  {
+                    "_uid": "004b3294-95ce-4751-aaec-8f2f2f7b2170",
+                    "component": "choice_option",
+                    "value": "24-30",
+                    "title": "Pay it off sooner",
+                    "meta": "24-month Device Plan · £30 upfront · 0% APR",
+                    "price": "£21.25/mo"
+                  },
+                  {
+                    "_uid": "41c491b1-b2b2-41e1-8770-9eb834a83839",
+                    "component": "choice_option",
+                    "value": "36-100",
+                    "title": "Lowest monthly",
+                    "meta": "36-month Device Plan · £100 upfront · 0% APR",
+                    "price": "£12.22/mo"
+                  }
+                ]
+              },
+              {
+                "_uid": "313bc81b-72f6-4a03-8c0b-89d1c99257c1",
+                "component": "legal",
+                "title": "Representative example",
+                "body": "Your Custom Plan - Representative Example\nDuration of Device Plan: 36 months\nMonthly device payment: £14.17\nCredit Amount: £510.00\nInterest Rate (fixed): 0%\nRepresentative APR: 0%\nUpfront Cost: £30.00\nTotal amount payable for device: £540.00\nCash price: £540.00\n\n0% APR. Finance subject to status and credit checks, 18+, Direct Debit. Credit provided by Telefonica UK Ltd, 500 Brook Drive, Reading, RG2 6UU, UK. Terms apply, see o2.co.uk/terms."
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 3
+            },
+            "back_link": {
+              "__step": 1
+            },
+            "basket_label": "iPhone 15 Pro (Like New)",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£14.17"
+          }
+        },
+        {
+          "name": "04 · How much data do you need?",
+          "slug": "04-how-much-data-do-you-need",
+          "content": {
+            "_uid": "7252ef94-8575-43b4-8719-5d6f664ebe4f",
+            "component": "journey_step",
+            "title": "How much data do you need?",
+            "subtitle": "Unlimited UK Minutes & Texts. All our tariffs are 5G ready.",
+            "stage": "Plan",
+            "blocks": [
+              {
+                "_uid": "6a8c70d1-22d1-4cde-bd96-20946cf99c3b",
+                "component": "choice",
+                "layout": "cards",
+                "default_option": "30gb-classic",
+                "options": [
+                  {
+                    "_uid": "5bed1f8f-09a9-4416-84a3-a26771134140",
+                    "component": "choice_option",
+                    "value": "5gb-classic",
+                    "title": "5GB",
+                    "meta": "Classic · Roam freely in the EU, up to 25GB.",
+                    "price": "+£24.00/mo"
+                  },
+                  {
+                    "_uid": "8e86295d-6978-48ab-8e40-aee861a79e0a",
+                    "component": "choice_option",
+                    "value": "30gb-classic",
+                    "title": "30GB",
+                    "meta": "Classic · Roam freely in the EU, up to 25GB.",
+                    "price": "+£27.00/mo",
+                    "badge": "Recommended"
+                  },
+                  {
+                    "_uid": "7bd6f604-973c-4788-a16b-1c7464308a1e",
+                    "component": "choice_option",
+                    "value": "125gb-classic",
+                    "title": "125GB",
+                    "meta": "Classic · Roam freely in the EU, up to 25GB.",
+                    "price": "+£32.00/mo"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 4
+            },
+            "back_link": {
+              "__step": 2
+            },
+            "basket_label": "iPhone 15 Pro (Like New)",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£41.17"
+          }
+        },
+        {
+          "name": "05 · Let's check you're likely to be approved",
+          "slug": "05-lets-check-youre-likely-to-be-approved",
+          "content": {
+            "_uid": "e4fe6df3-6f69-4b79-b734-f5ceecee464c",
+            "component": "journey_step",
+            "title": "Let's check you're likely to be approved",
+            "subtitle": "A quick eligibility check before you give us your details. It won't affect your credit score.",
+            "stage": "Check",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "d3b6dea6-54b5-4426-ac63-be8ba94663e8",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "f370f899-4ec2-44a8-9b94-8e529a7a3c47",
+                    "component": "form_field",
+                    "label": "How long have you lived at your address?",
+                    "input_type": "text",
+                    "options": "Less than 1 year\n1 to 2 years\n3 to 5 years\nMore than 5 years"
+                  },
+                  {
+                    "_uid": "a5fa0223-bfce-4474-8648-fa08394e6d81",
+                    "component": "form_field",
+                    "label": "Employment status",
+                    "input_type": "text",
+                    "options": "Employed\nEmployed part-time\nSelf-employed\nStudent\nRetired\nNot employed"
+                  },
+                  {
+                    "_uid": "d1487e55-c9b2-4626-b5f0-9ef0c9e2afed",
+                    "component": "form_field",
+                    "label": "Personal annual income before tax",
+                    "input_type": "text",
+                    "options": "Up to £10,000\n£10,001 - £20,000\n£20,001 - £30,000\n£30,001 - £40,000\n£40,001 - £50,000\n£50,001 - £75,000\nOver £75,000"
+                  }
+                ]
+              },
+              {
+                "_uid": "cf46d4e1-48a8-4411-973e-01fdba3485ac",
+                "component": "note",
+                "body": "0% APR. Finance subject to status and credit checks, 18+, Direct Debit. Credit provided by Telefonica UK Ltd, 500 Brook Drive, Reading, RG2 6UU, UK. Terms apply, see o2.co.uk/terms."
+              }
+            ],
+            "primary_label": "Check now",
+            "primary_link": {
+              "__step": 5
+            },
+            "back_link": {
+              "__step": 3
+            },
+            "basket_label": "iPhone 15 Pro (Like New)",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£41.17"
+          }
+        },
+        {
+          "name": "06 · Let's find a monthly that works for you",
+          "slug": "06-lets-find-a-monthly-that-works-for-you",
+          "content": {
+            "_uid": "30efc2e6-21c7-4f4e-b97d-7a875661cdc7",
+            "component": "journey_step",
+            "title": "Let's find a monthly that works for you",
+            "subtitle": "We can't offer £41.17 a month right now, but you're likely to be approved for any of these.",
+            "stage": "Check",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "3a6ff444-4784-4d0d-9a09-b84d65b033c0",
+                "component": "choice",
+                "layout": "cards",
+                "default_option": "upfront",
+                "options": [
+                  {
+                    "_uid": "d4cffcd4-c668-4044-b974-2a339eda1b96",
+                    "component": "choice_option",
+                    "value": "upfront",
+                    "title": "Pay £110 upfront",
+                    "meta": "Same phone, same plan",
+                    "price": "£38.94/mo"
+                  },
+                  {
+                    "_uid": "1d8e74d0-7add-4413-ae7e-414ffd7a4cbe",
+                    "component": "choice_option",
+                    "value": "plan",
+                    "title": "Switch to 5GB Classic",
+                    "meta": "Same phone, less data",
+                    "price": "£38.17/mo"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue with this",
+            "primary_link": {
+              "__step": 6
+            },
+            "back_link": {
+              "__step": 4
+            },
+            "basket_label": "iPhone 15 Pro (Like New)",
+            "basket_upfront": "£110.00",
+            "basket_monthly": "£38.94"
+          }
+        },
+        {
+          "name": "07 · About you",
+          "slug": "07-about-you",
+          "content": {
+            "_uid": "8ee43635-f032-49df-8c08-0129454ce6cf",
+            "component": "journey_step",
+            "title": "About you",
+            "stage": "Details",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "5f8e1a87-4ad4-40be-baba-d53a2f158669",
+                "component": "result",
+                "tone": "good",
+                "title": "You're likely to pass a credit check",
+                "body": "Based on the information we have, we think you're likely to pass a credit check. We'll complete the full credit check when you checkout, which will be recorded as a 'search' on your credit file. Our eligibility check results are automatically generated."
+              },
+              {
+                "_uid": "858ca1ee-c4ad-4e00-a72a-5a2f8686574e",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "481e2a4c-23f6-42b7-87f9-922d2a863b9e",
+                    "component": "form_field",
+                    "label": "Full name",
+                    "input_type": "text"
+                  },
+                  {
+                    "_uid": "3b36247a-5f5f-41f5-9b8f-d2f5f4d2e290",
+                    "component": "form_field",
+                    "label": "Email address",
+                    "input_type": "email"
+                  },
+                  {
+                    "_uid": "8991db3b-a565-4957-b0d7-61e6c1463db8",
+                    "component": "form_field",
+                    "label": "Mobile number",
+                    "input_type": "tel"
+                  },
+                  {
+                    "_uid": "ed236516-486c-4b66-961a-6eb7113f0b19",
+                    "component": "form_field",
+                    "label": "Date of birth (DD/MM/YYYY)",
+                    "input_type": "text"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 7
+            },
+            "back_link": {
+              "__step": 5
+            },
+            "basket_label": "iPhone 15 Pro (Like New)",
+            "basket_upfront": "£110.00",
+            "basket_monthly": "£38.94"
+          }
+        },
+        {
+          "name": "08 · How would you like to get it?",
+          "slug": "08-how-would-you-like-to-get-it",
+          "content": {
+            "_uid": "7839534e-a662-431c-a01d-fabd8f2c0f67",
+            "component": "journey_step",
+            "title": "How would you like to get it?",
+            "stage": "Details",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "bc4e4755-999a-4ffd-95d2-28960dc5b0bd",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "e0852493-0422-42a0-ba2e-a163953c4829",
+                    "component": "form_field",
+                    "label": "Delivery address",
+                    "input_type": "text"
+                  }
+                ]
+              },
+              {
+                "_uid": "fb6e95b5-292c-4f3f-aa5f-ef7143da0d49",
+                "component": "choice",
+                "layout": "list",
+                "default_option": "next-day",
+                "options": [
+                  {
+                    "_uid": "211f732d-d05f-48c3-b1d0-e425a98a31fc",
+                    "component": "choice_option",
+                    "value": "next-day",
+                    "title": "Free next-working-day home delivery",
+                    "meta": "Order your device by midnight for free next working day delivery",
+                    "price": "FREE"
+                  },
+                  {
+                    "_uid": "12a17140-8b78-4f77-be4e-de24ee344e70",
+                    "component": "choice_option",
+                    "value": "premium",
+                    "title": "Premium delivery",
+                    "meta": "Pick a morning or midday slot, including weekends.",
+                    "price": "£9.99"
+                  },
+                  {
+                    "_uid": "283b522c-8d70-41c9-bb51-949feff5bdbc",
+                    "component": "choice_option",
+                    "value": "collect",
+                    "title": "Click and collect",
+                    "meta": "If it's available you can collect the same day, and could even get it in minutes.",
+                    "price": "FREE"
+                  }
+                ]
+              },
+              {
+                "_uid": "83e36980-0f42-43a8-9460-601339df5b59",
+                "component": "choice",
+                "label": "Your SIM",
+                "layout": "chips",
+                "default_option": "esim",
+                "options": [
+                  {
+                    "_uid": "61d10014-27c2-425b-8e68-3574d6ed4997",
+                    "component": "choice_option",
+                    "value": "esim",
+                    "title": "Use an eSIM"
+                  },
+                  {
+                    "_uid": "8ccfe9c6-acd6-49fb-a669-e4b8a0f6b31b",
+                    "component": "choice_option",
+                    "value": "physical",
+                    "title": "Use a plastic SIM"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 8
+            },
+            "back_link": {
+              "__step": 6
+            },
+            "basket_label": "iPhone 15 Pro (Like New)",
+            "basket_upfront": "£110.00",
+            "basket_monthly": "£38.94"
+          }
+        },
+        {
+          "name": "09 · Make sure you’re happy with your order",
+          "slug": "09-make-sure-youre-happy-with-your-order",
+          "content": {
+            "_uid": "f300d863-cc48-4071-88b4-e55f88aa372d",
+            "component": "journey_step",
+            "title": "Make sure you’re happy with your order",
+            "stage": "Pay",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "7668d06d-a598-4ec6-8009-732b9f7995b1",
+                "component": "order_summary",
+                "image": {
+                  "__asset": "/catalogue/iphone-15-pro-like-new-black-titanium-01-main.png"
+                },
+                "rows": [
+                  {
+                    "_uid": "00cd5afb-625a-487c-bed4-b4761cf2f311",
+                    "component": "summary_row",
+                    "label": "iPhone 15 Pro (Like New) 128GB",
+                    "meta": "Black Titanium · Device Plan, 36 months, 0% APR",
+                    "value": "£11.94"
+                  },
+                  {
+                    "_uid": "ff39d4d6-c752-4f9b-bf2c-ab14429057a4",
+                    "component": "summary_row",
+                    "label": "30GB Classic",
+                    "meta": "30-day rolling Airtime Plan",
+                    "value": "£27.00"
+                  },
+                  {
+                    "_uid": "d4c7d2d8-27c5-4e53-88e7-6be3d5be16fc",
+                    "component": "summary_row",
+                    "label": "Free next-working-day home delivery",
+                    "meta": "eSIM",
+                    "value": "FREE"
+                  },
+                  {
+                    "_uid": "c13d450f-e18a-4e2c-b3d9-d733220b7a6c",
+                    "component": "summary_row",
+                    "label": "Total monthly",
+                    "value": "£38.94",
+                    "total": true
+                  },
+                  {
+                    "_uid": "68999b2a-5840-4ac0-b323-feca484045e2",
+                    "component": "summary_row",
+                    "label": "Pay today",
+                    "value": "£110.00",
+                    "total": true
+                  }
+                ]
+              },
+              {
+                "_uid": "c40227f3-a0f9-426c-858b-73ec5b5b7f2a",
+                "component": "legal",
+                "title": "Your Device Plan and Airtime Plan",
+                "body": "Direct purchases only. Pay the cash price for your device or spread the cost over 3 to 36 months (excludes dongles). Certain device costs available to be spread over 3 to 48 months. The cost of your Device will be the same however long you choose. There may be an upfront cost. For customers who took out an O2 Refresh custom plan on or after 17 December 2021, your Airtime Plan and Device plans unlink after 24 months. This means that if you are in the first 24 months of your Device Plan you will have to pay off your Device Plan in full if you decide to end your Airtime Plan. After 24 months you can: keep your Airtime and Device Plans without changing anything Cancel your Airtime Plan and keep paying off your Device Plan instalments or, Cancel your Airtime Plan and pay off your Device Plan in full. For customers who took out an O2 Refresh custom plan before the 17 December 2021 the Airtime and Device Plans remain linked for the duration of the Device Plan, this means you will have to pay off your Device Plan in full if you decide to end your Airtime Plan at any point.\n\nDevice balance due if Airtime Plan cancelled in first 24 months."
+              },
+              {
+                "_uid": "e1bb8011-b351-447e-8f95-0db12cf69cec",
+                "component": "legal",
+                "title": "Your credit agreement",
+                "body": "Your Custom Plan - Representative Example\nDuration of Device Plan: 36 months\nMonthly device payment: £11.94\nCredit Amount: £430.00\nInterest Rate (fixed): 0%\nRepresentative APR: 0%\nUpfront Cost: £110.00\nTotal amount payable for device: £540.00\nCash price: £540.00"
+              },
+              {
+                "_uid": "34f6b60a-8553-4eba-a170-89bd4a748e0a",
+                "component": "legal",
+                "title": "Subject to Annual Price Increase",
+                "body": "Monthly price of your Airtime Plan will increase by £2.50 each April, except Data Only and Smartwatch Plans which will increase by 75p. Out of bundle charges increase by 5% every 1 April."
+              },
+              {
+                "_uid": "0ab6a652-44f4-4461-8e9a-e754c012c3a3",
+                "component": "legal",
+                "title": "Your cancellation rights",
+                "body": "If you’ve decided that the device isn’t for you, you can return it to us within 14 days for a refund. If you’d like to exchange it for a different device, just complete the return and place a new order."
+              }
+            ],
+            "primary_label": "Agree and continue",
+            "primary_link": {
+              "__step": 9
+            },
+            "back_link": {
+              "__step": 7
+            },
+            "basket_label": "iPhone 15 Pro (Like New)",
+            "basket_upfront": "£110.00",
+            "basket_monthly": "£38.94"
+          }
+        },
+        {
+          "name": "10 · Pay and place your order",
+          "slug": "10-pay-and-place-your-order",
+          "content": {
+            "_uid": "71dd15b4-a1fb-4d44-94cd-7298beda64b6",
+            "component": "journey_step",
+            "title": "Pay and place your order",
+            "stage": "Pay",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "81a6310b-b0b2-4393-847b-c793c72d47a9",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "0bcf3e24-0801-4043-ba0f-e30e5dbbff76",
+                    "component": "form_field",
+                    "label": "Account holder name",
+                    "input_type": "text",
+                    "value": "Kai Turner"
+                  },
+                  {
+                    "_uid": "684bb947-d18d-4a3e-b86e-48d9728a420d",
+                    "component": "form_field",
+                    "label": "Sort code",
+                    "input_type": "text"
+                  },
+                  {
+                    "_uid": "bbdb071a-1149-4f0b-b32a-e469bcd4bb2f",
+                    "component": "form_field",
+                    "label": "Account number",
+                    "input_type": "text"
+                  }
+                ]
+              },
+              {
+                "_uid": "77e28de4-84ab-4981-8ff6-750a334db1d9",
+                "component": "choice",
+                "label": "Pay £110.00 today with",
+                "layout": "chips",
+                "default_option": "applepay",
+                "options": [
+                  {
+                    "_uid": "552acbd4-fdc9-471b-8038-e11b376337b3",
+                    "component": "choice_option",
+                    "value": "applepay",
+                    "title": "Apple Pay"
+                  },
+                  {
+                    "_uid": "73967021-4c30-4e17-bc97-776f8d095e75",
+                    "component": "choice_option",
+                    "value": "card",
+                    "title": "Debit or credit card"
+                  }
+                ]
+              },
+              {
+                "_uid": "c99d40a4-7a30-4d37-a5a3-659f49ed5a86",
+                "component": "note",
+                "body": "When you place your order we run a full credit check and an ID check. This will be recorded as a search on your credit file."
+              },
+              {
+                "_uid": "9e21d6aa-ead9-452b-8e23-163d7de04b51",
+                "component": "legal",
+                "title": "Finance and credit",
+                "body": "0% APR. Finance subject to status and credit checks, 18+, Direct Debit. Credit provided by Telefonica UK Ltd, 500 Brook Drive, Reading, RG2 6UU, UK. Terms apply, see o2.co.uk/terms."
+              }
+            ],
+            "primary_label": "Place order · £110.00 today",
+            "primary_link": {
+              "__step": 10
+            },
+            "back_link": {
+              "__step": 8
+            },
+            "payment_logos": true,
+            "basket_label": "iPhone 15 Pro (Like New)",
+            "basket_upfront": "£110.00",
+            "basket_monthly": "£38.94"
+          }
+        },
+        {
+          "name": "11 · Your order is complete",
+          "slug": "11-your-order-is-complete",
+          "content": {
+            "_uid": "ca2e7e14-90ae-46c3-8d09-1fae243810f5",
+            "component": "journey_step",
+            "title": "Your order is complete",
+            "stage": "Pay",
+            "blocks": [
+              {
+                "_uid": "468b9c29-f6c2-44bc-b120-f14e3a111d61",
+                "component": "result",
+                "tone": "good",
+                "title": "We’ve received your order and it’ll be on its way soon.",
+                "body": "We've sent an email to kai.turner@example.com with all the details."
+              },
+              {
+                "_uid": "f577e247-4ffa-4452-a335-63f293d82173",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "c7f815c7-972e-48d3-89da-5780432c8f71",
+                    "component": "form_field",
+                    "label": "Create a password to track your order",
+                    "input_type": "password"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Create my account",
+            "secondary_label": "Not now",
+            "back_link": {
+              "__step": 9
+            },
+            "basket_label": "iPhone 15 Pro (Like New)",
+            "basket_upfront": "£110.00",
+            "basket_monthly": "£38.94"
+          }
+        }
+      ]
+    },
+    {
+      "name": "iPhone 17 · save your basket",
+      "slug": "iphone-17-save-your-basket",
+      "steps": [
+        {
+          "name": "01 · iPhone 17",
+          "slug": "01-iphone-17",
+          "content": {
+            "_uid": "f873bd86-9f79-4f01-bae3-d5e599207d9a",
+            "component": "journey_step",
+            "title": "iPhone 17",
+            "subtitle": "More delightful. More durable.",
+            "stage": "Phone",
+            "blocks": [
+              {
+                "_uid": "022a1df1-e5ff-41be-8b4f-418f49a301c0",
+                "component": "hero",
+                "title": "iPhone 17",
+                "image": {
+                  "__asset": "/catalogue/iphone-17-mist-blue-01-main.png"
+                },
+                "from_price": "From £50.27 a month",
+                "rating": "4",
+                "reviews": "245",
+                "specs": "48MP | Camera\nFast-charge capable | Charging Times\n5G+ | Data Connectivity\n6.3 inch | Screen Size"
+              }
+            ],
+            "primary_label": "Choose iPhone 17",
+            "primary_link": {
+              "__step": 1
+            },
+            "basket_label": "iPhone 17"
+          }
+        },
+        {
+          "name": "02 · How do you want to pay for your phone?",
+          "slug": "02-how-do-you-want-to-pay-for-your-phone",
+          "content": {
+            "_uid": "319fe261-140c-4816-9b01-772376dd9248",
+            "component": "journey_step",
+            "title": "How do you want to pay for your phone?",
+            "subtitle": "Cash price £975.66. The cost of your phone is the same however long you choose.",
+            "stage": "Plan",
+            "blocks": [
+              {
+                "_uid": "1aabd342-c2d0-4fa1-bd47-4cca0256823b",
+                "component": "choice",
+                "layout": "cards",
+                "default_option": "24-30",
+                "options": [
+                  {
+                    "_uid": "ca2b2e9b-6b9a-4a5f-8264-5dfe55f5a565",
+                    "component": "choice_option",
+                    "value": "36-30",
+                    "title": "Smallest upfront",
+                    "meta": "36-month Device Plan · £30 upfront · 0% APR",
+                    "price": "£26.27/mo"
+                  },
+                  {
+                    "_uid": "ff1caa9f-bad6-488c-9cde-f22825d33df6",
+                    "component": "choice_option",
+                    "value": "24-30",
+                    "title": "Pay it off sooner",
+                    "meta": "24-month Device Plan · £30 upfront · 0% APR",
+                    "price": "£39.40/mo"
+                  },
+                  {
+                    "_uid": "437dddb7-3a8b-4cf0-b198-c23950a204a2",
+                    "component": "choice_option",
+                    "value": "36-100",
+                    "title": "Lowest monthly",
+                    "meta": "36-month Device Plan · £100 upfront · 0% APR",
+                    "price": "£24.32/mo"
+                  }
+                ]
+              },
+              {
+                "_uid": "275ca2f7-2a13-417a-9a3a-9377d90c7f85",
+                "component": "legal",
+                "title": "Representative example",
+                "body": "Your Custom Plan - Representative Example\nDuration of Device Plan: 36 months\nMonthly device payment: £26.27\nCredit Amount: £945.66\nInterest Rate (fixed): 0%\nRepresentative APR: 0%\nUpfront Cost: £30.00\nTotal amount payable for device: £975.66\nCash price: £975.66\n\n0% APR. Finance subject to status and credit checks, 18+, Direct Debit. Credit provided by Telefonica UK Ltd, 500 Brook Drive, Reading, RG2 6UU, UK. Terms apply, see o2.co.uk/terms."
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 2
+            },
+            "back_link": {
+              "__step": 0
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£39.40"
+          }
+        },
+        {
+          "name": "03 · How much data do you need?",
+          "slug": "03-how-much-data-do-you-need",
+          "content": {
+            "_uid": "63d715d5-cc6b-43d7-8327-c76691ed1e4a",
+            "component": "journey_step",
+            "title": "How much data do you need?",
+            "subtitle": "Unlimited UK Minutes & Texts. All our tariffs are 5G ready.",
+            "stage": "Plan",
+            "blocks": [
+              {
+                "_uid": "050430af-1e60-48d3-bf24-b833447e0c21",
+                "component": "choice",
+                "layout": "cards",
+                "default_option": "unlimited-classic",
+                "options": [
+                  {
+                    "_uid": "e83b8325-a049-4de5-8072-c4ae8268be14",
+                    "component": "choice_option",
+                    "value": "30gb-classic",
+                    "title": "30GB",
+                    "meta": "Classic · Roam freely in the EU, up to 25GB.",
+                    "price": "+£27.00/mo"
+                  },
+                  {
+                    "_uid": "5ac509b4-9f95-4172-830c-2abdb4fc4a32",
+                    "component": "choice_option",
+                    "value": "125gb-classic",
+                    "title": "125GB",
+                    "meta": "Classic · Roam freely in the EU, up to 25GB.",
+                    "price": "+£32.00/mo"
+                  },
+                  {
+                    "_uid": "b7403984-8bfc-465d-8058-661bf0002a3a",
+                    "component": "choice_option",
+                    "value": "unlimited-classic",
+                    "title": "Unlimited",
+                    "meta": "Classic · Roam freely in the EU, up to 25GB.",
+                    "price": "+£37.00/mo",
+                    "badge": "Recommended"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 3
+            },
+            "back_link": {
+              "__step": 1
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£76.40"
+          }
+        },
+        {
+          "name": "04 · Save your basket and price",
+          "slug": "04-save-your-basket-and-price",
+          "content": {
+            "_uid": "e126be9c-8d5f-4b72-a136-26de1d14870b",
+            "component": "journey_step",
+            "title": "Save your basket and price",
+            "subtitle": "We'll hold £76.40 a month and £30.00 upfront for 7 days. No account needed.",
+            "stage": "Plan",
+            "blocks": [
+              {
+                "_uid": "bf1e4ec9-23d2-4b5b-8f4d-c4a96ed184d3",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "1df9f856-1580-4f30-ab46-3962771e84c7",
+                    "component": "form_field",
+                    "label": "First name",
+                    "input_type": "text"
+                  },
+                  {
+                    "_uid": "cf5c561b-b086-4071-b71a-1fd1a695018d",
+                    "component": "form_field",
+                    "label": "Email address",
+                    "input_type": "email"
+                  },
+                  {
+                    "_uid": "3b534537-1f51-4744-ae99-322e6db45124",
+                    "component": "form_field",
+                    "label": "Mobile number",
+                    "input_type": "tel"
+                  }
+                ]
+              },
+              {
+                "_uid": "88fee88a-fbda-4c0c-9a16-8de8d4cf9399",
+                "component": "choice",
+                "label": "Can we send your saved basket on WhatsApp?",
+                "layout": "list",
+                "default_option": "yes",
+                "options": [
+                  {
+                    "_uid": "3d0aa27e-4b30-488a-970f-467a3b1168ef",
+                    "component": "choice_option",
+                    "value": "yes",
+                    "title": "Yes, send it on WhatsApp",
+                    "meta": "You can stop messages at any time."
+                  },
+                  {
+                    "_uid": "c0326e8e-2e44-4e3b-b3c3-3e0834b92228",
+                    "component": "choice_option",
+                    "value": "no",
+                    "title": "No, email only"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Save and continue",
+            "primary_link": {
+              "__step": 4
+            },
+            "secondary_label": "Skip for now",
+            "secondary_link": {
+              "__step": 4
+            },
+            "back_link": {
+              "__step": 2
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£76.40"
+          }
+        },
+        {
+          "name": "05 · Let's check you're likely to be approved",
+          "slug": "05-lets-check-youre-likely-to-be-approved",
+          "content": {
+            "_uid": "1153e1d4-78af-4318-a19f-798e05e5630a",
+            "component": "journey_step",
+            "title": "Let's check you're likely to be approved",
+            "subtitle": "A quick eligibility check before you give us your details. It won't affect your credit score.",
+            "stage": "Check",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "527031c1-cf18-4adf-99ab-5b9aaf876b77",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "0fa9aa31-7054-4630-85cc-0b44f7b6d618",
+                    "component": "form_field",
+                    "label": "How long have you lived at your address?",
+                    "input_type": "text",
+                    "options": "Less than 1 year\n1 to 2 years\n3 to 5 years\nMore than 5 years"
+                  },
+                  {
+                    "_uid": "33ef88de-e9c9-47e3-a70a-e19b16a8267a",
+                    "component": "form_field",
+                    "label": "Employment status",
+                    "input_type": "text",
+                    "options": "Employed\nEmployed part-time\nSelf-employed\nStudent\nRetired\nNot employed"
+                  }
+                ]
+              },
+              {
+                "_uid": "620db9cc-f55a-4ece-a871-15c1c8d321bd",
+                "component": "note",
+                "body": "0% APR. Finance subject to status and credit checks, 18+, Direct Debit. Credit provided by Telefonica UK Ltd, 500 Brook Drive, Reading, RG2 6UU, UK. Terms apply, see o2.co.uk/terms."
+              }
+            ],
+            "primary_label": "Check now",
+            "primary_link": {
+              "__step": 5
+            },
+            "back_link": {
+              "__step": 3
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£76.40"
+          }
+        },
+        {
+          "name": "06 · About you",
+          "slug": "06-about-you",
+          "content": {
+            "_uid": "b4359521-8308-4b45-92a3-de8409147c49",
+            "component": "journey_step",
+            "title": "About you",
+            "stage": "Details",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "faf53f22-0317-411a-b0bf-92e427aa708a",
+                "component": "result",
+                "tone": "good",
+                "title": "You're likely to pass a credit check",
+                "body": "Based on the information we have, we think you're likely to pass a credit check. We'll complete the full credit check when you checkout, which will be recorded as a 'search' on your credit file. Our eligibility check results are automatically generated."
+              },
+              {
+                "_uid": "072cbe53-b070-4fb0-b9c2-817be8239e50",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "7f68e3e7-b102-41a2-a5f7-3bebdbe73b0e",
+                    "component": "form_field",
+                    "label": "Full name",
+                    "input_type": "text"
+                  },
+                  {
+                    "_uid": "e12dbad1-b269-4f05-94d6-ebcfcdb27ab8",
+                    "component": "form_field",
+                    "label": "Email address",
+                    "input_type": "email",
+                    "value": "alex.morgan@example.com"
+                  },
+                  {
+                    "_uid": "22cf0731-9c5b-473e-a584-a91dec2db6d4",
+                    "component": "form_field",
+                    "label": "Mobile number",
+                    "input_type": "tel",
+                    "value": "07700 900321"
+                  },
+                  {
+                    "_uid": "4bf428f5-d8bd-40de-9993-f19b299a108f",
+                    "component": "form_field",
+                    "label": "Date of birth (DD/MM/YYYY)",
+                    "input_type": "text"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 6
+            },
+            "back_link": {
+              "__step": 4
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£76.40"
+          }
+        },
+        {
+          "name": "07 · How would you like to get it?",
+          "slug": "07-how-would-you-like-to-get-it",
+          "content": {
+            "_uid": "4263e895-87ad-467f-b311-852c1d42fc66",
+            "component": "journey_step",
+            "title": "How would you like to get it?",
+            "stage": "Details",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "a7eb5a51-b165-497f-be2a-dbe6ec281aca",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "7c4213f0-41c1-4e52-9745-fc2edd0094ef",
+                    "component": "form_field",
+                    "label": "Delivery address",
+                    "input_type": "text"
+                  }
+                ]
+              },
+              {
+                "_uid": "f561e201-2d72-4f65-b817-23e935225af5",
+                "component": "choice",
+                "layout": "list",
+                "default_option": "next-day",
+                "options": [
+                  {
+                    "_uid": "9095c666-307d-4dfd-a704-a3c6fc67014a",
+                    "component": "choice_option",
+                    "value": "next-day",
+                    "title": "Free next-working-day home delivery",
+                    "meta": "Order your device by midnight for free next working day delivery",
+                    "price": "FREE"
+                  },
+                  {
+                    "_uid": "c8a88f75-276e-400b-8c7e-3185aad17bdf",
+                    "component": "choice_option",
+                    "value": "premium",
+                    "title": "Premium delivery",
+                    "meta": "Pick a morning or midday slot, including weekends.",
+                    "price": "£9.99"
+                  },
+                  {
+                    "_uid": "773edbf4-783f-4f66-bea0-5384525f74d4",
+                    "component": "choice_option",
+                    "value": "collect",
+                    "title": "Click and collect",
+                    "meta": "If it's available you can collect the same day, and could even get it in minutes.",
+                    "price": "FREE"
+                  }
+                ]
+              },
+              {
+                "_uid": "53cec62f-847c-4173-98ee-bd40dd30889f",
+                "component": "choice",
+                "label": "Your SIM",
+                "layout": "chips",
+                "default_option": "esim",
+                "options": [
+                  {
+                    "_uid": "80940e61-30c0-4e89-94fc-7f5fec53c0e1",
+                    "component": "choice_option",
+                    "value": "esim",
+                    "title": "Use an eSIM"
+                  },
+                  {
+                    "_uid": "34d3bd78-5f15-41b0-8702-81354002d594",
+                    "component": "choice_option",
+                    "value": "physical",
+                    "title": "Use a plastic SIM"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 7
+            },
+            "back_link": {
+              "__step": 5
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£76.40"
+          }
+        },
+        {
+          "name": "08 · Make sure you’re happy with your order",
+          "slug": "08-make-sure-youre-happy-with-your-order",
+          "content": {
+            "_uid": "54d226db-a65d-40e5-98aa-d049dd3efffa",
+            "component": "journey_step",
+            "title": "Make sure you’re happy with your order",
+            "stage": "Pay",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "b84d1781-adaa-49f7-9b39-e6d667be2297",
+                "component": "order_summary",
+                "image": {
+                  "__asset": "/catalogue/iphone-17-mist-blue-01-main.png"
+                },
+                "rows": [
+                  {
+                    "_uid": "f53552e9-1aeb-4570-aac8-9608873799a6",
+                    "component": "summary_row",
+                    "label": "iPhone 17 256GB",
+                    "meta": "Mist Blue · Device Plan, 24 months, 0% APR",
+                    "value": "£39.40"
+                  },
+                  {
+                    "_uid": "e7903f27-a894-4b51-8e57-c0a0f10eaf09",
+                    "component": "summary_row",
+                    "label": "Unlimited Classic",
+                    "meta": "30-day rolling Airtime Plan",
+                    "value": "£37.00"
+                  },
+                  {
+                    "_uid": "1abe6a8f-37cc-4d0e-975c-b617affdf21b",
+                    "component": "summary_row",
+                    "label": "Free next-working-day home delivery",
+                    "meta": "eSIM",
+                    "value": "FREE"
+                  },
+                  {
+                    "_uid": "b722fcc9-a31b-4e64-b52f-58aadef51fbd",
+                    "component": "summary_row",
+                    "label": "Total monthly",
+                    "value": "£76.40",
+                    "total": true
+                  },
+                  {
+                    "_uid": "2a2d50cc-7a51-4636-9cda-d7b2badd568a",
+                    "component": "summary_row",
+                    "label": "Pay today",
+                    "value": "£30.00",
+                    "total": true
+                  }
+                ]
+              },
+              {
+                "_uid": "22c6b10a-5cf2-47b5-8ff7-b132f9b2f075",
+                "component": "legal",
+                "title": "Your Device Plan and Airtime Plan",
+                "body": "Direct purchases only. Pay the cash price for your device or spread the cost over 3 to 36 months (excludes dongles). Certain device costs available to be spread over 3 to 48 months. The cost of your Device will be the same however long you choose. There may be an upfront cost. For customers who took out an O2 Refresh custom plan on or after 17 December 2021, your Airtime Plan and Device plans unlink after 24 months. This means that if you are in the first 24 months of your Device Plan you will have to pay off your Device Plan in full if you decide to end your Airtime Plan. After 24 months you can: keep your Airtime and Device Plans without changing anything Cancel your Airtime Plan and keep paying off your Device Plan instalments or, Cancel your Airtime Plan and pay off your Device Plan in full. For customers who took out an O2 Refresh custom plan before the 17 December 2021 the Airtime and Device Plans remain linked for the duration of the Device Plan, this means you will have to pay off your Device Plan in full if you decide to end your Airtime Plan at any point.\n\nDevice balance due if Airtime Plan cancelled in first 24 months."
+              },
+              {
+                "_uid": "de3b817d-ca12-4a06-97e6-3eaf7243ba4c",
+                "component": "legal",
+                "title": "Your credit agreement",
+                "body": "Your Custom Plan - Representative Example\nDuration of Device Plan: 24 months\nMonthly device payment: £39.40\nCredit Amount: £945.66\nInterest Rate (fixed): 0%\nRepresentative APR: 0%\nUpfront Cost: £30.00\nTotal amount payable for device: £975.66\nCash price: £975.66"
+              },
+              {
+                "_uid": "41cfa92e-d4f0-433b-846f-cee09751f4e2",
+                "component": "legal",
+                "title": "Subject to Annual Price Increase",
+                "body": "Monthly price of your Airtime Plan will increase by £2.50 each April, except Data Only and Smartwatch Plans which will increase by 75p. Out of bundle charges increase by 5% every 1 April."
+              },
+              {
+                "_uid": "151582bf-4cea-409f-a2f7-64069192b823",
+                "component": "legal",
+                "title": "Your cancellation rights",
+                "body": "If you’ve decided that the device isn’t for you, you can return it to us within 14 days for a refund. If you’d like to exchange it for a different device, just complete the return and place a new order."
+              }
+            ],
+            "primary_label": "Agree and continue",
+            "primary_link": {
+              "__step": 8
+            },
+            "back_link": {
+              "__step": 6
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£76.40"
+          }
+        },
+        {
+          "name": "09 · Pay and place your order",
+          "slug": "09-pay-and-place-your-order",
+          "content": {
+            "_uid": "fb9d04c4-e8ac-4b71-8603-f4b98c27d771",
+            "component": "journey_step",
+            "title": "Pay and place your order",
+            "stage": "Pay",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "b14fba28-83c8-4eb4-b975-f733769154e1",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "f664300a-9572-47c9-8a5e-4e72c9b696b9",
+                    "component": "form_field",
+                    "label": "Account holder name",
+                    "input_type": "text",
+                    "value": "Alex Morgan"
+                  },
+                  {
+                    "_uid": "e96fe757-0b98-4adf-baa6-74a265f1d139",
+                    "component": "form_field",
+                    "label": "Sort code",
+                    "input_type": "text"
+                  },
+                  {
+                    "_uid": "7d36d3d1-2347-4d7f-91b9-47c3dad27a16",
+                    "component": "form_field",
+                    "label": "Account number",
+                    "input_type": "text"
+                  }
+                ]
+              },
+              {
+                "_uid": "37130c06-860a-4b62-ab4e-27e6c6b014e7",
+                "component": "choice",
+                "label": "Pay £30.00 today with",
+                "layout": "chips",
+                "default_option": "applepay",
+                "options": [
+                  {
+                    "_uid": "49592086-781d-4b09-a518-2032c991d5a2",
+                    "component": "choice_option",
+                    "value": "applepay",
+                    "title": "Apple Pay"
+                  },
+                  {
+                    "_uid": "bfbed4b6-c8a6-4e3f-bfb1-01a178bba549",
+                    "component": "choice_option",
+                    "value": "card",
+                    "title": "Debit or credit card"
+                  }
+                ]
+              },
+              {
+                "_uid": "f1c31f45-17f3-4c69-8efd-c844bf531c91",
+                "component": "note",
+                "body": "When you place your order we run a full credit check and an ID check. This will be recorded as a search on your credit file."
+              },
+              {
+                "_uid": "d2cd838f-a1c5-4391-9a01-4acf0fd289fa",
+                "component": "legal",
+                "title": "Finance and credit",
+                "body": "0% APR. Finance subject to status and credit checks, 18+, Direct Debit. Credit provided by Telefonica UK Ltd, 500 Brook Drive, Reading, RG2 6UU, UK. Terms apply, see o2.co.uk/terms."
+              }
+            ],
+            "primary_label": "Place order · £30.00 today",
+            "primary_link": {
+              "__step": 9
+            },
+            "back_link": {
+              "__step": 7
+            },
+            "payment_logos": true,
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£76.40"
+          }
+        },
+        {
+          "name": "10 · Your order is complete",
+          "slug": "10-your-order-is-complete",
+          "content": {
+            "_uid": "ba1dfa04-e6ac-490d-b25c-e6c92337e5c0",
+            "component": "journey_step",
+            "title": "Your order is complete",
+            "stage": "Pay",
+            "blocks": [
+              {
+                "_uid": "09349ebe-815d-4eba-8900-0b526526ba6b",
+                "component": "result",
+                "tone": "good",
+                "title": "We’ve received your order and it’ll be on its way soon.",
+                "body": "We've sent an email to alex.morgan@example.com with all the details."
+              },
+              {
+                "_uid": "ba30bc15-d1f0-4143-91c5-3d83cbe4cc12",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "e0913c11-a1e0-494e-a33c-b84dfda67534",
+                    "component": "form_field",
+                    "label": "Create a password to track your order",
+                    "input_type": "password"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Create my account",
+            "secondary_label": "Not now",
+            "back_link": {
+              "__step": 8
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£76.40"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Help me choose",
+      "slug": "help-me-choose",
+      "steps": [
+        {
+          "name": "01 · Find your perfect phone and plan",
+          "slug": "01-find-your-perfect-phone-and-plan",
+          "content": {
+            "_uid": "1d7be7c9-b3ea-456e-9df5-81d85b120e84",
+            "component": "journey_step",
+            "title": "Find your perfect phone and plan",
+            "stage": "Phone",
+            "blocks": [
+              {
+                "_uid": "ee3bed1d-f054-45ef-a24f-8a552e3a41a3",
+                "component": "splash",
+                "title": "Find your perfect phone and plan",
+                "body": "Answer a few quick questions and we'll recommend a phone and plan that suit you, with real prices.",
+                "points": "About a minute\nNo personal details needed\nChange your mind at any point",
+                "images": [
+                  {
+                    "__asset": "/catalogue/iphone-17-lavender-01-main.png"
+                  },
+                  {
+                    "__asset": "/catalogue/iphone-16e-black-01-main.png"
+                  },
+                  {
+                    "__asset": "/catalogue/galaxy-s26-ultra-black-01-main.png"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Help me choose",
+            "primary_link": {
+              "__step": 1
+            },
+            "secondary_label": "I know what I want",
+            "secondary_link": {
+              "__step": 1
+            },
+            "buttons_in_page": true
+          }
+        },
+        {
+          "name": "02 · What matters most to you?",
+          "slug": "02-what-matters-most-to-you",
+          "content": {
+            "_uid": "3116b6eb-ea1e-4e57-8fa9-f5910c9cea61",
+            "component": "journey_step",
+            "title": "What matters most to you?",
+            "subtitle": "Pick up to two.",
+            "stage": "Phone",
+            "blocks": [
+              {
+                "_uid": "a3066a7e-8d8e-4e27-bb74-17393da5eb61",
+                "component": "choice",
+                "layout": "list",
+                "multi": "2",
+                "default_option": "camera",
+                "options": [
+                  {
+                    "_uid": "a3824818-affa-4936-83cf-b07d8345c0ad",
+                    "component": "choice_option",
+                    "value": "camera",
+                    "title": "Camera",
+                    "meta": "Great photos and video"
+                  },
+                  {
+                    "_uid": "b18b81e2-5e78-4b14-955d-99b8f6477822",
+                    "component": "choice_option",
+                    "value": "battery",
+                    "title": "Battery life",
+                    "meta": "Lasts all day and more"
+                  },
+                  {
+                    "_uid": "75681ea6-43bb-419e-994c-deb16332f103",
+                    "component": "choice_option",
+                    "value": "screen",
+                    "title": "Big screen",
+                    "meta": "6.5 inches or bigger"
+                  },
+                  {
+                    "_uid": "78cd693a-da46-4b0d-8422-489fa8906695",
+                    "component": "choice_option",
+                    "value": "latest",
+                    "title": "Latest model",
+                    "meta": "The newest phones"
+                  },
+                  {
+                    "_uid": "bd75e311-16bb-4dea-ba84-66d1aac01575",
+                    "component": "choice_option",
+                    "value": "value",
+                    "title": "Best value",
+                    "meta": "Lower monthly price"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Next",
+            "primary_link": {
+              "__step": 2
+            },
+            "back_link": {
+              "__step": 0
+            }
+          }
+        },
+        {
+          "name": "03 · iPhone or Android?",
+          "slug": "03-iphone-or-android",
+          "content": {
+            "_uid": "2b802785-6680-4493-9b93-72070c5f1404",
+            "component": "journey_step",
+            "title": "iPhone or Android?",
+            "stage": "Phone",
+            "blocks": [
+              {
+                "_uid": "83443799-844d-4f18-92e2-8ec22beffec6",
+                "component": "choice",
+                "layout": "list",
+                "default_option": "apple",
+                "options": [
+                  {
+                    "_uid": "e80abc6a-529b-4eea-833c-fb8ea2f4ba8a",
+                    "component": "choice_option",
+                    "value": "apple",
+                    "title": "iPhone",
+                    "meta": "Apple"
+                  },
+                  {
+                    "_uid": "0416ca8a-47d7-4764-b957-d40b55b95ed8",
+                    "component": "choice_option",
+                    "value": "samsung",
+                    "title": "Android",
+                    "meta": "Samsung Galaxy"
+                  },
+                  {
+                    "_uid": "eeea3ab6-03d9-431f-89e7-35a87f393923",
+                    "component": "choice_option",
+                    "value": "either",
+                    "title": "I don’t mind"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Next",
+            "primary_link": {
+              "__step": 3
+            },
+            "back_link": {
+              "__step": 1
+            }
+          }
+        },
+        {
+          "name": "04 · How much data do you use?",
+          "slug": "04-how-much-data-do-you-use",
+          "content": {
+            "_uid": "cdcb063f-fe3d-446d-8c73-68ac50ef429c",
+            "component": "journey_step",
+            "title": "How much data do you use?",
+            "subtitle": "Not sure? Your current network’s app shows how much you used last month.",
+            "stage": "Phone",
+            "blocks": [
+              {
+                "_uid": "7ba87e8e-2af6-49db-be4d-8dc4c31d4c14",
+                "component": "choice",
+                "layout": "list",
+                "default_option": "light",
+                "options": [
+                  {
+                    "_uid": "e466b891-bf32-4d4a-97e6-03aa46246be7",
+                    "component": "choice_option",
+                    "value": "light",
+                    "title": "A little",
+                    "meta": "Messages, maps and social media"
+                  },
+                  {
+                    "_uid": "78b8460e-381c-4203-b63a-188c667b7c96",
+                    "component": "choice_option",
+                    "value": "some",
+                    "title": "A fair bit",
+                    "meta": "Some streaming when I’m out"
+                  },
+                  {
+                    "_uid": "9574277a-701f-41df-b234-a6fed2abe21c",
+                    "component": "choice_option",
+                    "value": "lots",
+                    "title": "Lots",
+                    "meta": "Video, music and hotspot"
+                  },
+                  {
+                    "_uid": "ab6a78d8-d017-4513-972d-c37f27ad69d3",
+                    "component": "choice_option",
+                    "value": "max",
+                    "title": "I never want to think about it",
+                    "meta": "Unlimited data"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Next",
+            "primary_link": {
+              "__step": 4
+            },
+            "back_link": {
+              "__step": 2
+            }
+          }
+        },
+        {
+          "name": "05 · What would you like to spend a month?",
+          "slug": "05-what-would-you-like-to-spend-a-month",
+          "content": {
+            "_uid": "ae99ba54-c272-467e-b84d-ce26e637f7ec",
+            "component": "journey_step",
+            "title": "What would you like to spend a month?",
+            "subtitle": "Phone and plan together, with £30 upfront.",
+            "stage": "Phone",
+            "blocks": [
+              {
+                "_uid": "e7383a77-ec7c-45ba-9745-2bfca1d9bf1b",
+                "component": "choice",
+                "layout": "list",
+                "default_option": "mid",
+                "options": [
+                  {
+                    "_uid": "7b7a2e1a-09b6-4085-81aa-09f69801bed9",
+                    "component": "choice_option",
+                    "value": "low",
+                    "title": "Up to £45 a month"
+                  },
+                  {
+                    "_uid": "df70b5b0-8931-46ac-ba9b-1d8c2a7b19af",
+                    "component": "choice_option",
+                    "value": "mid",
+                    "title": "£45 to £60 a month"
+                  },
+                  {
+                    "_uid": "227421f9-e9c5-4307-8d6c-50836decea37",
+                    "component": "choice_option",
+                    "value": "high",
+                    "title": "£60 or more"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Next",
+            "primary_link": {
+              "__step": 5
+            },
+            "back_link": {
+              "__step": 3
+            }
+          }
+        },
+        {
+          "name": "06 · Do you have Virgin Media broadband at home?",
+          "slug": "06-do-you-have-virgin-media-broadband-at-home",
+          "content": {
+            "_uid": "fbd6ca05-e08b-436c-8be0-572a5d98502f",
+            "component": "journey_step",
+            "title": "Do you have Virgin Media broadband at home?",
+            "subtitle": "If you do, you could get Volt: double data, boosted broadband speeds and more.",
+            "stage": "Phone",
+            "blocks": [
+              {
+                "_uid": "f70f5b86-3157-4af2-90e0-f2ee9f8b64d5",
+                "component": "choice",
+                "layout": "list",
+                "default_option": "yes",
+                "options": [
+                  {
+                    "_uid": "4d73d9a7-493c-4b90-b5cd-75552a599bbe",
+                    "component": "choice_option",
+                    "value": "yes",
+                    "title": "Yes"
+                  },
+                  {
+                    "_uid": "26a32716-8673-4906-9db1-ea9ac4229eef",
+                    "component": "choice_option",
+                    "value": "no",
+                    "title": "No"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "See my recommendations",
+            "primary_link": {
+              "__step": 6
+            },
+            "back_link": {
+              "__step": 4
+            }
+          }
+        },
+        {
+          "name": "07 · We think you’ll love these",
+          "slug": "07-we-think-youll-love-these",
+          "content": {
+            "_uid": "3916296d-933f-4142-a65e-57f830ab03a3",
+            "component": "journey_step",
+            "title": "We think you’ll love these",
+            "subtitle": "Prices are for 36 months with £30 upfront. You can change anything next.",
+            "stage": "Phone",
+            "blocks": [
+              {
+                "_uid": "08a14cec-2dfd-478a-a858-5f35c0604c99",
+                "component": "reco",
+                "default_option": "iphone-16e",
+                "options": [
+                  {
+                    "_uid": "d1e460c5-2fd5-40cb-993a-77ab17604599",
+                    "component": "reco_option",
+                    "value": "iphone-16e",
+                    "title": "iPhone 16e",
+                    "price": "£41.22/mo",
+                    "badge": "Best match",
+                    "image": {
+                      "__asset": "/catalogue/iphone-16e-black-01-main-thumb-256.png"
+                    },
+                    "why": "48MP camera for great photos and video\n£41.22 a month fits your budget\n5GB Classic plan for how you use data\nWith Volt, your 5GB becomes 10GB"
+                  },
+                  {
+                    "_uid": "d60eff93-85ee-4121-9811-4bf9418f37fe",
+                    "component": "reco_option",
+                    "value": "iphone-15-pro-like-new",
+                    "title": "iPhone 15 Pro (Like New)",
+                    "meta": "Like New",
+                    "price": "£38.17/mo",
+                    "badge": "Lower price",
+                    "image": {
+                      "__asset": "/catalogue/iphone-15-pro-like-new-black-titanium-01-main-thumb-256.png"
+                    },
+                    "why": "48MP camera for great photos and video\nLike New refurbished: the same phone for less\n£38.17 a month fits your budget\n5GB Classic plan for how you use data\nWith Volt, your 5GB becomes 10GB"
+                  },
+                  {
+                    "_uid": "396b0895-083c-4db8-bbbf-7cc9d6689ebd",
+                    "component": "reco_option",
+                    "value": "iphone-17-pro",
+                    "title": "iPhone 17 Pro",
+                    "price": "£56.29/mo",
+                    "badge": "Step up",
+                    "image": {
+                      "__asset": "/catalogue/iphone-17-pro-cosmic-orange-01-main-thumb-256.png"
+                    },
+                    "why": "48MP camera for great photos and video\n£56.29 a month fits your budget\n5GB Classic plan for how you use data\nWith Volt, your 5GB becomes 10GB"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Choose this phone",
+            "primary_link": {
+              "__step": 7
+            },
+            "back_link": {
+              "__step": 5
+            },
+            "basket_label": "iPhone 16e"
+          }
+        },
+        {
+          "name": "08 · How do you want to pay for your phone?",
+          "slug": "08-how-do-you-want-to-pay-for-your-phone",
+          "content": {
+            "_uid": "8fdb89e2-8cbe-4f5c-9e54-e1ee34caf9f9",
+            "component": "journey_step",
+            "title": "How do you want to pay for your phone?",
+            "subtitle": "Cash price £649.98. The cost of your phone is the same however long you choose.",
+            "stage": "Plan",
+            "blocks": [
+              {
+                "_uid": "f2d44e0e-abf4-4190-ba08-54154479a0e0",
+                "component": "choice",
+                "layout": "cards",
+                "default_option": "24-30",
+                "options": [
+                  {
+                    "_uid": "0bea958f-0c0c-4f67-9b26-97e2085a6c4d",
+                    "component": "choice_option",
+                    "value": "36-30",
+                    "title": "Smallest upfront",
+                    "meta": "36-month Device Plan · £30 upfront · 0% APR",
+                    "price": "£17.22/mo"
+                  },
+                  {
+                    "_uid": "8d622c02-baa6-4fa6-91db-7cea1d2fc713",
+                    "component": "choice_option",
+                    "value": "24-30",
+                    "title": "Pay it off sooner",
+                    "meta": "24-month Device Plan · £30 upfront · 0% APR",
+                    "price": "£25.83/mo"
+                  },
+                  {
+                    "_uid": "937a444f-7ce0-4e42-8e8b-b649d526ae62",
+                    "component": "choice_option",
+                    "value": "36-100",
+                    "title": "Lowest monthly",
+                    "meta": "36-month Device Plan · £100 upfront · 0% APR",
+                    "price": "£15.28/mo"
+                  }
+                ]
+              },
+              {
+                "_uid": "528cd87b-65a7-4132-8248-dd7b767fff80",
+                "component": "legal",
+                "title": "Representative example",
+                "body": "Your Custom Plan - Representative Example\nDuration of Device Plan: 36 months\nMonthly device payment: £17.22\nCredit Amount: £619.98\nInterest Rate (fixed): 0%\nRepresentative APR: 0%\nUpfront Cost: £30.00\nTotal amount payable for device: £649.98\nCash price: £649.98\n\n0% APR. Finance subject to status and credit checks, 18+, Direct Debit. Credit provided by Telefonica UK Ltd, 500 Brook Drive, Reading, RG2 6UU, UK. Terms apply, see o2.co.uk/terms."
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 8
+            },
+            "back_link": {
+              "__step": 6
+            },
+            "basket_label": "iPhone 16e",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£49.83"
+          }
+        },
+        {
+          "name": "09 · You can get Volt",
+          "slug": "09-you-can-get-volt",
+          "content": {
+            "_uid": "08cc17fd-7d3a-4a85-a4e7-0e01a6415ae5",
+            "component": "journey_step",
+            "title": "You can get Volt",
+            "stage": "Plan",
+            "blocks": [
+              {
+                "_uid": "842bd851-a295-40cf-bba3-26f940f664b1",
+                "component": "offer",
+                "title": "Volt",
+                "body": "Get double data, boosted broadband speeds, and more when you're with both Virgin Media and O2.",
+                "bullets": "Double data: your 5GB becomes 10GB\na broadband speed boost (up to 1Gbps)\nour WiFi guarantee (if you don’t have it already) including up to three WiFi Pods if needed\ndouble mobile data on all eligible O2 plans in your household",
+                "price": "Included",
+                "image": {
+                  "__asset": "/o2/volt/promo-block-background-volt.jpg"
+                },
+                "logo": {
+                  "__asset": "/o2/volt/volt-nav-image-256x119-110225.webp"
+                },
+                "legal": "You’ll need an eligible Virgin Media broadband pack or bundle and an eligible O2 Pay Monthly phone, tablet or SIM in your household to get Volt benefits."
+              }
+            ],
+            "primary_label": "Add Volt",
+            "primary_link": {
+              "__step": 9
+            },
+            "secondary_label": "No thanks",
+            "secondary_link": {
+              "__step": 9
+            },
+            "back_link": {
+              "__step": 7
+            },
+            "basket_label": "iPhone 16e",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£49.83"
+          }
+        },
+        {
+          "name": "10 · Let's check you're likely to be approved",
+          "slug": "10-lets-check-youre-likely-to-be-approved",
+          "content": {
+            "_uid": "f3a4e7fb-eb43-4e42-8e9c-e7b8e0121fb4",
+            "component": "journey_step",
+            "title": "Let's check you're likely to be approved",
+            "subtitle": "A quick eligibility check before you give us your details. It won't affect your credit score.",
+            "stage": "Check",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "37e38ed5-db90-419d-b39c-379167c14342",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "f1d99c15-b309-41f4-8c60-b57dd66de8b7",
+                    "component": "form_field",
+                    "label": "How long have you lived at your address?",
+                    "input_type": "text",
+                    "options": "Less than 1 year\n1 to 2 years\n3 to 5 years\nMore than 5 years"
+                  },
+                  {
+                    "_uid": "dc281e87-6812-4d98-ab58-a3db2f04e74c",
+                    "component": "form_field",
+                    "label": "Employment status",
+                    "input_type": "text",
+                    "options": "Employed\nEmployed part-time\nSelf-employed\nStudent\nRetired\nNot employed"
+                  }
+                ]
+              },
+              {
+                "_uid": "05dec3f7-30a0-4017-a409-b733705bab46",
+                "component": "note",
+                "body": "0% APR. Finance subject to status and credit checks, 18+, Direct Debit. Credit provided by Telefonica UK Ltd, 500 Brook Drive, Reading, RG2 6UU, UK. Terms apply, see o2.co.uk/terms."
+              }
+            ],
+            "primary_label": "Check now",
+            "primary_link": {
+              "__step": 10
+            },
+            "back_link": {
+              "__step": 8
+            },
+            "basket_label": "iPhone 16e",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£49.83"
+          }
+        },
+        {
+          "name": "11 · About you",
+          "slug": "11-about-you",
+          "content": {
+            "_uid": "21c1c315-7a89-4477-94f2-28a0014256be",
+            "component": "journey_step",
+            "title": "About you",
+            "stage": "Details",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "77ceb4a5-a409-4579-a89c-ee7a0810fce6",
+                "component": "result",
+                "tone": "good",
+                "title": "You're likely to pass a credit check",
+                "body": "Based on the information we have, we think you're likely to pass a credit check. We'll complete the full credit check when you checkout, which will be recorded as a 'search' on your credit file. Our eligibility check results are automatically generated."
+              },
+              {
+                "_uid": "54021d9f-dfc3-40ac-961a-20b4aec39a0c",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "3b14ea18-94a8-4e67-b4c0-e0019254a5d0",
+                    "component": "form_field",
+                    "label": "Full name",
+                    "input_type": "text"
+                  },
+                  {
+                    "_uid": "4f5ac65a-df71-417b-900e-1f11bed2fdf5",
+                    "component": "form_field",
+                    "label": "Email address",
+                    "input_type": "email"
+                  },
+                  {
+                    "_uid": "27a53d1d-4cfc-4028-bf6d-910f76dcd96d",
+                    "component": "form_field",
+                    "label": "Mobile number",
+                    "input_type": "tel"
+                  },
+                  {
+                    "_uid": "f6c221f0-a053-4038-85cc-afbac6eb388a",
+                    "component": "form_field",
+                    "label": "Date of birth (DD/MM/YYYY)",
+                    "input_type": "text"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 11
+            },
+            "back_link": {
+              "__step": 9
+            },
+            "basket_label": "iPhone 16e",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£49.83"
+          }
+        },
+        {
+          "name": "12 · How would you like to get it?",
+          "slug": "12-how-would-you-like-to-get-it",
+          "content": {
+            "_uid": "8fad47fc-bd7a-4b7a-9d3a-e77493b580e6",
+            "component": "journey_step",
+            "title": "How would you like to get it?",
+            "stage": "Details",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "af29adb9-ca1f-4845-b0f8-f89e78a797b2",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "0fc68fd3-53f6-49a4-a12b-c76f79ea50b4",
+                    "component": "form_field",
+                    "label": "Delivery address",
+                    "input_type": "text"
+                  }
+                ]
+              },
+              {
+                "_uid": "fe0f2398-b7ea-4ff5-8010-576b4fff619a",
+                "component": "choice",
+                "layout": "list",
+                "default_option": "next-day",
+                "options": [
+                  {
+                    "_uid": "00b5597b-d30e-43e3-81ae-470f10058ee3",
+                    "component": "choice_option",
+                    "value": "next-day",
+                    "title": "Free next-working-day home delivery",
+                    "meta": "Order your device by midnight for free next working day delivery",
+                    "price": "FREE"
+                  },
+                  {
+                    "_uid": "67b50d86-d6fa-4191-9eb4-19855237fac0",
+                    "component": "choice_option",
+                    "value": "premium",
+                    "title": "Premium delivery",
+                    "meta": "Pick a morning or midday slot, including weekends.",
+                    "price": "£9.99"
+                  },
+                  {
+                    "_uid": "ef2d31f8-068e-4a6e-9ffb-77ebdc69963b",
+                    "component": "choice_option",
+                    "value": "collect",
+                    "title": "Click and collect",
+                    "meta": "If it's available you can collect the same day, and could even get it in minutes.",
+                    "price": "FREE"
+                  }
+                ]
+              },
+              {
+                "_uid": "055317b5-a6e6-417c-80b9-09eccebd4fa9",
+                "component": "choice",
+                "label": "Your SIM",
+                "layout": "chips",
+                "default_option": "esim",
+                "options": [
+                  {
+                    "_uid": "47f07a9d-eb86-4749-843e-c88f80c247b4",
+                    "component": "choice_option",
+                    "value": "esim",
+                    "title": "Use an eSIM"
+                  },
+                  {
+                    "_uid": "37e86e06-7c86-4dd0-9654-fa9e1bc92230",
+                    "component": "choice_option",
+                    "value": "physical",
+                    "title": "Use a plastic SIM"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 12
+            },
+            "back_link": {
+              "__step": 10
+            },
+            "basket_label": "iPhone 16e",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£49.83"
+          }
+        },
+        {
+          "name": "13 · Make sure you’re happy with your order",
+          "slug": "13-make-sure-youre-happy-with-your-order",
+          "content": {
+            "_uid": "7253db80-752f-48af-a887-65a942a37ea1",
+            "component": "journey_step",
+            "title": "Make sure you’re happy with your order",
+            "stage": "Pay",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "3098c408-216a-4646-95dc-3bac3d986906",
+                "component": "order_summary",
+                "image": {
+                  "__asset": "/catalogue/iphone-16e-black-01-main.png"
+                },
+                "rows": [
+                  {
+                    "_uid": "e07ef4c9-8cbd-40d1-9c60-77fdad030c73",
+                    "component": "summary_row",
+                    "label": "iPhone 16e 128GB",
+                    "meta": "Black · Device Plan, 24 months, 0% APR",
+                    "value": "£25.83"
+                  },
+                  {
+                    "_uid": "c98b9aaf-903b-4d9d-9515-5648d68676ac",
+                    "component": "summary_row",
+                    "label": "5GB Classic",
+                    "meta": "30-day rolling Airtime Plan",
+                    "value": "£24.00"
+                  },
+                  {
+                    "_uid": "6228352e-24be-45ce-955d-4454ef9ddb5a",
+                    "component": "summary_row",
+                    "label": "Volt",
+                    "meta": "Add-on",
+                    "value": "Included"
+                  },
+                  {
+                    "_uid": "c92a75bd-04d2-4d8d-bd9b-386bbf36e8a7",
+                    "component": "summary_row",
+                    "label": "Free next-working-day home delivery",
+                    "meta": "eSIM",
+                    "value": "FREE"
+                  },
+                  {
+                    "_uid": "8e25abb9-6253-4e67-983b-6791621a1ced",
+                    "component": "summary_row",
+                    "label": "Total monthly",
+                    "value": "£49.83",
+                    "total": true
+                  },
+                  {
+                    "_uid": "b598563e-1319-4b5c-91e9-8d14ec45b58f",
+                    "component": "summary_row",
+                    "label": "Pay today",
+                    "value": "£30.00",
+                    "total": true
+                  }
+                ]
+              },
+              {
+                "_uid": "a991dcd6-eee0-4ef7-80fd-ec873ded6472",
+                "component": "legal",
+                "title": "Your Device Plan and Airtime Plan",
+                "body": "Direct purchases only. Pay the cash price for your device or spread the cost over 3 to 36 months (excludes dongles). Certain device costs available to be spread over 3 to 48 months. The cost of your Device will be the same however long you choose. There may be an upfront cost. For customers who took out an O2 Refresh custom plan on or after 17 December 2021, your Airtime Plan and Device plans unlink after 24 months. This means that if you are in the first 24 months of your Device Plan you will have to pay off your Device Plan in full if you decide to end your Airtime Plan. After 24 months you can: keep your Airtime and Device Plans without changing anything Cancel your Airtime Plan and keep paying off your Device Plan instalments or, Cancel your Airtime Plan and pay off your Device Plan in full. For customers who took out an O2 Refresh custom plan before the 17 December 2021 the Airtime and Device Plans remain linked for the duration of the Device Plan, this means you will have to pay off your Device Plan in full if you decide to end your Airtime Plan at any point.\n\nDevice balance due if Airtime Plan cancelled in first 24 months."
+              },
+              {
+                "_uid": "3482e32e-d905-4b47-890d-0accb88fedc0",
+                "component": "legal",
+                "title": "Your credit agreement",
+                "body": "Your Custom Plan - Representative Example\nDuration of Device Plan: 24 months\nMonthly device payment: £25.83\nCredit Amount: £619.98\nInterest Rate (fixed): 0%\nRepresentative APR: 0%\nUpfront Cost: £30.00\nTotal amount payable for device: £649.98\nCash price: £649.98"
+              },
+              {
+                "_uid": "8ed3f7ff-2865-4244-b344-33ef5cc94f5c",
+                "component": "legal",
+                "title": "Subject to Annual Price Increase",
+                "body": "Monthly price of your Airtime Plan will increase by £2.50 each April, except Data Only and Smartwatch Plans which will increase by 75p. Out of bundle charges increase by 5% every 1 April."
+              },
+              {
+                "_uid": "acfa87c8-1c95-4449-8e1a-f925be9970b4",
+                "component": "legal",
+                "title": "Your cancellation rights",
+                "body": "If you’ve decided that the device isn’t for you, you can return it to us within 14 days for a refund. If you’d like to exchange it for a different device, just complete the return and place a new order."
+              }
+            ],
+            "primary_label": "Agree and continue",
+            "primary_link": {
+              "__step": 13
+            },
+            "back_link": {
+              "__step": 11
+            },
+            "basket_label": "iPhone 16e",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£49.83"
+          }
+        },
+        {
+          "name": "14 · Pay and place your order",
+          "slug": "14-pay-and-place-your-order",
+          "content": {
+            "_uid": "f1949319-b6dc-4056-98ae-60f8cce8d960",
+            "component": "journey_step",
+            "title": "Pay and place your order",
+            "stage": "Pay",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "b5c81d0b-9b4b-45ff-92f6-50635a2f060a",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "d3c2aec3-3417-499c-b0c5-ab01e9af77b8",
+                    "component": "form_field",
+                    "label": "Account holder name",
+                    "input_type": "text",
+                    "value": "Sam Taylor"
+                  },
+                  {
+                    "_uid": "be217393-c889-4f41-9bb1-caf421d63a8d",
+                    "component": "form_field",
+                    "label": "Sort code",
+                    "input_type": "text"
+                  },
+                  {
+                    "_uid": "791ce0a9-d6e7-4673-96ae-67538ea7f54d",
+                    "component": "form_field",
+                    "label": "Account number",
+                    "input_type": "text"
+                  }
+                ]
+              },
+              {
+                "_uid": "3ef88819-527a-4f84-9f10-fb07abc02796",
+                "component": "choice",
+                "label": "Pay £30.00 today with",
+                "layout": "chips",
+                "default_option": "applepay",
+                "options": [
+                  {
+                    "_uid": "dbd8eca3-fbe2-4481-8c4d-8a3f96e19230",
+                    "component": "choice_option",
+                    "value": "applepay",
+                    "title": "Apple Pay"
+                  },
+                  {
+                    "_uid": "6087f7a1-7955-4fd8-a62b-6530f07be4b3",
+                    "component": "choice_option",
+                    "value": "card",
+                    "title": "Debit or credit card"
+                  }
+                ]
+              },
+              {
+                "_uid": "e4903417-75d2-4300-9211-d0e1768012a4",
+                "component": "note",
+                "body": "When you place your order we run a full credit check and an ID check. This will be recorded as a search on your credit file."
+              },
+              {
+                "_uid": "cb172eb4-1dfe-443d-8e59-a7c3883cbd60",
+                "component": "legal",
+                "title": "Finance and credit",
+                "body": "0% APR. Finance subject to status and credit checks, 18+, Direct Debit. Credit provided by Telefonica UK Ltd, 500 Brook Drive, Reading, RG2 6UU, UK. Terms apply, see o2.co.uk/terms."
+              }
+            ],
+            "primary_label": "Place order · £30.00 today",
+            "primary_link": {
+              "__step": 14
+            },
+            "back_link": {
+              "__step": 12
+            },
+            "payment_logos": true,
+            "basket_label": "iPhone 16e",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£49.83"
+          }
+        },
+        {
+          "name": "15 · Your order is complete",
+          "slug": "15-your-order-is-complete",
+          "content": {
+            "_uid": "d6369b3d-ec23-43ba-9b68-617c6be4eedc",
+            "component": "journey_step",
+            "title": "Your order is complete",
+            "stage": "Pay",
+            "blocks": [
+              {
+                "_uid": "8eab1f77-0919-42bc-8fdc-0aa2ca627af0",
+                "component": "result",
+                "tone": "good",
+                "title": "We’ve received your order and it’ll be on its way soon.",
+                "body": "We've sent an email to sam.taylor@example.com with all the details."
+              },
+              {
+                "_uid": "9b727648-7771-44e1-b86d-89f59b9f14f4",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "69025a2c-dcba-44d2-9059-92ff9e942c51",
+                    "component": "form_field",
+                    "label": "Create a password to track your order",
+                    "input_type": "password"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Create my account",
+            "secondary_label": "Not now",
+            "back_link": {
+              "__step": 13
+            },
+            "basket_label": "iPhone 16e",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£49.83"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Upgrade · O2 Recycle trade-in",
+      "slug": "upgrade-o2-recycle",
+      "steps": [
+        {
+          "name": "01 · You can upgrade now, Chris",
+          "slug": "01-you-can-upgrade-now-chris",
+          "content": {
+            "_uid": "5ca2ab6f-9576-441b-bca8-de0d790bf6dc",
+            "component": "journey_step",
+            "title": "You can upgrade now, Chris",
+            "stage": "Phone",
+            "blocks": [
+              {
+                "_uid": "e922a479-8aad-4d03-8790-da6200252297",
+                "component": "result",
+                "tone": "good",
+                "title": "Your iPhone 13 Device Plan is paid off",
+                "body": "If you've already paid off your device plan, you'll be able to upgrade your device at no extra cost. The same applies if your contract is now at an end."
+              },
+              {
+                "_uid": "34f92200-f8eb-4082-9280-30e990f22232",
+                "component": "info_card",
+                "title": "Your iPhone 13 on 30GB Classic",
+                "lines": "O2 customer for 4 years\nYou've used an average of 41GB a month over the last 3 months\nTrade it in for up to £146",
+                "image": {
+                  "__asset": "/o2/upgrade/iphone-13.png"
+                }
+              },
+              {
+                "_uid": "e55a7b41-f453-4f7a-aba3-74ac7feceedd",
+                "component": "note",
+                "body": "Yes, you can. When your new device arrives, pop your existing SIM into it. If your contract has ended, you'll need to sign up to a new tariff or switch to Pay As You Go to continue using it."
+              }
+            ],
+            "primary_label": "See phones for me",
+            "primary_link": {
+              "__step": 1
+            }
+          }
+        },
+        {
+          "name": "02 · Pick your new phone",
+          "slug": "02-pick-your-new-phone",
+          "content": {
+            "_uid": "27446615-69b5-4696-be6c-566b2a666a54",
+            "component": "journey_step",
+            "title": "Pick your new phone",
+            "subtitle": "Existing customers get the same deals as new customers.",
+            "stage": "Phone",
+            "blocks": [
+              {
+                "_uid": "3153b0d5-82f8-4706-82c8-28d15c4862fc",
+                "component": "choice",
+                "layout": "cards",
+                "default_option": "iphone-17",
+                "options": [
+                  {
+                    "_uid": "f6faf12b-4719-480c-b453-c1aaa4f1df49",
+                    "component": "choice_option",
+                    "value": "iphone-17",
+                    "title": "iPhone 17",
+                    "meta": "48MP camera · 6.3 inch screen size",
+                    "price": "From £50.27/mo",
+                    "badge": "Recommended for your iPhone 13",
+                    "image": {
+                      "__asset": "/catalogue/iphone-17-lavender-01-main-thumb-256.png"
+                    }
+                  },
+                  {
+                    "_uid": "4109ce27-05c7-423d-8b8a-d6dc913372e9",
+                    "component": "choice_option",
+                    "value": "galaxy-s26",
+                    "title": "Galaxy S26",
+                    "meta": "50MP camera · 6.3 inches screen size",
+                    "price": "From £49.25/mo",
+                    "image": {
+                      "__asset": "/catalogue/galaxy-s26-black-01-main-thumb-256.png"
+                    }
+                  },
+                  {
+                    "_uid": "a6a98686-4ed4-43a6-b211-c16322cafbce",
+                    "component": "choice_option",
+                    "value": "iphone-17-pro",
+                    "title": "iPhone 17 Pro",
+                    "meta": "48MP camera · 6.3 inch screen size",
+                    "price": "From £56.29/mo",
+                    "image": {
+                      "__asset": "/catalogue/iphone-17-pro-cosmic-orange-01-main-thumb-256.png"
+                    }
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 2
+            },
+            "back_link": {
+              "__step": 0
+            },
+            "basket_label": "iPhone 17"
+          }
+        },
+        {
+          "name": "03 · Choose your colour and storage",
+          "slug": "03-choose-your-colour-and-storage",
+          "content": {
+            "_uid": "1824b4a6-a79a-47da-81a0-790b1ee6940b",
+            "component": "journey_step",
+            "title": "Choose your colour and storage",
+            "stage": "Phone",
+            "blocks": [
+              {
+                "_uid": "38bb98e3-292c-4983-9462-6d8816250b2e",
+                "component": "hero",
+                "title": "iPhone 17",
+                "image": {
+                  "__asset": "/catalogue/iphone-17-lavender-01-main.png"
+                },
+                "rating": "4",
+                "reviews": "245"
+              },
+              {
+                "_uid": "e9634977-bf70-45c3-b0d3-7c096d916de6",
+                "component": "choice",
+                "label": "Colour",
+                "layout": "swatches",
+                "default_option": "lavender",
+                "options": [
+                  {
+                    "_uid": "62576351-267d-4628-a86b-82e2457acab7",
+                    "component": "choice_option",
+                    "value": "lavender",
+                    "title": "Lavender",
+                    "swatch": "#e9d9f2",
+                    "image": {
+                      "__asset": "/catalogue/iphone-17-lavender-01-main.png"
+                    }
+                  },
+                  {
+                    "_uid": "977e944e-945a-435d-ba7e-a83791a5e731",
+                    "component": "choice_option",
+                    "value": "sage",
+                    "title": "Sage",
+                    "swatch": "#bac69d",
+                    "image": {
+                      "__asset": "/catalogue/iphone-17-sage-01-main.png"
+                    }
+                  },
+                  {
+                    "_uid": "982dd000-cbef-4f5b-95f8-984c0778acbb",
+                    "component": "choice_option",
+                    "value": "mist-blue",
+                    "title": "Mist Blue",
+                    "swatch": "#acc1de",
+                    "image": {
+                      "__asset": "/catalogue/iphone-17-mist-blue-01-main.png"
+                    }
+                  },
+                  {
+                    "_uid": "7164a93f-2c31-4234-af97-3684c1e6c530",
+                    "component": "choice_option",
+                    "value": "white",
+                    "title": "White",
+                    "swatch": "#fafafa",
+                    "image": {
+                      "__asset": "/catalogue/iphone-17-white-01-main.png"
+                    }
+                  },
+                  {
+                    "_uid": "9783c451-7a74-4994-9f59-0f45571498d4",
+                    "component": "choice_option",
+                    "value": "black",
+                    "title": "Black",
+                    "swatch": "#484c4e",
+                    "image": {
+                      "__asset": "/catalogue/iphone-17-black-01-main.png"
+                    }
+                  }
+                ]
+              },
+              {
+                "_uid": "0008f622-80fd-4eb2-8bc1-ccf13388cd9e",
+                "component": "choice",
+                "label": "Capacity",
+                "layout": "chips",
+                "default_option": "256GB",
+                "options": [
+                  {
+                    "_uid": "f2d933ec-76a0-4b34-85c4-7d105249f099",
+                    "component": "choice_option",
+                    "value": "256GB",
+                    "title": "256GB"
+                  },
+                  {
+                    "_uid": "457a3479-36d7-46de-ae4b-32bf83ec239c",
+                    "component": "choice_option",
+                    "value": "512GB",
+                    "title": "512GB"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 3
+            },
+            "back_link": {
+              "__step": 1
+            },
+            "basket_label": "iPhone 17"
+          }
+        },
+        {
+          "name": "04 · Trade in your iPhone 13?",
+          "slug": "04-trade-in-your-iphone-13",
+          "content": {
+            "_uid": "2ba01763-31b0-4a45-ba3c-84d5647ac5cc",
+            "component": "journey_step",
+            "title": "Trade in your iPhone 13?",
+            "stage": "Phone",
+            "blocks": [
+              {
+                "_uid": "ff51f1b7-198c-4be8-8504-a4979b02c6ab",
+                "component": "info_card",
+                "title": "Get up to £146 for your iPhone 13",
+                "lines": "With O2 Recycle. Post it with a free pack once your new phone arrives.\nPaid after we receive and check it.",
+                "image": {
+                  "__asset": "/o2/upgrade/iphone-13.png"
+                },
+                "logo": {
+                  "__asset": "/o2/upgrade/o2-recycle-logo.svg"
+                }
+              },
+              {
+                "_uid": "573a22db-e58d-4332-aaa1-95bd64bc374b",
+                "component": "choice",
+                "layout": "list",
+                "default_option": "yes",
+                "options": [
+                  {
+                    "_uid": "addd5edd-ebc3-48eb-b3c2-bc63e8b1bdf1",
+                    "component": "choice_option",
+                    "value": "yes",
+                    "title": "Yes, trade in my iPhone 13",
+                    "price": "Up to £146"
+                  },
+                  {
+                    "_uid": "4c2f81fd-0556-455b-8b75-cda6cd8deb02",
+                    "component": "choice_option",
+                    "value": "no",
+                    "title": "No, keep my iPhone 13"
+                  }
+                ]
+              },
+              {
+                "_uid": "29a53699-12ad-4a80-8591-75bf9461ff4e",
+                "component": "legal",
+                "title": "How O2 Recycle works",
+                "body": "Choose your device - phone, tablet, laptop or console\nGet an instant quote - and confirm if you’re happy\nPrepare it - back up data, charge it and remove locks\nPost it to us - with your own packaging or a free pack\nGet paid fast - after we receive and wipe your device"
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 4
+            },
+            "back_link": {
+              "__step": 2
+            },
+            "basket_label": "iPhone 17"
+          }
+        },
+        {
+          "name": "05 · How do you want to pay for your phone?",
+          "slug": "05-how-do-you-want-to-pay-for-your-phone",
+          "content": {
+            "_uid": "df28e6f7-ba50-4816-ad66-63791cac76ba",
+            "component": "journey_step",
+            "title": "How do you want to pay for your phone?",
+            "subtitle": "Cash price £975.66. The cost of your phone is the same however long you choose.",
+            "stage": "Plan",
+            "blocks": [
+              {
+                "_uid": "dad22583-3b10-4564-9bcf-cf66c04b7575",
+                "component": "choice",
+                "layout": "cards",
+                "default_option": "24-30",
+                "options": [
+                  {
+                    "_uid": "47811040-5824-4a64-b822-7c0e28c886b0",
+                    "component": "choice_option",
+                    "value": "36-30",
+                    "title": "Smallest upfront",
+                    "meta": "36-month Device Plan · £30 upfront · 0% APR",
+                    "price": "£26.27/mo"
+                  },
+                  {
+                    "_uid": "4eae8968-1ab7-4578-a7fb-a18f33650428",
+                    "component": "choice_option",
+                    "value": "24-30",
+                    "title": "Pay it off sooner",
+                    "meta": "24-month Device Plan · £30 upfront · 0% APR",
+                    "price": "£39.40/mo"
+                  },
+                  {
+                    "_uid": "5feecb64-d76d-4e83-ba0b-bc7267709ae9",
+                    "component": "choice_option",
+                    "value": "36-100",
+                    "title": "Lowest monthly",
+                    "meta": "36-month Device Plan · £100 upfront · 0% APR",
+                    "price": "£24.32/mo"
+                  }
+                ]
+              },
+              {
+                "_uid": "eca659aa-6bd5-44e9-8383-2e24e7d31045",
+                "component": "legal",
+                "title": "Representative example",
+                "body": "Your Custom Plan - Representative Example\nDuration of Device Plan: 36 months\nMonthly device payment: £26.27\nCredit Amount: £945.66\nInterest Rate (fixed): 0%\nRepresentative APR: 0%\nUpfront Cost: £30.00\nTotal amount payable for device: £975.66\nCash price: £975.66\n\n0% APR. Finance subject to status and credit checks, 18+, Direct Debit. Credit provided by Telefonica UK Ltd, 500 Brook Drive, Reading, RG2 6UU, UK. Terms apply, see o2.co.uk/terms."
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 5
+            },
+            "back_link": {
+              "__step": 3
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£39.40"
+          }
+        },
+        {
+          "name": "06 · How much data do you need?",
+          "slug": "06-how-much-data-do-you-need",
+          "content": {
+            "_uid": "cd2a6e4e-8c6b-4582-9b81-6bff99ef04ec",
+            "component": "journey_step",
+            "title": "How much data do you need?",
+            "subtitle": "You've used an average of 41GB a month on your 30GB Classic plan, so we recommend a bit more.",
+            "stage": "Plan",
+            "blocks": [
+              {
+                "_uid": "efe36a53-4604-43ef-b938-c5990fc4a952",
+                "component": "choice",
+                "layout": "cards",
+                "default_option": "125gb-classic",
+                "options": [
+                  {
+                    "_uid": "56566f12-1be5-452b-9e7b-ef5673928c56",
+                    "component": "choice_option",
+                    "value": "30gb-classic",
+                    "title": "30GB",
+                    "meta": "Classic · Roam freely in the EU, up to 25GB.",
+                    "price": "+£27.00/mo"
+                  },
+                  {
+                    "_uid": "23bd53c2-17c3-478c-9402-bf3d3a7b8b24",
+                    "component": "choice_option",
+                    "value": "125gb-classic",
+                    "title": "125GB",
+                    "meta": "Classic · Roam freely in the EU, up to 25GB.",
+                    "price": "+£32.00/mo",
+                    "badge": "Recommended"
+                  },
+                  {
+                    "_uid": "e742feb2-f4f8-47b0-9461-1ad77cd53d6d",
+                    "component": "choice_option",
+                    "value": "unlimited-classic",
+                    "title": "Unlimited",
+                    "meta": "Classic · Roam freely in the EU, up to 25GB.",
+                    "price": "+£37.00/mo"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 6
+            },
+            "back_link": {
+              "__step": 4
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£71.40"
+          }
+        },
+        {
+          "name": "07 · Protect your new phone",
+          "slug": "07-protect-your-new-phone",
+          "content": {
+            "_uid": "30960aeb-2662-4d0b-ab43-a89ad0f0168b",
+            "component": "journey_step",
+            "title": "Protect your new phone",
+            "stage": "Plan",
+            "blocks": [
+              {
+                "_uid": "b119cd18-ab82-4f3e-a6c8-88f12f250ed7",
+                "component": "offer",
+                "title": "O2 Insure Full Cover",
+                "body": "Dropping your phone. Leaving it on the bus. Finding it missing from your gym bag. We cover all of that. Our Full Cover policy meets the needs of someone wishing to cover their mobile device against theft, loss or accidental damage.",
+                "price": "£12.50/mo",
+                "image": {
+                  "__asset": "/catalogue/insurance-o2-insure-full-cover-headerbackground.jpg"
+                },
+                "logo": {
+                  "__asset": "/catalogue/insurance-icon.png"
+                },
+                "legal": "This product meets your demands and needs if you wish to cover your device for loss, theft and accidental damage and do not have a suitable alternative policy."
+              }
+            ],
+            "primary_label": "Add insurance",
+            "primary_link": {
+              "__step": 7
+            },
+            "secondary_label": "No thanks",
+            "secondary_link": {
+              "__step": 7
+            },
+            "back_link": {
+              "__step": 5
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£71.40"
+          }
+        },
+        {
+          "name": "08 · Is this you, Chris?",
+          "slug": "08-is-this-you-chris",
+          "content": {
+            "_uid": "4f11e99b-0865-4cd4-987f-d874cc6bf634",
+            "component": "journey_step",
+            "title": "Is this you, Chris?",
+            "stage": "Details",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "3d962de9-37f3-492f-be2c-b27489a7afb7",
+                "component": "result",
+                "tone": "good",
+                "title": "You're likely to pass a credit check",
+                "body": "We used your O2 account history, so there were no questions to answer. Based on the information we have, we think you're likely to pass a credit check. We'll complete the full credit check when you checkout, which will be recorded as a 'search' on your credit file. Our eligibility check results are automatically generated."
+              },
+              {
+                "_uid": "bd109a60-49a6-4337-968d-7f4f0b7ee0ec",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "f3e5f170-d9fe-4f7f-bb17-e70c2b1ef505",
+                    "component": "form_field",
+                    "label": "Full name",
+                    "input_type": "text",
+                    "value": "Chris Walker"
+                  },
+                  {
+                    "_uid": "eb6cd3ae-3a89-4705-9cc6-0dd018952543",
+                    "component": "form_field",
+                    "label": "Email address",
+                    "input_type": "email",
+                    "value": "chris.walker@example.com"
+                  },
+                  {
+                    "_uid": "35f27725-a1e1-4f0b-8c45-fe3776986d8a",
+                    "component": "form_field",
+                    "label": "Mobile number",
+                    "input_type": "tel",
+                    "value": "07700 900987"
+                  },
+                  {
+                    "_uid": "b0554caa-2596-4a2c-b9ac-28cb619f3a62",
+                    "component": "form_field",
+                    "label": "Date of birth (DD/MM/YYYY)",
+                    "input_type": "text",
+                    "value": "19/05/1988"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 8
+            },
+            "back_link": {
+              "__step": 6
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£83.90"
+          }
+        },
+        {
+          "name": "09 · How would you like to get it?",
+          "slug": "09-how-would-you-like-to-get-it",
+          "content": {
+            "_uid": "a740c3f9-6b4d-4372-9b30-3b20643bdac9",
+            "component": "journey_step",
+            "title": "How would you like to get it?",
+            "stage": "Details",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "6122acd7-9f80-457b-aa59-04f43dc372c4",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "5f64ab3f-7fa5-42d1-ae29-ca5dc22c2c92",
+                    "component": "form_field",
+                    "label": "Delivery address",
+                    "input_type": "text",
+                    "value": "15 Sample Street, Birmingham, B1 1AA"
+                  }
+                ]
+              },
+              {
+                "_uid": "9160a78d-4363-49da-a0a9-872e1d8abde2",
+                "component": "choice",
+                "layout": "list",
+                "default_option": "next-day",
+                "options": [
+                  {
+                    "_uid": "424f3894-c508-4ed7-a1b7-4a4c5c983590",
+                    "component": "choice_option",
+                    "value": "next-day",
+                    "title": "Free next-working-day home delivery",
+                    "meta": "Order your device by midnight for free next working day delivery",
+                    "price": "FREE"
+                  },
+                  {
+                    "_uid": "95d0fd78-4744-4c16-a3f2-882c54aa2a33",
+                    "component": "choice_option",
+                    "value": "premium",
+                    "title": "Premium delivery",
+                    "meta": "Pick a morning or midday slot, including weekends.",
+                    "price": "£9.99"
+                  },
+                  {
+                    "_uid": "0bb37a5b-1595-4ed5-8709-aec059f5434d",
+                    "component": "choice_option",
+                    "value": "collect",
+                    "title": "Click and collect",
+                    "meta": "If it's available you can collect the same day, and could even get it in minutes.",
+                    "price": "FREE"
+                  }
+                ]
+              },
+              {
+                "_uid": "6462ad91-77b1-45c2-8afc-306552d735f2",
+                "component": "choice",
+                "label": "Your SIM and number",
+                "layout": "chips",
+                "default_option": "keep",
+                "options": [
+                  {
+                    "_uid": "f06bb214-1d91-40a4-a8d7-350d0498c1c2",
+                    "component": "choice_option",
+                    "value": "keep",
+                    "title": "Keep my current SIM"
+                  },
+                  {
+                    "_uid": "f63e6677-10e6-4319-9886-26cdb9a80636",
+                    "component": "choice_option",
+                    "value": "esim",
+                    "title": "Switch to an eSIM"
+                  }
+                ]
+              }
+            ],
+            "primary_label": "Continue",
+            "primary_link": {
+              "__step": 9
+            },
+            "back_link": {
+              "__step": 7
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£83.90"
+          }
+        },
+        {
+          "name": "10 · Make sure you’re happy with your order",
+          "slug": "10-make-sure-youre-happy-with-your-order",
+          "content": {
+            "_uid": "41e9f514-6ab3-44e8-9b53-d58c96a2f639",
+            "component": "journey_step",
+            "title": "Make sure you’re happy with your order",
+            "stage": "Pay",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "c205104b-2ab8-47e4-9a2b-f8cfd6936f3f",
+                "component": "order_summary",
+                "image": {
+                  "__asset": "/catalogue/iphone-17-lavender-01-main.png"
+                },
+                "rows": [
+                  {
+                    "_uid": "cde90ba6-4330-4d5e-a9e9-5a53832209f9",
+                    "component": "summary_row",
+                    "label": "iPhone 17 256GB",
+                    "meta": "Lavender · Device Plan, 24 months, 0% APR",
+                    "value": "£39.40"
+                  },
+                  {
+                    "_uid": "050e6d61-b8b3-4bbb-b04f-c545e60705ed",
+                    "component": "summary_row",
+                    "label": "125GB Classic",
+                    "meta": "30-day rolling Airtime Plan",
+                    "value": "£32.00"
+                  },
+                  {
+                    "_uid": "1b3b3d5b-85eb-4002-98a2-d24d559988f2",
+                    "component": "summary_row",
+                    "label": "O2 Insure Full Cover",
+                    "meta": "Add-on",
+                    "value": "£12.50"
+                  },
+                  {
+                    "_uid": "330d998f-f986-4582-a20a-01baca02fd69",
+                    "component": "summary_row",
+                    "label": "Free next-working-day home delivery",
+                    "meta": "Keep current SIM and number",
+                    "value": "FREE"
+                  },
+                  {
+                    "_uid": "990185db-18d7-4493-a331-6c23bc1cc4d1",
+                    "component": "summary_row",
+                    "label": "O2 Recycle trade-in",
+                    "meta": "Paid after we receive and check your old phone",
+                    "value": "Up to £146"
+                  },
+                  {
+                    "_uid": "07dd85f1-f5cd-4924-a3e1-81ecf7d9b2c7",
+                    "component": "summary_row",
+                    "label": "Total monthly",
+                    "value": "£83.90",
+                    "total": true
+                  },
+                  {
+                    "_uid": "2bf172a3-0c0c-4540-83b6-bd1f066895ab",
+                    "component": "summary_row",
+                    "label": "Pay today",
+                    "value": "£30.00",
+                    "total": true
+                  }
+                ]
+              },
+              {
+                "_uid": "1f6dd6db-738d-4414-ac36-75edd589fabd",
+                "component": "legal",
+                "title": "Your Device Plan and Airtime Plan",
+                "body": "Direct purchases only. Pay the cash price for your device or spread the cost over 3 to 36 months (excludes dongles). Certain device costs available to be spread over 3 to 48 months. The cost of your Device will be the same however long you choose. There may be an upfront cost. For customers who took out an O2 Refresh custom plan on or after 17 December 2021, your Airtime Plan and Device plans unlink after 24 months. This means that if you are in the first 24 months of your Device Plan you will have to pay off your Device Plan in full if you decide to end your Airtime Plan. After 24 months you can: keep your Airtime and Device Plans without changing anything Cancel your Airtime Plan and keep paying off your Device Plan instalments or, Cancel your Airtime Plan and pay off your Device Plan in full. For customers who took out an O2 Refresh custom plan before the 17 December 2021 the Airtime and Device Plans remain linked for the duration of the Device Plan, this means you will have to pay off your Device Plan in full if you decide to end your Airtime Plan at any point.\n\nDevice balance due if Airtime Plan cancelled in first 24 months."
+              },
+              {
+                "_uid": "45c176d5-365f-4236-962b-b9886c304720",
+                "component": "legal",
+                "title": "Your credit agreement",
+                "body": "Your Custom Plan - Representative Example\nDuration of Device Plan: 24 months\nMonthly device payment: £39.40\nCredit Amount: £945.66\nInterest Rate (fixed): 0%\nRepresentative APR: 0%\nUpfront Cost: £30.00\nTotal amount payable for device: £975.66\nCash price: £975.66"
+              },
+              {
+                "_uid": "48a5e5ca-7aa4-495d-b589-a2b8637b1f48",
+                "component": "legal",
+                "title": "Subject to Annual Price Increase",
+                "body": "Monthly price of your Airtime Plan will increase by £2.50 each April, except Data Only and Smartwatch Plans which will increase by 75p. Out of bundle charges increase by 5% every 1 April."
+              },
+              {
+                "_uid": "9762f156-d306-42ee-8bb8-5aa6038944d9",
+                "component": "legal",
+                "title": "Your cancellation rights",
+                "body": "If you’ve decided that the device isn’t for you, you can return it to us within 14 days for a refund. If you’d like to exchange it for a different device, just complete the return and place a new order."
+              }
+            ],
+            "primary_label": "Agree and continue",
+            "primary_link": {
+              "__step": 10
+            },
+            "back_link": {
+              "__step": 8
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£83.90"
+          }
+        },
+        {
+          "name": "11 · Pay and place your order",
+          "slug": "11-pay-and-place-your-order",
+          "content": {
+            "_uid": "7a66a509-a769-4e97-b4b2-fa12c354604f",
+            "component": "journey_step",
+            "title": "Pay and place your order",
+            "stage": "Pay",
+            "secure_checkout": true,
+            "blocks": [
+              {
+                "_uid": "eea66f4f-199c-45f4-bcce-6fdbc8f889b4",
+                "component": "form",
+                "fields": [
+                  {
+                    "_uid": "99d43233-6c69-4f12-b0c6-441ce4de3439",
+                    "component": "form_field",
+                    "label": "Account holder name",
+                    "input_type": "text",
+                    "value": "Chris Walker",
+                    "read_only": true
+                  },
+                  {
+                    "_uid": "5dd28652-c800-4d25-bf29-89af851634a8",
+                    "component": "form_field",
+                    "label": "Sort code",
+                    "input_type": "text",
+                    "value": "••-••-21",
+                    "read_only": true
+                  },
+                  {
+                    "_uid": "24f5d078-145a-4b16-aa49-862dc5078b90",
+                    "component": "form_field",
+                    "label": "Account number",
+                    "input_type": "text",
+                    "value": "••••4417",
+                    "read_only": true
+                  }
+                ]
+              },
+              {
+                "_uid": "532bece0-d56b-4c3f-9ff4-cd725c6ee95f",
+                "component": "note",
+                "body": "We’ll use the Direct Debit you already pay O2 with."
+              },
+              {
+                "_uid": "db89f13a-bd58-448a-941f-1a3786ac1897",
+                "component": "choice",
+                "label": "Pay £30.00 today with",
+                "layout": "chips",
+                "default_option": "applepay",
+                "options": [
+                  {
+                    "_uid": "62cc4b4e-15ac-4496-b7cd-171372750b3d",
+                    "component": "choice_option",
+                    "value": "applepay",
+                    "title": "Apple Pay"
+                  },
+                  {
+                    "_uid": "c0e9a66a-f639-4d26-9135-b5ccd67765c6",
+                    "component": "choice_option",
+                    "value": "card",
+                    "title": "Debit or credit card"
+                  }
+                ]
+              },
+              {
+                "_uid": "9cb02390-b9b2-49a5-8d43-378f4a07313b",
+                "component": "note",
+                "body": "When you place your order we run a full credit check and an ID check. This will be recorded as a search on your credit file."
+              },
+              {
+                "_uid": "3484e77d-3486-4eb7-bc5d-07b30145d8e7",
+                "component": "legal",
+                "title": "Finance and credit",
+                "body": "0% APR. Finance subject to status and credit checks, 18+, Direct Debit. Credit provided by Telefonica UK Ltd, 500 Brook Drive, Reading, RG2 6UU, UK. Terms apply, see o2.co.uk/terms."
+              }
+            ],
+            "primary_label": "Place order · £30.00 today",
+            "primary_link": {
+              "__step": 11
+            },
+            "back_link": {
+              "__step": 9
+            },
+            "payment_logos": true,
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£83.90"
+          }
+        },
+        {
+          "name": "12 · Your order is complete",
+          "slug": "12-your-order-is-complete",
+          "content": {
+            "_uid": "9f767f6d-dae7-489c-8772-31d67ad6626f",
+            "component": "journey_step",
+            "title": "Your order is complete",
+            "stage": "Pay",
+            "blocks": [
+              {
+                "_uid": "77cc7175-8fa6-4d80-802e-d069c59ece5e",
+                "component": "result",
+                "tone": "good",
+                "title": "We’ve received your order and it’ll be on its way soon.",
+                "body": "We've sent an email to chris.walker@example.com with all the details."
+              },
+              {
+                "_uid": "79d4cd36-135a-46b1-806f-ef658b14eec4",
+                "component": "note",
+                "body": "We'll email your free O2 Recycle pack for your iPhone 13. You'll be paid up to £146 after we receive and check it."
+              },
+              {
+                "_uid": "2f6a6f20-3040-47eb-9082-774f0f82768e",
+                "component": "note",
+                "body": "Track your order in My O2 under \"My orders\". Your number stays the same."
+              }
+            ],
+            "primary_label": "Done",
+            "back_link": {
+              "__step": 10
+            },
+            "basket_label": "iPhone 17",
+            "basket_upfront": "£30.00",
+            "basket_monthly": "£83.90"
+          }
+        }
+      ]
+    }
+  ]
+}

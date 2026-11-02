@@ -1,0 +1,15 @@
+/* Additions for the Storyblok build. */
+body { background: var(--o2-surface); }
+.o2-page { display: flex; flex-direction: column; height: 100vh; }
+a.btn, a.back-link { text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 4px; }
+a.back-link { justify-content: flex-start; align-self: flex-start; }
+.sb-index { max-width: 880px; margin: 0 auto; padding: 40px 24px; font: 15px/1.5 system-ui, sans-serif; color: #1b1b1b; }
+.sb-index h1 { font-size: 24px; margin: 0 0 24px; }
+.sb-index h1 em { font-style: normal; font-weight: 400; color: #6b7280; margin-left: 8px; }
+.sb-index ul { list-style: none; margin: 0; padding: 0; }
+.sb-index li { display: flex; align-items: center; gap: 12px; border-bottom: 1px solid #e5e7eb; }
+.sb-index li a:first-child { flex: 1; display: block; padding: 12px 0; color: inherit; text-decoration: none; }
+.sb-index li a:first-child span { display: block; color: #6b7280; font-size: 13px; }
+.sb-index li a:first-child:hover strong { text-decoration: underline; }
+.sb-index .pub { color: #6b7280; font-size: 12px; }
+.sb-index code { background: #f3f4f6; padding: 1px 6px; border-radius: 4px; }
