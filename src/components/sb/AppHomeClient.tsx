@@ -41,10 +41,19 @@ const isDoc = (v: string) => /^\s*(<!doctype|<html)/i.test(v);
 type Design = { id?: string; name?: string; version?: number; status?: string; html_base64?: string | null; html?: string | null };
 async function fetchCreative(endpoint: string): Promise<{ doc: string; design: Design } | null> {
   const u = new URL(endpoint, location.href);
-  u.searchParams.set('format', 'json');
+  // "Latest" (no id/name) goes through the list function asking for html_base64 only: html-design returns
+  // both html fields and fails on large designs. Filters (status, tag, campaign_id) carry over unchanged.
+  if (u.pathname.endsWith('/html-design') && !u.searchParams.get('id') && !u.searchParams.get('name')) {
+    u.pathname += 's';
+    u.searchParams.delete('format');
+    u.searchParams.set('limit', '1');
+    u.searchParams.set('include', 'html_base64');
+  } else u.searchParams.set('format', 'json');
   const res = await fetch(u, { cache: 'no-store' });
   if (!res.ok) return null;
-  const d = (await res.json()) as Design;
+  const j = await res.json();
+  const d = (Array.isArray(j?.data) ? j.data[0] : j) as Design | undefined;
+  if (!d) return null;
   if (d.html_base64) {
     const bin = atob(d.html_base64);
     const doc = new TextDecoder().decode(Uint8Array.from(bin, c => c.charCodeAt(0)));
@@ -55,12 +64,57 @@ async function fetchCreative(endpoint: string): Promise<{ doc: string; design: D
 }
 const emit = (name: string, detail: unknown) => window.dispatchEvent(new CustomEvent(name, { detail }));
 
+// A full HTML creative, rendered straight into the page inside a Shadow DOM (its CSS can't leak either way).
+// html/body/:root rules are remapped to the creative's own wrapper, vw/vh become canvas pixels (1080 canvas),
+// @font-face goes to the document (fonts don't load from shadow roots), scripts are not run, and the canvas
+// is scaled to fit the slot.
+const CANVAS = 1080;
+function prepare(doc: string) {
+  const d = new DOMParser().parseFromString(doc, 'text/html');
+  let css = [...d.querySelectorAll('style')].map(x => x.textContent ?? '').join('\n');
+  const fonts = css.match(/@font-face\s*{[^}]*}/g) ?? [];
+  css = css.replace(/@font-face\s*{[^}]*}/g, '')
+    .replace(/:root\b/g, '.cr-body')
+    .replace(/(^|[\s,{}>+~(])(html|body)\b(?=[^{}]*{)/g, '$1.cr-body')
+    .replace(/(-?\d*\.?\d+)v(w|h|min|max)\b/g, (_, n) => `${(Number(n) * CANVAS / 100).toFixed(2)}px`);
+  d.querySelectorAll('script, style, link, meta, title').forEach(x => x.remove());
+  const cls = d.body.getAttribute('class') ?? '';
+  const style = d.body.getAttribute('style') ?? '';
+  return { css, fonts, html: d.body.innerHTML, cls, style };
+}
+const loadedFonts = new Set<string>();
+function InlineCreative({ doc, label }: { doc: string; label: string }) {
+  const host = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = host.current;
+    if (!el) return;
+    const root = el.shadowRoot ?? el.attachShadow({ mode: 'open' });
+    const c = prepare(doc);
+    for (const f of c.fonts) if (!loadedFonts.has(f)) {
+      loadedFonts.add(f);
+      const st = document.createElement('style'); st.textContent = f; document.head.appendChild(st);
+    }
+    const esc = (v: string) => v.replace(/"/g, '&quot;');
+    root.innerHTML = `<style>:host{display:block;position:relative;width:100%;height:100%;overflow:hidden;contain:paint}
+.cr-fit{position:absolute;left:50%;top:50%;transform-origin:50% 50%}
+.cr-body{display:block;position:relative;margin:0;width:max-content;overflow:hidden;box-sizing:border-box}
+${c.css}</style><div class="cr-fit"><div class="cr-body ${esc(c.cls)}" style="${esc(c.style)}">${c.html}</div></div>`;
+    const fit = root.querySelector<HTMLElement>('.cr-fit')!, body = root.querySelector<HTMLElement>('.cr-body')!;
+    const resize = () => {
+      const w = body.offsetWidth || CANVAS, h = body.offsetHeight || CANVAS;
+      const sc = Math.min(el.clientWidth / w, el.clientHeight / h) || 0;
+      fit.style.transform = `translate(-50%, -50%) scale(${sc})`;
+    };
+    resize();
+    const ro = new ResizeObserver(resize);
+    ro.observe(el); ro.observe(body);
+    return () => ro.disconnect();
+  }, [doc]);
+  return <div ref={host} className="ia-creative" role="img" aria-label={label || 'Offer'} />;
+}
+
 function SlotContent({ value, url, alt }: { value?: string; url?: string; alt: string }) {
-  // Full HTML creatives run in a sandboxed frame (scripts allowed, no access to this page).
-  // Chrome can leave a frame unpainted when it loads inside a moving (transformed) container;
-  // a one-frame size nudge repaints it and re-runs the creative's own resize-to-fit.
-  if (value && isDoc(value)) return <iframe className="ia-creative" srcDoc={value} sandbox="allow-scripts allow-popups" title={alt || 'Offer'}
-    onLoad={e => { const f = e.currentTarget; f.style.width = '99.9%'; requestAnimationFrame(() => requestAnimationFrame(() => { f.style.width = ''; })); }} />;
+  if (value && isDoc(value)) return <InlineCreative doc={value} label={alt} />;
   if (value) return isUrl(value) ? <img src={value} alt="" /> : <div dangerouslySetInnerHTML={{ __html: value }} />;
   return url ? <img src={url} alt={alt} /> : null;
 }
@@ -72,7 +126,6 @@ export function OfferSlot({ blok }: { blok: Blok }) {
   const alt: string = blok.alt ?? '';
   const [override, setOverride] = useState<Creative>({});
   const [open, setOpen] = useState(false);
-  const [shown, setShown] = useState(0); // bumps on each open so the pop-up creative loads (and sizes itself) while visible
   const openRef = useRef(false);
   const sheetRef = useRef<HTMLElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
@@ -83,8 +136,6 @@ export function OfferSlot({ blok }: { blok: Blok }) {
     lastFocus.current = document.activeElement;
     openRef.current = true;
     setOpen(true);
-    // Load the pop-up creative once the slide-in (.38s) has finished, so it lays out on screen.
-    setTimeout(() => setShown(n => n + 1), 420);
     setTimeout(() => closeRef.current?.focus({ preventScroll: true }), 50);
     emit('offer:shown', { slot: 'sheet' });
   }, []);
@@ -192,7 +243,7 @@ export function OfferSlot({ blok }: { blok: Blok }) {
           </button>
         </div>
         <div className={`ia-slot ia-slot-sheet${hasSheet ? ' ia-has-creative' : ''}`} data-slot="sheet" data-label={blok.sheet_placeholder || 'Offer slot · pop-up'}>
-          {shown > 0 && <SlotContent key={shown} value={override.sheet} url={sheetUrl} alt={alt} />}
+          <SlotContent value={override.sheet} url={sheetUrl} alt={alt} />
         </div>
         <button type="button" className="ia-later" onClick={() => doClose('not-now')}>{blok.dismiss_label || 'Not now'}</button>
       </section>
