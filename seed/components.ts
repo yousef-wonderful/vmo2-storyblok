@@ -111,7 +111,9 @@ export const COMPONENTS: ComponentDef[] = [
     notifications: bool('Unread notification dot'),
   } },
   { name: 'offer_slot', display_name: 'Offer slot (headline + pop-up)', folder: 'App', is_nestable: true, preview_field: 'alt', icon: 'block-tag', color: '#e5007d', schema: {
-    headline_creative: image('Headline creative'), sheet_creative: image('Pop-up creative', ),
+    creative_endpoint: text('Creative endpoint', { description: 'Public URL of the html-design function. On load the latest design fills both slots (pop-up + headline). Add ?status=live or ?tag=… to narrow it. Leave empty for the images below or grey placeholders.' }),
+    headline_aspect: option('Headline slot shape', ['16/7', '4/3', '1/1'], '16/7'),
+    headline_creative: image('Headline creative (fallback image)'), sheet_creative: image('Pop-up creative (fallback image)'),
     alt: text('Alt text'),
     'tab-popup': tab('Pop-up', ['open_on_load', 'delay_ms', 'dismiss_label']),
     open_on_load: { ...bool('Open pop-up on load'), default_value: true }, delay_ms: num('Delay before opening (ms)', { default_value: '700' }),

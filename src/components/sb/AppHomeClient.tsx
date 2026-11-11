@@ -35,9 +35,29 @@ declare global {
 }
 
 const isUrl = (v: string) => /^(https?:|\/|\.|assets\/)/.test(v);
+const isDoc = (v: string) => /^\s*(<!doctype|<html)/i.test(v);
+
+// Latest creative from the html-design function: JSON record → full HTML document (html_base64, UTF-8).
+type Design = { id?: string; name?: string; version?: number; status?: string; html_base64?: string | null; html?: string | null };
+async function fetchCreative(endpoint: string): Promise<{ doc: string; design: Design } | null> {
+  const u = new URL(endpoint, location.href);
+  u.searchParams.set('format', 'json');
+  const res = await fetch(u, { cache: 'no-store' });
+  if (!res.ok) return null;
+  const d = (await res.json()) as Design;
+  if (d.html_base64) {
+    const bin = atob(d.html_base64);
+    const doc = new TextDecoder().decode(Uint8Array.from(bin, c => c.charCodeAt(0)));
+    return { doc, design: d };
+  }
+  if (d.html) return { doc: `<!doctype html><html><head><meta charset="utf-8"></head><body style="margin:0">${d.html}</body></html>`, design: d };
+  return null;
+}
 const emit = (name: string, detail: unknown) => window.dispatchEvent(new CustomEvent(name, { detail }));
 
 function SlotContent({ value, url, alt }: { value?: string; url?: string; alt: string }) {
+  // Full HTML creatives run in a sandboxed frame (scripts allowed, no access to this page).
+  if (value && isDoc(value)) return <iframe className="ia-creative" srcDoc={value} sandbox="allow-scripts allow-popups" title={alt || 'Offer'} />;
   if (value) return isUrl(value) ? <img src={value} alt="" /> : <div dangerouslySetInnerHTML={{ __html: value }} />;
   return url ? <img src={url} alt={alt} /> : null;
 }
@@ -101,17 +121,29 @@ export function OfferSlot({ blok }: { blok: Blok }) {
     return () => { if (window.InlifeOffer === api) delete window.InlifeOffer; };
   }, [doOpen, doClose]);
 
-  // Open on load (after the window load event + delay). ?sheet=off suppresses it.
+  // On load: pull the latest creative into both slots (if an endpoint is set), then open the sheet
+  // after the delay. A failed pull leaves the grey placeholders. ?sheet=off suppresses the sheet.
+  const endpoint: string = String(blok.creative_endpoint ?? '').trim();
   useEffect(() => {
-    if (!blok.open_on_load) return;
-    if (new URLSearchParams(location.search).get('sheet') === 'off') return;
+    let cancelled = false;
+    let t: ReturnType<typeof setTimeout> | undefined;
     const ms = Number(blok.delay_ms);
     const delay = Number.isFinite(ms) && String(blok.delay_ms ?? '').trim() !== '' ? ms : 700;
-    let t: ReturnType<typeof setTimeout> | undefined;
-    const go = () => { t = setTimeout(doOpen, delay); };
+    const started = Date.now();
+    const pull = endpoint
+      ? fetchCreative(endpoint).then(r => {
+          if (cancelled || !r) return;
+          setOverride({ headline: r.doc, sheet: r.doc });
+          emit('offer:loaded', { id: r.design.id, name: r.design.name, version: r.design.version, status: r.design.status });
+        }).catch(() => { if (!cancelled) emit('offer:error', { endpoint }); })
+      : Promise.resolve();
+    const go = () => pull.then(() => {
+      if (cancelled || !blok.open_on_load || new URLSearchParams(location.search).get('sheet') === 'off') return;
+      t = setTimeout(doOpen, Math.max(0, delay - (Date.now() - started)));
+    });
     if (document.readyState === 'complete') go(); else window.addEventListener('load', go, { once: true });
-    return () => { window.removeEventListener('load', go); if (t) clearTimeout(t); };
-  }, [blok.open_on_load, blok.delay_ms, doOpen]);
+    return () => { cancelled = true; window.removeEventListener('load', go); if (t) clearTimeout(t); };
+  }, [endpoint, blok.open_on_load, blok.delay_ms, doOpen]);
 
   // Drag down to dismiss.
   const onDown = (e: RPointerEvent<HTMLElement>) => {
@@ -139,7 +171,7 @@ export function OfferSlot({ blok }: { blok: Blok }) {
   const hasSheet = !!(override.sheet || sheetUrl);
   return (
     <div className="ia-col" {...ed(blok)}>
-      <section className={`ia-slot ia-slot-hero${hasHeadline ? ' ia-has-creative' : ''}`} data-slot="headline"
+      <section className={`ia-slot ia-slot-hero ia-aspect-${String(blok.headline_aspect || '16/7').replace('/', '-')}${hasHeadline ? ' ia-has-creative' : ''}`} data-slot="headline"
         data-label={blok.headline_placeholder || 'Offer slot · headline'} aria-label="Offer for you" onClick={doOpen}>
         <SlotContent value={override.headline} url={headlineUrl} alt={alt} />
       </section>
