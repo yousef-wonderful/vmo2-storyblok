@@ -57,7 +57,10 @@ const emit = (name: string, detail: unknown) => window.dispatchEvent(new CustomE
 
 function SlotContent({ value, url, alt }: { value?: string; url?: string; alt: string }) {
   // Full HTML creatives run in a sandboxed frame (scripts allowed, no access to this page).
-  if (value && isDoc(value)) return <iframe className="ia-creative" srcDoc={value} sandbox="allow-scripts allow-popups" title={alt || 'Offer'} />;
+  // Chrome can leave a frame unpainted when it loads inside a moving (transformed) container;
+  // a one-frame size nudge repaints it and re-runs the creative's own resize-to-fit.
+  if (value && isDoc(value)) return <iframe className="ia-creative" srcDoc={value} sandbox="allow-scripts allow-popups" title={alt || 'Offer'}
+    onLoad={e => { const f = e.currentTarget; f.style.width = '99.9%'; requestAnimationFrame(() => requestAnimationFrame(() => { f.style.width = ''; })); }} />;
   if (value) return isUrl(value) ? <img src={value} alt="" /> : <div dangerouslySetInnerHTML={{ __html: value }} />;
   return url ? <img src={url} alt={alt} /> : null;
 }
@@ -69,6 +72,7 @@ export function OfferSlot({ blok }: { blok: Blok }) {
   const alt: string = blok.alt ?? '';
   const [override, setOverride] = useState<Creative>({});
   const [open, setOpen] = useState(false);
+  const [shown, setShown] = useState(0); // bumps on each open so the pop-up creative loads (and sizes itself) while visible
   const openRef = useRef(false);
   const sheetRef = useRef<HTMLElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
@@ -79,6 +83,8 @@ export function OfferSlot({ blok }: { blok: Blok }) {
     lastFocus.current = document.activeElement;
     openRef.current = true;
     setOpen(true);
+    // Load the pop-up creative once the slide-in (.38s) has finished, so it lays out on screen.
+    setTimeout(() => setShown(n => n + 1), 420);
     setTimeout(() => closeRef.current?.focus({ preventScroll: true }), 50);
     emit('offer:shown', { slot: 'sheet' });
   }, []);
@@ -186,7 +192,7 @@ export function OfferSlot({ blok }: { blok: Blok }) {
           </button>
         </div>
         <div className={`ia-slot ia-slot-sheet${hasSheet ? ' ia-has-creative' : ''}`} data-slot="sheet" data-label={blok.sheet_placeholder || 'Offer slot · pop-up'}>
-          <SlotContent value={override.sheet} url={sheetUrl} alt={alt} />
+          {shown > 0 && <SlotContent key={shown} value={override.sheet} url={sheetUrl} alt={alt} />}
         </div>
         <button type="button" className="ia-later" onClick={() => doClose('not-now')}>{blok.dismiss_label || 'Not now'}</button>
       </section>
