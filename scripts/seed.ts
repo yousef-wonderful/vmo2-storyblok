@@ -4,11 +4,14 @@
 //   3. a `journeys` folder, a subfolder per journey and one published `journey_step` story per step,
 //      with the buttons linked to the right steps (upsert by slug, from seed/journeys.json)
 //   4. the space's Visual Editor preview URL (STORYBLOK_PREVIEW_URL)
+//   5. asset libraries (seed/inlife.json `library`): every image in a folder, into a named Storyblok asset folder
+// seed/inlife.json adds hand-written journeys (own page type and asset folder) next to the extracted ones.
 // Usage: npm run seed              (everything)
 //        npm run seed -- --dry      (print what would happen, no writes)
 //        npm run seed -- --prune    (also delete stale stories under journeys/ and components/folders from earlier seeds)
-//        npm run seed -- --only=components|assets|stories|preview-url
-import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+//        npm run seed -- --only=components|assets|stories|library|preview-url
+//        npm run seed -- --journey=o2-in-life-app   (assets and stories for that journey only; never touches the others, no prune)
+import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { basename, extname } from 'node:path';
 import { COMPONENTS } from '../seed/components';
 
@@ -32,7 +35,11 @@ const DRY = process.argv.includes('--dry');
 const PRUNE = process.argv.includes('--prune');
 const ONLY = process.argv.find(a => a.startsWith('--only='))?.slice(7);
 const step = (s: string) => !ONLY || ONLY === s;
+const JOURNEY = process.argv.find(a => a.startsWith('--journey='))?.slice(10);
+if (JOURNEY && PRUNE) { console.error('--prune cannot be combined with --journey'); process.exit(1); }
 const APP_PUBLIC = new URL('../../app/public', import.meta.url).pathname;
+// Assets that only this project uses (in-life journey, libraries); checked before ../app/public.
+const SEED_ASSETS = new URL('../seed/assets', import.meta.url).pathname;
 
 // Trial / Growth plans allow 6 requests per second; stay under it and back off on 429.
 let last = 0;
@@ -81,14 +88,27 @@ const assetMap: Record<string, AssetRef> = existsSync(mapFile) ? JSON.parse(read
 const MIME: Record<string, string> = { '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.svg': 'image/svg+xml', '.gif': 'image/gif' };
 
 const seen = new Set<string>();
-async function upload(local: string): Promise<AssetRef> {
+const folderIds: Record<string, number> = {};
+async function assetFolder(name?: string): Promise<number | undefined> {
+  if (!name) return undefined;
+  if (folderIds[name] !== undefined) return folderIds[name];
+  const { asset_folders: all = [] } = await api<{ asset_folders: { id: number; name: string; parent_id: number | null }[] }>('GET', 'asset_folders/');
+  const found = all.find(f => f.name === name && !f.parent_id);
+  if (found) return (folderIds[name] = found.id);
+  console.log(`  + asset folder ${name}`);
+  if (DRY) return (folderIds[name] = 0);
+  return (folderIds[name] = (await api('POST', 'asset_folders/', { asset_folder: { name } })).asset_folder.id);
+}
+
+async function upload(local: string, folderName?: string): Promise<AssetRef> {
   if (assetMap[local]) return assetMap[local];
   if (DRY && seen.has(local)) return { id: 0, filename: local };
   seen.add(local);
-  const file = `${APP_PUBLIC}${local}`;
-  console.log(`  + asset ${local}`);
+  const file = existsSync(`${SEED_ASSETS}${local}`) ? `${SEED_ASSETS}${local}` : `${APP_PUBLIC}${local}`;
+  const asset_folder_id = await assetFolder(folderName);
+  console.log(`  + asset ${local}${folderName ? ` → ${folderName}` : ''}`);
   if (DRY) return { id: 0, filename: local };
-  const signed = await api('POST', 'assets/', { filename: basename(file), validate_upload: 1 });
+  const signed = await api('POST', 'assets/', { filename: basename(file), validate_upload: 1, ...(asset_folder_id ? { asset_folder_id } : {}) });
   const form = new FormData();
   for (const [k, v] of Object.entries(signed.fields as Record<string, string>)) form.append(k, v);
   form.append('file', new Blob([readFileSync(file)], { type: MIME[extname(file).toLowerCase()] ?? 'application/octet-stream' }), basename(file));
@@ -103,25 +123,41 @@ async function upload(local: string): Promise<AssetRef> {
 }
 
 // Replaces { __asset: path } placeholders with Storyblok asset objects (uploading on first use).
-async function resolveAssets(node: unknown, upload_: boolean): Promise<unknown> {
-  if (Array.isArray(node)) { const out = []; for (const n of node) out.push(await resolveAssets(n, upload_)); return out; }
+async function resolveAssets(node: unknown, upload_: boolean, folderName?: string): Promise<unknown> {
+  if (Array.isArray(node)) { const out = []; for (const n of node) out.push(await resolveAssets(n, upload_, folderName)); return out; }
   if (!node || typeof node !== 'object') return node;
   const o = node as Record<string, unknown>;
   if (typeof o.__asset === 'string') {
-    const ref = upload_ ? await upload(o.__asset) : assetMap[o.__asset];
+    const ref = upload_ ? await upload(o.__asset, folderName) : assetMap[o.__asset];
     if (!ref) throw new Error(`Asset ${o.__asset} not uploaded yet: run npm run seed -- --only=assets`);
     return { id: ref.id, filename: ref.filename, fieldtype: 'asset', alt: '', name: '', title: '', focus: '', copyright: '', is_external_url: false };
   }
   const out: Record<string, unknown> = {};
-  for (const [k, v] of Object.entries(o)) out[k] = await resolveAssets(v, upload_);
+  for (const [k, v] of Object.entries(o)) out[k] = await resolveAssets(v, upload_, folderName);
   return out;
 }
 
 type Step = { name: string; slug: string; content: Record<string, unknown> };
-const journeys = JSON.parse(readFileSync(new URL('../seed/journeys.json', import.meta.url), 'utf8')).journeys as { name: string; slug: string; steps: Step[] }[];
+type Journey = { name: string; slug: string; steps: Step[]; root?: string; asset_folder?: string };
+const inlife = JSON.parse(readFileSync(new URL('../seed/inlife.json', import.meta.url), 'utf8')) as { journeys: Journey[]; library?: { asset_folder: string; dir: string }[] };
+const journeys: Journey[] = [
+  ...JSON.parse(readFileSync(new URL('../seed/journeys.json', import.meta.url), 'utf8')).journeys,
+  ...inlife.journeys,
+].filter(j => !JOURNEY || j.slug === JOURNEY);
+if (JOURNEY && !journeys.length) { console.error(`No journey with slug ${JOURNEY}`); process.exit(1); }
 
 async function assets() {
-  for (const j of journeys) for (const st of j.steps) await resolveAssets(st.content, true);
+  for (const j of journeys) for (const st of j.steps) await resolveAssets(st.content, true, j.asset_folder);
+}
+
+const IMAGE = /\.(png|jpe?g|webp|svg|gif)$/i;
+async function library() {
+  for (const lib of inlife.library ?? []) {
+    const dir = `${SEED_ASSETS}${lib.dir}`;
+    const files = existsSync(dir) ? readdirSync(dir).filter(f => IMAGE.test(f)).sort() : [];
+    console.log(`  ~ ${lib.asset_folder} · ${files.length} images`);
+    for (const f of files) await upload(`${lib.dir}/${f}`, lib.asset_folder);
+  }
 }
 
 type Ref = { id: number; uuid: string; full_slug: string };
@@ -142,13 +178,13 @@ async function find(full_slug: string): Promise<Ref | undefined> {
   return stories[0];
 }
 
-async function folder(name: string, slug: string, parent_id?: number): Promise<number> {
+async function folder(name: string, slug: string, parent_id?: number, default_root = 'journey_step'): Promise<number> {
   const full = parent_id ? `journeys/${slug}` : slug;
   const found = await find(full);
   if (found) return found.id;
   console.log(`  + folder ${full}`);
   if (DRY) return 0;
-  return (await api('POST', 'stories/', { story: { name, slug, is_folder: true, parent_id, default_root: 'journey_step' } })).story.id;
+  return (await api('POST', 'stories/', { story: { name, slug, is_folder: true, parent_id, default_root } })).story.id;
 }
 
 async function upsert(story: Record<string, unknown>, full_slug: string, publish: boolean): Promise<Ref> {
@@ -163,7 +199,7 @@ async function stories() {
   const root = await folder('Journeys', 'journeys');
   const keep = new Set<string>(['journeys']);
   for (const j of journeys) {
-    const parent = await folder(j.name, j.slug, root);
+    const parent = await folder(j.name, j.slug, root, j.root);
     keep.add(`journeys/${j.slug}`);
     console.log(`  ~ journeys/${j.slug} · ${j.steps.length} steps`);
     // Pass 1 creates every step so later steps exist; pass 2 adds the button links and publishes.
@@ -222,6 +258,7 @@ async function previewUrl() {
   if (step('components')) { console.log('Components'); await components(); }
   if (step('assets')) { console.log('Assets'); await assets(); }
   if (step('stories')) { console.log('Stories'); await stories(); }
+  if (step('library')) { console.log('Library'); await library(); }
   if (PRUNE && step('components')) { console.log('Prune components'); await pruneComponents(); }
   if (step('preview-url')) { console.log('Visual Editor'); await previewUrl(); }
   console.log('Done.');

@@ -1,0 +1,46 @@
+{
+  "note": "Hand-written (not produced by npm run extract). Seeded with the journeys in journeys.json. Asset paths resolve from seed/assets/.",
+  "journeys": [
+    {
+      "name": "O2 In Life app",
+      "slug": "o2-in-life-app",
+      "root": "app_home",
+      "asset_folder": "O2 In Life app",
+      "steps": [
+        {
+          "name": "Home",
+          "slug": "01-home",
+          "content": {
+            "component": "app_home",
+            "title": "O2 · Home",
+            "blocks": [
+              { "component": "app_header", "logo": { "__asset": "/inlife/o2-logo-white.svg" }, "name": "Amber", "greeting": "time", "number": "07700 900 482", "plan_line": "Pay Monthly · Priority member", "notifications": true },
+              { "component": "offer_slot", "alt": "", "open_on_load": true, "delay_ms": "700", "dismiss_label": "Not now", "headline_placeholder": "Offer slot · headline", "sheet_placeholder": "Offer slot · pop-up" },
+              { "component": "bill_card", "amount": "£38.50", "status": "Paid", "tone": "paid", "date_label": "Next bill", "date": "28 November", "link_label": "View my bill" },
+              { "component": "plan_card", "label": "Mobile plan", "number": "07700 900 482", "description": "iPhone 15 · 100GB data, unlimited UK minutes and texts", "footer_label": "Contract ends", "footer_value": "14 January 2027" },
+              { "component": "usage_card", "label": "Airtime · resets in 9 days", "number": "07700 900 482", "data_left": "62.4", "data_unit": "GB left", "data_total": "100GB", "data_percent": "62", "minutes_title": "Minutes and texts", "minutes_value": "Unlimited" },
+              { "component": "priority_section", "wordmark": "PRIORITY", "title": "Rewards handpicked for you", "link_label": "See all", "tabs": "Popular\nUpcoming\nNearby",
+                "cards": [
+                  { "component": "priority_card", "kicker": "Priority Tickets", "title": "Exclusive gigs and 48-hour ticket presales", "body": "Get tickets before they go on general sale", "image": { "__asset": "/inlife/p-presale.jpg" }, "image_position": "center bottom" },
+                  { "component": "priority_card", "kicker": "O2 Academy venues", "title": "Fast-track the queue and get into gigs first", "body": "Experience the Priority treatment like a VIP", "image": { "__asset": "/inlife/p-academy.jpg" } },
+                  { "component": "priority_card", "kicker": "lastminute.com", "title": "Dive into a new adventure, on us", "body": "Win a trip worth £1,500 and travel to your dream destination", "image": { "__asset": "/inlife/p-lastminute.jpg" } }
+                ],
+                "banner": [ { "component": "priority_banner", "highlight": "Blue", "title": "Mondays", "body": "Exclusive prize drops and limited-time-only rewards every Monday" } ]
+              }
+            ],
+            "nav": [
+              { "component": "app_nav_tab", "label": "Home", "icon": "home", "active": true },
+              { "component": "app_nav_tab", "label": "Offers", "icon": "offers" },
+              { "component": "app_nav_tab", "label": "Tickets", "icon": "tickets" },
+              { "component": "app_nav_tab", "label": "Help", "icon": "help" },
+              { "component": "app_nav_tab", "label": "Account", "icon": "account" }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "library": [
+    { "asset_folder": "iPhone Duo", "dir": "/library/iphone-duo" }
+  ]
+}

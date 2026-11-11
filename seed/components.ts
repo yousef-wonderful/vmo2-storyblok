@@ -5,7 +5,7 @@
 
 type Field = Record<string, unknown> & { type: string };
 export interface ComponentDef {
-  name: string; display_name: string; folder: 'Pages' | 'Blocks' | 'Parts';
+  name: string; display_name: string; folder: 'Pages' | 'Blocks' | 'Parts' | 'App';
   is_root?: boolean; is_nestable?: boolean; preview_field?: string; icon?: string; color?: string;
   schema: Record<string, Field>;
 }
@@ -22,7 +22,9 @@ const bloks = (display_name: string, whitelist: string[], extra: Partial<Field> 
 const tab = (display_name: string, keys: string[]): Field => ({ type: 'tab', display_name, keys });
 const link = (display_name: string): Field => ({ type: 'multilink', display_name, restrict_content_types: true, component_whitelist: ['journey_step'], allow_target_blank: false });
 const lines = 'One per line';
+const num = (display_name: string, extra: Partial<Field> = {}): Field => ({ type: 'number', display_name, ...extra });
 
+export const APP_BLOCKS = ['app_header', 'offer_slot', 'bill_card', 'plan_card', 'usage_card', 'priority_section'];
 export const BLOCKS = ['hero', 'choice', 'reco', 'splash', 'offer', 'form', 'result', 'info_card', 'order_summary', 'legal', 'note'];
 
 export const COMPONENTS: ComponentDef[] = [
@@ -100,5 +102,54 @@ export const COMPONENTS: ComponentDef[] = [
     secure_checkout: bool('Secure checkout header'), buttons_in_page: bool('Buttons in the page (no basket bar)'), payment_logos: bool('Show payment logos'),
     'tab-basket': tab('Basket bar', ['basket_label', 'basket_upfront', 'basket_monthly']),
     basket_label: text('Basket label', { description: 'Shown before a price exists' }), basket_upfront: text('Upfront'), basket_monthly: text('Monthly'),
+  } },
+  // In-life app home (O2 In Life app journey): My O2 account + Priority, with an offer slot shown inline and as a bottom sheet.
+  { name: 'app_header', display_name: 'App header', folder: 'App', is_nestable: true, preview_field: 'name', icon: 'block-image', color: '#0050ff', schema: {
+    logo: image('Logo'), name: text('First name', { required: true }),
+    greeting: option('Greeting', ['time', 'hello'], 'time'),
+    number: text('Phone number'), plan_line: text('Plan line', { description: 'e.g. Pay Monthly · Priority member' }),
+    notifications: bool('Unread notification dot'),
+  } },
+  { name: 'offer_slot', display_name: 'Offer slot (headline + pop-up)', folder: 'App', is_nestable: true, preview_field: 'alt', icon: 'block-tag', color: '#e5007d', schema: {
+    headline_creative: image('Headline creative'), sheet_creative: image('Pop-up creative', ),
+    alt: text('Alt text'),
+    'tab-popup': tab('Pop-up', ['open_on_load', 'delay_ms', 'dismiss_label']),
+    open_on_load: { ...bool('Open pop-up on load'), default_value: true }, delay_ms: num('Delay before opening (ms)', { default_value: '700' }),
+    dismiss_label: text('Dismiss label', { default_value: 'Not now' }),
+    'tab-placeholder': tab('Placeholders', ['headline_placeholder', 'sheet_placeholder']),
+    headline_placeholder: text('Headline placeholder', { default_value: 'Offer slot · headline' }),
+    sheet_placeholder: text('Pop-up placeholder', { default_value: 'Offer slot · pop-up' }),
+  } },
+  { name: 'bill_card', display_name: 'Bill card', folder: 'App', is_nestable: true, preview_field: 'amount', icon: 'block-wallet', color: '#0019a5', schema: {
+    amount: text('Amount', { required: true }), status: text('Status'), tone: option('Status tone', ['paid', 'due'], 'paid'),
+    date_label: text('Date label'), date: text('Date'), link_label: text('Link label'),
+  } },
+  { name: 'plan_card', display_name: 'Plan card', folder: 'App', is_nestable: true, preview_field: 'number', icon: 'block-doc', color: '#0019a5', schema: {
+    label: text('Label'), number: text('Number', { required: true }), description: text('Description'),
+    footer_label: text('Footer label'), footer_value: text('Footer value'),
+  } },
+  { name: 'usage_card', display_name: 'Usage card', folder: 'App', is_nestable: true, preview_field: 'number', icon: 'block-table', color: '#0019a5', schema: {
+    label: text('Label'), number: text('Number'),
+    data_left: text('Data left'), data_unit: text('Data unit'), data_total: text('Data allowance'), data_percent: num('Data left (%)'),
+    minutes_title: text('Minutes title'), minutes_value: text('Minutes value'),
+  } },
+  { name: 'priority_card', display_name: 'Priority card', folder: 'App', is_nestable: true, preview_field: 'title', icon: 'block-star', color: '#00003c', schema: {
+    kicker: text('Kicker'), title: text('Title', { required: true }), body: text('Body'),
+    image: image('Image'), image_position: text('Image focus', { description: 'CSS object-position, e.g. center bottom' }),
+  } },
+  { name: 'priority_banner', display_name: 'Priority banner', folder: 'App', is_nestable: true, preview_field: 'title', icon: 'block-sticker', color: '#00003c', schema: {
+    highlight: text('Highlight word'), title: text('Title', { required: true }), body: text('Body'),
+  } },
+  { name: 'priority_section', display_name: 'Priority section', folder: 'App', is_nestable: true, preview_field: 'title', icon: 'block-star', color: '#00003c', schema: {
+    wordmark: text('Wordmark'), title: text('Title', { required: true }), link_label: text('Link label'),
+    tabs: area('Tabs', { description: lines }),
+    cards: bloks('Cards', ['priority_card']), banner: bloks('Banner', ['priority_banner'], { maximum: 1 }),
+  } },
+  { name: 'app_nav_tab', display_name: 'Nav tab', folder: 'App', is_nestable: true, preview_field: 'label', icon: 'block-buildin', color: '#0050ff', schema: {
+    label: text('Label', { required: true }), icon: option('Icon', ['home', 'offers', 'tickets', 'help', 'account'], 'home'), active: bool('Current tab'),
+  } },
+  { name: 'app_home', display_name: 'App home', folder: 'Pages', is_root: true, is_nestable: false, preview_field: 'title', icon: 'block-image', color: '#0050ff', schema: {
+    title: text('Title', { description: 'Browser tab title' }),
+    blocks: bloks('Blocks', APP_BLOCKS), nav: bloks('Bottom nav', ['app_nav_tab'], { maximum: 5 }),
   } },
 ];

@@ -1,0 +1,134 @@
+/* O2 in-life app home (Storyblok page type app_home). Port of inlife/amber-home.html.
+   Every selector is scoped under .ia with ia- class names so it can't clash with the journey styles. */
+.ia {
+  --ia-primary: #0050FF; --ia-navy: #00008C; --ia-deep: #0019A5; --ia-tint: #D4E2FF;
+  --ia-ink: #00001E; --ia-ink-2: #4D4D4D; --ia-surface: #FFFFFF; --ia-surface-dim: #F3F3F5; --ia-line: #E3E3E8;
+  --ia-warn-bg: #FFF4D6; --ia-warn: #B07A00;
+  --ia-pr-bg: #00003C; --ia-pr-card: #0A1E7A; --ia-pr-ink: #FFFFFF; --ia-pr-ink-2: #C9D4FF;
+  --ia-radius: 16px; --ia-radius-sm: 12px; --ia-shadow: 0 2px 10px rgba(0,0,30,.08);
+  --ia-col: 640px; --ia-nav-h: 72px;
+  /* Header height (safe area + top bar + greeting + who line) and headline slot ratio, for the gradient band. */
+  --ia-hdr-h: calc(env(safe-area-inset-top) + 138px);
+  --ia-slot-ratio: calc(7 / 16);
+  position: relative; isolation: isolate;
+  min-height: 100vh;
+  font-family: var(--o2-font, "on-air-momentum", Arial, Helvetica, sans-serif);
+  color: var(--ia-ink); background: var(--ia-surface-dim);
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: calc(var(--ia-nav-h) + env(safe-area-inset-bottom));
+}
+/* Blue gradient behind the header and the headline slot (which is a separate blok placed after the header). */
+.ia::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 0; z-index: -1; pointer-events: none;
+  height: calc(var(--ia-hdr-h) + (min(100vw, var(--ia-col)) - 32px) * var(--ia-slot-ratio));
+  background: linear-gradient(180deg, #0019A5 0%, #0036E0 45%, #0050FF 75%, rgba(0,80,255,0) 100%);
+}
+.ia, .ia *, .ia *::before, .ia *::after { box-sizing: border-box; }
+.ia button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; padding: 0; }
+.ia a { color: var(--ia-primary); text-decoration: none; font-weight: 700; }
+.ia svg { display: block; }
+.ia-col { max-width: var(--ia-col); margin: 0 auto; padding: 0 16px; }
+
+/* ---------- Header (My O2) ---------- */
+.ia-hdr { color: #fff; padding-top: env(safe-area-inset-top); }
+.ia-hdr-top { display: flex; align-items: center; justify-content: space-between; height: 56px; }
+.ia-hdr-top img { height: 28px; }
+.ia-icon-btn { width: 40px; height: 40px; display: grid; place-items: center; border-radius: 50%; position: relative; }
+.ia .ia-icon-btn:focus-visible, .ia .ia-tab:focus-visible, .ia .ia-chip:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.ia-dot { position: absolute; top: 8px; right: 9px; width: 8px; height: 8px; border-radius: 50%; background: #E21C33; border: 2px solid #0036E0; }
+.ia-greet { font-size: 24px; line-height: 30px; font-weight: 700; margin: 8px 0 4px; }
+.ia-who { display: flex; align-items: center; gap: 8px; font-size: 14px; line-height: 20px; opacity: .92; margin-bottom: 20px; }
+.ia-who .ia-sep { opacity: .5; }
+
+/* ---------- Offer slot (headline + sheet) ---------- */
+.ia-slot { position: relative; border-radius: var(--ia-radius); background: #D9D9DE; overflow: hidden; }
+.ia-slot::after { content: attr(data-label); position: absolute; inset: 0; display: grid; place-items: center; font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #7A7A85; border: 2px dashed #B9B9C2; border-radius: inherit; }
+.ia-slot.ia-has-creative::after { display: none; }
+.ia-slot > * { display: block; width: 100%; height: 100%; object-fit: cover; }
+.ia-slot-hero { aspect-ratio: 16/7; box-shadow: var(--ia-shadow); cursor: pointer; }
+
+/* ---------- Cards (My O2) ---------- */
+.ia-stack { display: grid; gap: 12px; margin-top: 16px; }
+.ia-card { background: var(--ia-surface); border-radius: var(--ia-radius); box-shadow: var(--ia-shadow); padding: 16px; }
+.ia-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.ia-amt { font-size: 28px; line-height: 32px; font-weight: 700; }
+.ia-muted { color: var(--ia-ink-2); font-size: 14px; line-height: 20px; }
+.ia-small { font-size: 12px; line-height: 16px; }
+.ia-b { font-weight: 700; }
+.ia-pill { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; background: #E7F6E6; color: #087A02; }
+.ia-pill.ia-due { background: var(--ia-warn-bg); color: var(--ia-warn); }
+.ia-pill i { width: 8px; height: 8px; border-radius: 50%; background: currentColor; display: block; }
+.ia .ia-plan { display: flex; gap: 12px; align-items: center; color: inherit; font-weight: 400; }
+.ia-plan-ico { width: 40px; height: 40px; border-radius: 10px; background: var(--ia-surface-dim); display: grid; place-items: center; flex: none; color: var(--ia-ink); }
+.ia-plan .ia-num { font-size: 18px; font-weight: 700; line-height: 24px; }
+.ia-chev { color: var(--ia-ink); flex: none; }
+.ia-usage { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+.ia-dial { background: var(--ia-surface-dim); border-radius: var(--ia-radius-sm); padding: 14px 8px 12px; text-align: center; }
+.ia .ia-dial svg { margin: 0 auto; width: 120px; height: 72px; }
+.ia-dial .ia-v { font-size: 20px; font-weight: 700; margin-top: -34px; line-height: 22px; }
+.ia-dial .ia-u { font-size: 12px; color: var(--ia-ink-2); }
+.ia-dial .ia-t { font-size: 14px; font-weight: 700; margin-top: 12px; }
+.ia-hr { height: 1px; background: var(--ia-line); margin: 12px 0; }
+
+/* ---------- Priority section (full bleed) ---------- */
+.ia-pr { background: var(--ia-pr-bg); color: var(--ia-pr-ink); margin-top: 24px; padding: 24px 0 28px; }
+.ia-pr-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; }
+.ia-wordmark { font-weight: 700; letter-spacing: .22em; font-size: 14px; color: var(--ia-pr-ink-2); }
+.ia-pr h2 { font-size: 24px; line-height: 30px; margin: 6px 0 0; font-weight: 700; }
+.ia .ia-pr-head a { color: #fff; font-size: 14px; white-space: nowrap; }
+.ia-tabs { display: flex; gap: 20px; margin: 18px 0 16px; border-bottom: 1px solid rgba(255,255,255,.12); }
+.ia .ia-chip { font-size: 15px; font-weight: 700; color: var(--ia-pr-ink-2); padding: 10px 0; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.ia .ia-chip[aria-selected="true"] { color: #fff; border-color: #fff; }
+.ia-rail { display: grid; grid-auto-flow: column; grid-auto-columns: 82%; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 4px; scrollbar-width: none; }
+.ia-rail::-webkit-scrollbar { display: none; }
+.ia-pcard { scroll-snap-align: start; background: var(--ia-pr-card); border-radius: var(--ia-radius); overflow: hidden; position: relative; display: flex; flex-direction: column; }
+.ia-pcard .ia-img { aspect-ratio: 16/10; position: relative; overflow: hidden; }
+.ia-pcard .ia-img img { width: 100%; height: 100%; object-fit: cover; object-position: center 70%; display: block; }
+/* ticket notches, as in the Priority Tickets cards */
+.ia-pcard .ia-img::before, .ia-pcard .ia-img::after { content: ""; position: absolute; bottom: -12px; width: 24px; height: 24px; border-radius: 50%; background: var(--ia-pr-bg); z-index: 1; }
+.ia-pcard .ia-img::before { left: -12px; }
+.ia-pcard .ia-img::after { right: -12px; }
+.ia-pcard .ia-body { padding: 16px 16px 18px; }
+.ia-kicker { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ia-pr-ink-2); }
+.ia-pcard h3 { font-size: 18px; line-height: 24px; margin: 6px 0 6px; font-weight: 700; }
+.ia-pcard p { margin: 0; font-size: 14px; line-height: 20px; color: var(--ia-pr-ink-2); }
+.ia-monday { margin-top: 16px; border-radius: var(--ia-radius); background: linear-gradient(105deg, #0050FF, #2166FA 60%, #96C3FF); padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.ia-monday .ia-t1 { font-weight: 900; font-size: 20px; line-height: 24px; }
+.ia-monday .ia-t1 span { color: #96E1FF; }
+.ia-monday p { margin: 4px 0 0; font-size: 14px; line-height: 20px; }
+
+/* ---------- Bottom nav ---------- */
+.ia-nav { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: rgba(255,255,255,.96); backdrop-filter: saturate(1.4) blur(10px); -webkit-backdrop-filter: saturate(1.4) blur(10px); border-top: 1px solid var(--ia-line); padding-bottom: env(safe-area-inset-bottom); }
+.ia-nav ul { list-style: none; margin: 0 auto; padding: 0 8px; max-width: var(--ia-col); display: grid; grid-template-columns: repeat(5, 1fr); height: var(--ia-nav-h); }
+.ia-nav li { margin: 0; padding: 0; }
+.ia .ia-tab { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 12px; font-weight: 700; color: #5A5A66; }
+.ia-tab .ia-ic { width: 44px; height: 30px; border-radius: 15px; display: grid; place-items: center; }
+.ia .ia-tab[aria-current="page"] { color: var(--ia-primary); }
+.ia-tab[aria-current="page"] .ia-ic { background: var(--ia-tint); }
+.ia .ia-tab:focus-visible { outline-color: var(--ia-primary); }
+
+/* ---------- Offer bottom sheet ---------- */
+.ia-scrim { position: fixed; inset: 0; z-index: 40; background: rgba(0,0,30,.55); opacity: 0; pointer-events: none; transition: opacity .28s ease; }
+.ia-sheet { position: fixed; left: 0; right: 0; bottom: 0; z-index: 41; margin: 0 auto; max-width: var(--ia-col); background: var(--ia-surface); border-radius: 24px 24px 0 0; box-shadow: 0 -8px 32px rgba(0,0,30,.25); padding: 8px 16px calc(20px + env(safe-area-inset-bottom)); transform: translateY(105%); transition: transform .38s cubic-bezier(.2,.8,.2,1); max-height: 88vh; overflow: auto; touch-action: pan-y; }
+.ia-sheet.ia-dragging { transition: none; }
+.ia-scrim.ia-open { opacity: 1; pointer-events: auto; }
+.ia-sheet.ia-open { transform: translateY(0); }
+.ia-grab { width: 40px; height: 4px; border-radius: 2px; background: #C9C9D1; margin: 4px auto 8px; }
+.ia-sheet-top { display: flex; justify-content: flex-end; margin-bottom: 8px; }
+.ia-sheet-top .ia-icon-btn { background: var(--ia-surface-dim); width: 36px; height: 36px; }
+.ia .ia-sheet-top .ia-icon-btn:focus-visible { outline-color: var(--ia-primary); }
+.ia-slot-sheet { aspect-ratio: 1/1; max-height: 52vh; width: 100%; margin: 0 auto; }
+.ia .ia-later { display: block; margin: 14px auto 0; font-size: 16px; font-weight: 700; color: var(--ia-primary); padding: 10px 16px; }
+
+/* ---------- Wider screens ---------- */
+@media (min-width: 48em) {
+  .ia { --ia-col: 960px; --ia-hdr-h: calc(env(safe-area-inset-top) + 154px); --ia-slot-ratio: calc(1 / 3); }
+  .ia-greet { font-size: 32px; line-height: 38px; margin-top: 16px; }
+  .ia-slot-hero { aspect-ratio: 21/7; }
+  .ia-stack { grid-template-columns: 1fr 1fr; }
+  .ia-stack .ia-span { grid-column: 1/-1; }
+  .ia-rail { grid-auto-flow: row; grid-template-columns: repeat(3, 1fr); overflow: visible; }
+  .ia-sheet { max-width: 560px; }
+  .ia-slot-sheet { aspect-ratio: 16/11; }
+}
+@media (prefers-reduced-motion: reduce) { .ia-sheet, .ia-scrim { transition: none; } }

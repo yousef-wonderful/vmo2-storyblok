@@ -3,6 +3,7 @@ import '../styles/o2-brand.css';
 import '../styles/o2-tokens.css';
 import '../styles/styles.css';
 import '../styles/storyblok.css';
+import '../styles/inlife.css';
 
 export const metadata: Metadata = { title: 'O2 buying layer · Storyblok', description: 'O2 journeys composed from Storyblok components' };
 
