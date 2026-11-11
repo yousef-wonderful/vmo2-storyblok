@@ -132,3 +132,22 @@
   .ia-slot-sheet { aspect-ratio: 16/11; }
 }
 @media (prefers-reduced-motion: reduce) { .ia-sheet, .ia-scrim { transition: none; } }
+
+/* Small phones (Storyblok's Mobile preview is 320px wide): nothing may overflow the column. */
+.ia-stack { grid-template-columns: minmax(0, 1fr); }
+.ia-card, .ia-dial, .ia-plan > span { min-width: 0; }
+.ia-usage { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.ia-who { flex-wrap: wrap; row-gap: 2px; }
+.ia-who > span:first-child { white-space: nowrap; }
+.ia .ia-dial svg { width: 100%; max-width: 120px; height: auto; }
+@media (min-width: 48em) { .ia-stack { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 22.5em) {
+  .ia-greet { font-size: 22px; line-height: 28px; }
+  .ia-amt { font-size: 24px; line-height: 28px; }
+  .ia-who .ia-sep { display: none; }
+  .ia-who > span:last-child { flex-basis: 100%; }
+  .ia-dial .ia-v { font-size: 18px; margin-top: -30px; }
+  .ia .ia-tab { font-size: 11px; }
+  .ia-tab .ia-ic { width: 40px; }
+  .ia-nav ul { padding: 0 4px; }
+}
