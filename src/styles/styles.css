@@ -165,6 +165,10 @@ main.o2 { flex: 1; min-width: 0; overflow: auto; background: var(--o2-surface); 
 .total-figs div { display: flex; flex-direction: column; align-items: flex-end; }
 .total-figs span { font: var(--o2-type-small); text-transform: uppercase; }
 .total-figs strong { font: var(--o2-type-price-total); }
+.total-saving { display: flex; flex-direction: column; align-items: flex-end; }
+.total-saving span { font: var(--o2-type-small); text-transform: uppercase; }
+.total-saving strong { font: var(--o2-type-price-total); white-space: nowrap; }
+.total-saving + .total-cta { margin-left: 0; }
 .total-cta { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; margin-left: auto; }
 .total-figs + .total-cta { margin-left: 0; }
 .pay-logos { display: flex; gap: 8px; align-items: center; }
@@ -189,6 +193,8 @@ main.o2 { flex: 1; min-width: 0; overflow: auto; background: var(--o2-surface); 
 @container (max-width: 560px) {
   .total-inner { gap: 12px; }
   .total-figs { margin-left: auto; }
+  .total-saving { flex-basis: 100%; flex-direction: row; justify-content: flex-end; align-items: baseline; gap: 8px; }
+  .total-saving strong { font: var(--o2-type-body-strong); }
   .total-cta { flex-basis: 100%; align-items: stretch; }
   .total-cta .btn { width: 100%; }
   .pay-logos { justify-content: center; }

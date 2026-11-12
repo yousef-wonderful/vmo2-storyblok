@@ -100,8 +100,9 @@ export const COMPONENTS: ComponentDef[] = [
     'tab-checkout': tab('Checkout', ['stage', 'secure_checkout', 'buttons_in_page', 'payment_logos']),
     stage: option('Progress step', ['Phone', 'Plan', 'Check', 'Details', 'Pay'], 'Phone'),
     secure_checkout: bool('Secure checkout header'), buttons_in_page: bool('Buttons in the page (no basket bar)'), payment_logos: bool('Show payment logos'),
-    'tab-basket': tab('Basket bar', ['basket_label', 'basket_upfront', 'basket_monthly']),
+    'tab-basket': tab('Basket bar', ['basket_label', 'basket_upfront', 'basket_monthly', 'basket_saving_label', 'basket_saving']),
     basket_label: text('Basket label', { description: 'Shown before a price exists' }), basket_upfront: text('Upfront'), basket_monthly: text('Monthly'),
+    basket_saving_label: text('Saving label', { description: 'e.g. Trade-in. Defaults to Saving' }), basket_saving: text('Saving', { description: 'Any headline saving must show here as a number, e.g. Up to £146' }),
   } },
   // In-life app home (O2 In Life app journey): My O2 account + Priority, with an offer slot shown inline and as a bottom sheet.
   { name: 'app_header', display_name: 'App header', folder: 'App', is_nestable: true, preview_field: 'name', icon: 'block-image', color: '#0050ff', schema: {
