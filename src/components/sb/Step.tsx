@@ -51,8 +51,8 @@ export default function Step({ blok }: { blok: Blok }) {
               {priced && <div className="total-figs">
                 <div><span>Upfront</span><strong>{blok.basket_upfront}</strong></div>
                 <div><span>Monthly</span><strong>{blok.basket_monthly}</strong></div>
-                {blok.basket_saving && <div className="saving"><span>{blok.basket_saving_label || 'Saving'}</span><strong>{blok.basket_saving}</strong></div>}
               </div>}
+              {priced && blok.basket_saving && <div className="total-saving"><span>{blok.basket_saving_label || 'Saving'}</span><strong>{blok.basket_saving}</strong></div>}
               <div className="total-cta">
                 <StepLink link={blok.primary_link} className="btn on-navy">{blok.primary_label}</StepLink>
                 {blok.payment_logos && <div className="pay-logos">{PAY.map(f => <img key={f} src={`/o2/payment/${f}`} alt="" />)}</div>}
