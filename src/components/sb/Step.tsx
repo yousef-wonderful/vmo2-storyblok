@@ -51,6 +51,7 @@ export default function Step({ blok }: { blok: Blok }) {
               {priced && <div className="total-figs">
                 <div><span>Upfront</span><strong>{blok.basket_upfront}</strong></div>
                 <div><span>Monthly</span><strong>{blok.basket_monthly}</strong></div>
+                {blok.basket_saving && <div className="saving"><span>{blok.basket_saving_label || 'Saving'}</span><strong>{blok.basket_saving}</strong></div>}
               </div>}
               <div className="total-cta">
                 <StepLink link={blok.primary_link} className="btn on-navy">{blok.primary_label}</StepLink>
